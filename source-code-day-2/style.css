@@ -1,0 +1,11 @@
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: aqua;
+    /* display: block; thẻ này để hiển thị block */
+    /* height: 50px; */
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 40px;
+}
