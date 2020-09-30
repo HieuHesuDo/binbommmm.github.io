@@ -1,0 +1,108 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.margin {
+  margin-top: 30px;
+}
+
+/* Hình 1 */
+.content {
+  display: flex;
+}
+
+.side-bar-left {
+  width: 70%;
+  background-color: red;
+  height: 400px;
+}
+
+.side-bar-right {
+  width: 30%;
+  height: 400px;
+}
+
+.side-bar-1 {
+  background-color: green;
+  height: 200px;
+}
+
+.side-bar-2 {
+  background-color: blue;
+  height: 200px;
+}
+
+/* Hình 2 */
+.content-2 {
+  display: flex;
+}
+
+.box-left {
+  width: 70%;
+  background-color: red;
+  height: 400px;
+}
+
+.box-right {
+  width: 30%;
+  height: 400px;
+  margin-left: 15px;
+}
+
+.box1 {
+  background-color: green;
+  height: 200px;
+}
+
+.box2 {
+  background-color: blue;
+  height: 200px;
+}
+
+/* Hình 3 */
+.content-3 {
+  display: flex;
+}
+
+.cot1 {
+  width: 100%;
+  background-color: red;
+  height: 400px;
+}
+
+.cot2 {
+  width: 100%;
+  background-color: green;
+  height: 400px;
+}
+
+.cot3 {
+  width: 100%;
+  background-color: blue;
+  height: 400px;
+}
+
+/* Hình 4 */
+.content-4 {
+  display: flex;
+}
+
+.column1 {
+  width: 100%;
+  background-color: red;
+  height: 400px;
+}
+
+.column2 {
+  width: 100%;
+  background-color: green;
+  height: 400px;
+  margin: 0px 15px 0px 15px;
+}
+
+.column3 {
+  width: 100%;
+  background-color: blue;
+  height: 400px;
+}
