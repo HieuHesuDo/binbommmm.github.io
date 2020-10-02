@@ -266,6 +266,11 @@ a {
  margin: 0% ; 
 }
 
+.row4x4 a{
+  text-transform: none;
+  color: #838486;
+}
+
 .row4x4 h4{
   color: #fff;
   font-size: 18px;
