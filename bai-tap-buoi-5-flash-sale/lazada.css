@@ -69,41 +69,6 @@ body {
   display: block;
 }
 
-.menu ul li:hover > .sub-menu-1-2 {
-  display: block;
-} 
-
-.menu ul li:hover > .sub-menu-1-3 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-4 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-5 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-6 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-7 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-8 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-9 {
-  display: block;
-}
-
-.menu ul li:hover > .sub-menu-1-10 {
-  display: block;
-}
 
 .menu ul li:hover > .sub-menu-2 {
   display: block;
@@ -113,21 +78,6 @@ body {
     display: block;
   } 
 
-.menu ul li:hover > .sub-menu-2-2 {
-    display: block;
-  }
-
-.menu ul li:hover > .sub-menu-2-3 {
-    display: block;
-  }
-
-.menu ul li:hover > .sub-menu-2-4 {
-    display: block;
-  }
-
-.menu ul li:hover > .sub-menu-2-5 {
-    display: block;
-  }
 
 .menu ul li:hover > .sub-menu-3 {
   display: block;

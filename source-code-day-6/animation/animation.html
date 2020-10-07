@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* border-radius: 100%; */
+        animation-name: pump;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+
+      /* h1{
+        animation-name: change-color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      } */
+
+      @keyframes pump {
+        30% {
+          transform: scale(1.1);
+        }
+        50% {
+          transform: scale(1);
+        }
+        90% {
+          transform: scale(1.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+  </body>
+</html>

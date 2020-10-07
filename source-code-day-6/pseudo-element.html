@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .doan-van::first-letter{
+            font-size: 30px;
+        }
+
+        .doan-van::first-line{
+            color: aqua;
+        }
+
+        .money::before{
+            content: "Tôi ";
+        }
+
+        .money::after{
+            content: " VND ";
+        }
+
+        p::selection{
+            background-color: red;
+        }
+
+        .money{
+            position: relative;
+        }
+
+        .money::after{
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color: purple;
+            top: 0;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="doan-van">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa obcaecati laudantium sit similique voluptas cupiditate ipsam neque eum vel ea corporis animi adipisci enim quas aspernatur illo nemo, quisquam error.
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ratione quis consectetur reiciendis.
+    </p>
+
+    <p class="money">có 100000</p>
+    <p class="money">có 200000</p>
+    <p class="money">có 300000</p>
+</body>
+</html>
