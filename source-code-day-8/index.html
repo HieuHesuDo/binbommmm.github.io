@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="">Họ tên</label>
+      <input id="username" type="text" placeholder="Username" name="username" required/>
+
+      <br />
+
+      <label for="">Mật khẩu</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+        name="password"
+        required
+      />
+
+      <br />
+
+      <label for="">Giới tính</label>
+      <input id="male" type="radio" name="Gender" value="male"/ checked><label for="male">Nam</label>
+      <input id="female" type="radio" name="Gender" value="female"/><label for="female">Nữ</label>
+
+      <br />
+
+      <label for="">Sở thích: </label>
+      <input id="swim" type="checkbox" name="hobby" value="swim" />
+      <label for="swim">Bơi lội</label>
+      <input id="football" type="checkbox" name="hobby" value="football"/>
+      <label for="football">Đá bóng</label>
+      <input id="listen-music" type="checkbox" name="hobby" value="listen-music"/>
+      <label for="listen-music">Nghe nhạc</label>
+
+      <br />
+
+      <button type="submit">Đăng nhập</button>
+      <button type="reset">Hủy</button>
+
+      <br>
+
+      <select name="countries" id="countries">
+          <option value="ha-noi">Hà Nội</option>
+          <option value="thanh-hoa">Thanh Hóa</option>
+          <option value="da-lat">Đà Lạt</option>
+          <option value="ho-chi-minh">Hồ Chí Minh</option>
+      </select>
+    </form>
+  </body>
+</html>
