@@ -6,8 +6,22 @@
     <title>Document</title>
 </head>
 <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     table{
         text-align: center;
@@ -60,7 +74,18 @@ span-1{
 
 .table-2 .align{
 text-align: right;
-    }
+}
+
+.title{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(240, 210, 154);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 /* .sub-table tr:nth-child(3){
     background-color: red;
@@ -69,7 +94,10 @@ text-align: right;
     
 </style>
 <body>
-    <caption>Hello</caption>
+    <div class="container">
+    <!-- <caption>Hello</caption> -->
+    <div class="title"><p><span-1>Kết quả xổ số miền Bắc</span-1> ngày 25/09/2020</p> </div>
+
     <table>
         <tr>
             <td colspan="16"><span-1>3QV</span-1> - <span-1>9QV</span-1> - <span-1>4QV</span-1> - <span-1>12QV</span-1> - <span-1>13QV</span-1> - <span-1>14QV</span-1></td>
@@ -267,6 +295,7 @@ text-align: right;
         </table>
     </div>
     </table>
+</div>
 </div>
 </body>
 </html>
