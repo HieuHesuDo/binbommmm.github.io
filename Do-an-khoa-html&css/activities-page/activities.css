@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content{
+    width: 100%;
+    height: 1000px;
+}
+
+.navbar{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 90%;
+    margin-left: 30px ;
+}
+
+.menu ul{
+    display: flex;  
+    transform: translate(30%);
+}
+
+.menu li{
+    list-style-type: none;
+    padding-left: 25px;
+    font-weight: 500;
+} 
+
+.menu li a:hover{
+    background-color: #3FC588;
+    color: #fff;
+}
+
+.menu li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: green;
+    border-radius: 50% 0 50% 0;
+    transition: 0.5s;
+}
+
+
+.navbar button{
+    width: 200px;
+    height: 70px;
+    transform: translate(110%);
+    border: none;
+    background-color: #175743;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+.navbar button:hover{
+    background-color: #3FC588;
+    color: #000;
+    transition: 0.5s;
+}
+
+.content{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1190,w_2121,x_0,y_33/v1583164013/shape/mentalfloss/546495-gettyimages-1094085668.jpg?itok=r9kDrfLh);
+    background-position: center;
+    background-size: cover;
+    /* position: absolute; */
+}
+
+.text-underline{
+    width: 100%;
+    position: absolute;
+    z-index: 111;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    transform: translateY(250%);
+}
+
+.text-for-activities{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-for-activities .text-content{
+    width: 65%;
+    font-size: 22px;
+    margin: 30px;
+}
+
+
+.ours-activities-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.ours-activities-area h1{
+    margin: 30px 0px 50px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ours-activities-area .row-1{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.row-1 a{
+    background-color: #fff;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    margin: 1px;
+}
+
+.row-1 .picture img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.row-1 a:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.ours-activities-area .row-2{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.row-2 a{
+    background-color: #fff;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    margin: 1px;
+}
+
+.row-2 .picture img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.row-2 a:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.picture .img-title{
+    width: 300px;
+    position: absolute;
+    z-index: 111;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(-250%);
+    text-transform: uppercase;
+}
+.action-img {
+    width: 100%;
+    height: 600px;
+    background-image: url(//wwfasia.awsassets.panda.org/img/original_ww185756_2_720591.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.action-img .sologan{
+    position: absolute;
+    z-index: 111;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: translate(400%,550%);
+}
+
+.action-img button{
+    width: 200px;
+    height: 70px;
+    transform: translate(550%,400%);
+    border: none;
+    background-color: #3FC588;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.action-img button:hover{
+    background-color: #06f78a;
+    color: #000;
+    transition: 0.5s;
+}
+
+.company-info{
+    width: 100%;
+    height: 550px;
+    background-color: #def5ee;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.register-form form{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-address{
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.block-about-us{
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+form h2{
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#firstname{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+#lastname{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+#email{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+form button{
+    width: 280px;
+    height: 40px;
+    border: none;
+    background-color: #24C482;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: 0.5s;
+}
+
+form button:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.social-media{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i{
+    font-size: 50px;
+    color: #3FC588;
+}
+
+.social-media a{
+    margin: 10px;
+}
+
+.icon-up {
+    font-size: 40px;
+    color: #464646;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+  }

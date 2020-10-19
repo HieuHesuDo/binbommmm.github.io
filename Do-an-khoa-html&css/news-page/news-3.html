@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Sức sống Hành tinh: Hai phần ba các quần thể động vật hoang dã đã giảm từ năm 1970</title>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/ptFWBcCLjGx5s32ccdKQRDYKm0yiUjsgNJO-d6uios1i3Mlsy8LKHPQvxhyPgLBYvBHWmxOYwb8wRCiKMQgY=w1366-h625-rw" type="image/x-icon">
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo img{
+    width: 90%;
+    margin-left: 30px ;
+}
+
+.menu ul{
+    display: flex;  
+    transform: translate(30%);
+}
+
+.menu li{
+    list-style-type: none;
+    padding-left: 25px;
+    font-weight: 500;
+} 
+
+.menu li a:hover{
+    background-color: #3FC588;
+    color: #fff;
+}
+
+.menu li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: green;
+    border-radius: 50% 0 50% 0;
+    transition: 0.5s;
+}
+
+
+.navbar button{
+    width: 200px;
+    height: 70px;
+    transform: translate(110%);
+    border: none;
+    background-color: #175743;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+.navbar button:hover{
+    background-color: #3FC588;
+    color: #000;
+    transition: 0.5s;
+}
+
+.content{
+    width: 70%;
+    margin-top: 50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.content figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content figcaption{
+    font-size: 13px;
+    width: 500px;
+    text-align: center;
+    margin: 5px;
+}
+
+.content figure img{
+    width: 100%;
+}
+
+.company-info{
+    width: 100%;
+    height: 550px;
+    background-color: #def5ee;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.register-form form{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-address{
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.block-about-us{
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+form h2{
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#firstname{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+#lastname{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+#email{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+form button{
+    width: 280px;
+    height: 40px;
+    border: none;
+    background-color: #24C482;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: 0.5s;
+}
+
+form button:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.social-media{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i{
+    font-size: 50px;
+    color: #3FC588;
+}
+
+.social-media a{
+    margin: 10px;
+}
+
+.icon-up {
+    font-size: 40px;
+    color: #464646;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+  }
+
+.bottom-logo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.bottom-logo img{
+    width: 300px;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/Do-an-khoa-html&css/main-page/index.html"><img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89" alt="brother-earth-logo"></a>
+            </div>
+
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/Do-an-khoa-html&css/about-us-page/about-us.html">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="/Do-an-khoa-html&css/activities-page/activities.html">HOẠT ĐỘNG</a></li>
+                    <li><a style="background-color: #3FC588; border-radius: 50% 0 50% 0; color: #fff;" href="#">TIN TỨC</a></li>
+                    <li><a href="/Do-an-khoa-html&css/image-gallery-page/image-gallery.html">HÌNH ẢNH</a></li>
+                    <li><a href="/Do-an-khoa-html&css/contact-page/contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+
+            <div class="sign-in">
+                <a href="/Do-an-khoa-html&css/action-page.html"><button>HÃY HÀNH ĐỘNG!</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 style="font-size: 40px; text-align: center;">Báo cáo Sức sống Hành tinh: Hai phần ba các quần thể động vật hoang dã đã giảm từ năm 1970</h1>
+            <br><br>
+            <h2 style="font-weight: 400;">Tổ chức WWF kêu gọi hành động khẩn cấp để đảo ngược xu hướng suy thoái của thiên nhiên vào năm 2030, bằng cách chấm dứt việc huỷ hoại môi trường sống tự nhiên và cải tổ hệ thống sản xuất và tiêu dùng thực phẩm trên toàn cầu theo hướng bền vững.</h2>
+            <br>
+            <p><b>Gland, Thuỵ Sỹ - Ngày 10 tháng 9 năm 2020 -</b>theo Báo cáo Sức sống Hành tinh 2020, được WWF công bố ngày hôm nay, trong vòng chưa tới nửa thế kỷ, hai phần ba quần thể động vật có vú, chim, lưỡng cư, bò sát và cá trên toàn cầu đã giảm, phần lớn là do môi trường bị phá huỷ. Đây cũng là nguyên nhân góp phần lây lan các dịch bệnh liên quan đến động vật, như COVID-19. </p>
+            <br>
+            <p> Chỉ số Sức sống Hành tinh (LPI) do Hiệp hội Động vật học London (ZSL) tính toán đã cho thấy các yếu tố khiến các đại dịch dễ bùng phát trên trái đất cũng chính là tác nhân thúc đẩy mức suy giảm trung bình 68% quần thể các loài có xương sống trên toàn cầu từ năm 1970 tới 2016. Những yếu tố này gồm có sự thay đổi trong sử dụng đất và buôn bán động vật hoang dã.
+            </p>
+            <br>
+            
+            <p>Ông Marco Lambertini, Tổng giám đốc, WWF Quốc tế chia sẻ: "Báo cáo Sức sống Hành tinh 2020 đã nhấn mạnh sự phá huỷ thiên nhiên ngày càng tăng của chúng ta đang không chỉ huỷ diệt động vật hoang dã mà cả sức khỏe con người cũng như tất cả các khía cạnh của cuộc sống của chúng ta". </p>
+            <br>
+            <p>"Chúng ta không thể bỏ qua các bằng chứng về chỉ số suy giảm nghiêm trọng quần thể các loài động vật hoang dã. Đây là chỉ số cảnh báo môi trường thiên nhiên và là môi trường sống của chúng ta đang bị dọa nghiêm trọng. Hành tinh chúng ta đang phát tín hiệu đỏ, cảnh báo lỗi hệ thống. Từ các loài cá ở đại dương và sông ngòi đến loài ong vốn có vai trò quan trọng trong sản xuất nông nghiệp, sự suy giảm ở động vật hoang dã ảnh hưởng trực tiếp đến dinh dưỡng, an ninh lương thực và sinh kế của hàng tỷ người”.</p>
+            <br>
+            <p>Ông nói thêm: "Trong bối cảnh đại dịch toàn cầu, hơn bao giờ hết, các quốc gia cần phải phối hợp và hành động để cùng chặn đứng và đảo ngược xu hướng mất đa dạng sinh học và quần thể các loài hoang dã vào cuối thập kỷ này. Sự sống còn của chúng ta ngày càng phụ thuộc vào việc này."</p>
+            <br>
+            <p>Báo cáo Sức sống Hành tinh 2020 giới thiệu một cách tổng quan, toàn diện về hiện trạng của thế giới tự nhiên, thông qua các chỉ số LPI - theo dõi xu hướng về sự phong phú của động vật hoang dã trên toàn cầu. Báo cáo có sự đóng góp của hơn 125 chuyên gia trên khắp thế giới. Nó cho thấy các nguyên nhân chính khiến quần thể các loài trên cạn, được theo dõi trong chỉ số LPI, bị giảm là do mất và suy giảm môi trường sống, trong đó có phá rừng. Cách chúng ta sản xuất thực phẩm không bền vững cũng thúc đẩy sự suy giảm này.</p>
+            <br>
+            <p>Hai loài nguy cấp trong chỉ số LPI được báo cáo miêu tả nổi bật là loài đười ươi ở vùng đất thấp miền Đông Congo và loài vẹt xám châu Phi ở Tây Nam Ghana. Số lượng của loài đười ươi trong vườn quốc gia Kahuzi-Biega thuộc Cộng hòa Dân chủ Congo được ước tính giảm khoảng 87% từ năm 1994 đến 2015, chủ yếu là do săn bắn bất hợp pháp. Loài vẹt xám châu Phi ở Tây Nam của Ghana giảm 99% từ 1992 đến 2014 do bị bẫy bắt để bán và bị mất môi trường sống.</p>
+           
+            <br>
+            <p>Báo cáo theo dõi chỉ số LPI của gần 21.000 quần thể của hơn 4.000 loài động vật có xương sống từ năm 1970 năm 2016. Nó cũng cho thấy quần thể động vật hoang dã ở môi trường nước ngọt bị suy giảm 84%. Đây là sự suy giảm quần  trung bình mạnh nhất trong các hệ sinh thái, tương đương với giảm 4% /năm kể từ năm 1970. Một ví dụ tiêu biểu là số lượng sinh sản của cá tầm Trung Quốc trên sông Dương Tử đã giảm 94% kể từ 1982 tới 2015 do dòng chảy của sông bị các con đập thuỷ điện chia cắt. </p>
+            <br>
+            <p>Theo tiến sĩ Andrew Terry, Giám đốc Chương trình Bảo tồn của ZSL: "Chỉ số Sức sống Hành tinh là một trong những chỉ số đa dạng sinh học toàn cầu toàn diện nhất. Giảm trung bình 68% trong 50 năm thực sự là một thảm hoạ, và là bằng chứng rõ ràng về tác động mà con người đang gây ra cho thế giới tự nhiên. Nếu không thay đổi, chắc chắn các quần thể còn tiếp tục giảm và đi đến tuyệt chủng, đe dọa tính vẹn toàn của các hệ sinh thái đang nuôi dưỡng tất cả chúng ta. Nhưng đồng thời, chúng ta cũng biết rằng các nỗ lực bảo tồn có hiệu quả và các loài có thể tự phục hồi từ bờ vực tuyệt chủng. Với cam kết, đầu tư và chuyên môn, ta có thể đảo ngược xu hướng đó.” </p>
+            <br>
+            <p>Báo cáo Sức sống Hành tinh 2020 còn đưa ra mô hình dự báo, cho thấy rằng nếu không tiếp tục ngăn cản việc suy thoái và mất môi trường sống, đa dạng sinh học toàn cầu sẽ tiếp tục giảm. Mô hình này được dựa trên bài nghiên cứu “Cần một chiến lược toàn diện để đảo ngược xu hướng đi xuống trong đa dạng sinh học trên cạn” do WWF và hơn 40 tổ chức phi chính phủ, các tổ chức học thuật và nghiên cứu công bố trên tạp chí Tự nhiên ngày hôm nay. Nó chỉ ra rằng, chỉ có thể ổn định và đảo ngược sự mất mát của thiên nhiên do con người gây ra nếu có các nỗ lực bảo tồn tham vọng và có sự cải tổ trong cách sản xuất và tiêu thụ thực phẩm. Các thay đổi mà chúng ta cần là sản xuất thực phẩm và thương mại một cách hiệu quả và bền vững, giảm rác thải, và cổ vũ cho một chế độ ăn uống lành mạnh, thân thiện hơn với môi trường. </p>
+            <br>
+            <p> Nghiên cứu cho thấy rằng việc thực hiện tổng hợp các biện pháp, thay vì đơn lẻ, sẽ giúp giảm nhanh các áp lực lên môi trường sống của các loài hoang dã. Với cách này, ta có thể đảo ngược xu hướng suy giảm đa dạng sinh học do mất môi trường sống sớm hơn vài thập kỷ, so với kịch bản phá huỷ môi trường sống rồi cố gắng để đảo ngược tình thế. Các mô hình cũng chỉ ra rằng nếu thế giới “tiếp tục như hiện tại", tỷ lệ mất đa dạng sinh học từ năm 1970 sẽ tiếp tục trong những năm tới.</p>
+            <br>
+            <p>"Theo kịch bản tốt nhất, sẽ mất nhiều thập kỷ để đảo ngược những thiệt hại trên. Nhiều khả năng sẽ không thể phục hồi các đa dạng sinh học đã bị mất, gây rủi ro cho vô số các dịch vụ hệ sinh thái mà con người phụ thuộc vào", trích lời ông David Leclère, nghiên cứu viên của Viện Phân tích Hệ thống Ứng dụng Quốc tế và tác giả chính của nghiên cứu này.</p>
+        </div>
+    </div>
+
+    <div class="bottom-logo">
+        <img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89" alt="brother-earth-logo">
+        <p><i>Xây dựng một tương lai trong đó con người sống hài hoà với thiên nhiên</i></p>
+    </div>
+
+    <div class="company-info">
+        <div class="register-form" id="register-form">
+            <form action="#" method="POST">
+                <h2>Để luôn được cập nhật thông tin mới nhất về các chiến dịch của chúng tôi</h2>
+                <br>
+                <input id="firstname" type="text" placeholder="Họ" name="firstname" required/>
+
+                <input id="lastname" type="text" placeholder="Tên" name="lastname" required/>
+
+                <input id="email" type="text" placeholder="Email" name="email" required/>
+
+                <a href=""><button>Đăng ký</button></a>
+                <br>
+
+                <div class="social-media">
+                    <a title="facebook" href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a title="Instagram" href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a title="Twitter" href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a title="Pinterest" href="#"><i class="fab fa-pinterest-square"></i></a>
+                    <a title="Youtube" href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            </form>
+        </div>
+
+        <div class="company-address">
+            <div class="block-about-us">
+                <p> <b>Trụ sở tại Việt Nam:</b> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội  </p>
+                <p><b>Trụ sở tại Anh:</b> 1st Floor, The Printworks, 139 Clapham Road, London, SW9 0HP</p>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8642858745443!2d105.79223651424478!3d20.998076594202576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8f8064667b%3A0x65f8f955fb2e87c1!2zVml3YXNlZW4gVG93ZXIgNDggdOG7kSBo4buvdQ!5e0!3m2!1svi!2s!4v1602926106732!5m2!1svi!2s" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
+    </div>
+    <a href="#top"><i title="Về đầu trang" class="fas fa-arrow-circle-up icon-up"></i></a>
+</body>
+</html>

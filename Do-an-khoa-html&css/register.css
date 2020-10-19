@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 625px;
+    background-image: url(https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 90%;
+    margin-left: 30px ;
+}
+
+.menu ul{
+    display: flex;  
+    transform: translate(30%);
+}
+
+.menu li{
+    list-style-type: none;
+    padding-left: 25px;
+    font-weight: 500;
+} 
+
+.menu li a:hover{
+    background-color: #3FC588;
+    color: #fff;
+}
+
+.menu li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: green;
+    border-radius: 50% 0 50% 0;
+    transition: 0.5s;
+}
+
+
+.navbar button{
+    width: 200px;
+    height: 70px;
+    transform: translate(110%);
+    border: none;
+    background-color: #3FC588;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+.navbar button:hover{
+    background-color: #3FC588;
+    color: #000;
+    transition: 0.5s;
+}
+
+.container .register-form{
+    position: relative;
+    background-color: #fff;
+    width: 432px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+}
+
+.header{
+    padding-left: 10px;
+}
+
+.header h1{
+    line-height: 45px;
+    color: #1c1e21;
+    font-weight: 650;
+    font-size: 32px;
+}
+
+.header p{
+    color: #777;
+}
+
+.register-info{
+    margin: auto;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstname{
+    width: 50%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 4px;
+    margin-right: 5px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+}
+
+#lastname{
+    width: 50%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+}
+
+#contact{
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+}
+
+#post-code{
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+}
+
+.description p{
+    color: #777;
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.description a{
+    color: #385898;
+    text-decoration: none;
+}
+
+.register-form h6{
+    font-weight: normal;
+    color: #777;
+    font-size: 12px;
+    line-height: 25px;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.submit-button button{
+    width: 200px;
+    height: 36px;
+    background-color: #119F16;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+hr{
+    height: 1px;
+    background-color:#dddddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-width: 0px;
+    border-style: none;
+  }
+
+  .company-info{
+    width: 100%;
+    height: 550px;
+    background-color: #def5ee;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.register-form form{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-address{
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.block-about-us{
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+form h2{
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#firstname{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+#lastname{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+#email{
+    width: 70%;
+    height: 40px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F6F7;
+    border: solid #ccd0d5 1px;
+    margin-bottom: 15px;
+}
+
+form button{
+    width: 280px;
+    height: 40px;
+    border: none;
+    background-color: #24C482;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: 0.5s;
+}
+
+form button:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.social-media{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i{
+    font-size: 50px;
+    color: #3FC588;
+}
+
+.social-media a{
+    margin: 10px;
+}
+
+.icon-up {
+    font-size: 40px;
+    color: #464646;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+  }
+
+  .bottom-logo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bottom-logo img{
+    width: 300px;
+}
+
