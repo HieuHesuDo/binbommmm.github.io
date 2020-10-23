@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+<body>
+    
+</body>
+<script>
+    document.write("1. Viết hàm chuyển đổi từ độ C sang độ F và ngược lại");
+    document.write("<br>");
+    document.writeln("Nhập vào <strong>cTof</strong> để đổi từ độ C sang độ F > sau đó nhập giá trị độ F > Ví dụ: cTof(50)");
+    document.write("<br>");
+    document.writeln("Nhập vào <strong>fToc</strong> để đổi từ độ F sang độ C > sau đó nhập giá trị độ C > Ví dụ: fToc(100)");
+    document.write("<br><br><br>");
+    function cTof(c){
+        var f = (c *1.8) + 32;
+        console.log(c + " độ C sẽ là " + f + " độ F")
+    }
+
+    function fToc(f){
+        var c = (f - 32) / 1.8;
+        console.log(f + " độ F sẽ là " + c + " độ C")
+    }
+
+    document.write("2. Viết function tính thế kỷ của 1 năm. Biết thế kỷ thứ nhất tính từ năm 1 đến 100.");
+    document.write("<br>");
+    document.writeln("Nhập vào <strong>yearTocentury</strong> để đổi từ năm sang thế kỷ > sau đó nhập năm > Ví dụ: yearTocentury(2020)");
+    document.write("<br><br><br>");
+    function yearTocentury(y){
+        c = Math.ceil(y/100) ;
+        console.log("Năm " + y + " là thế kỷ " + c);
+    }
+
+
+    document.write("3. Cho 1 chuỗi dài hơn 15 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu '...' ở cuối chuỗi.");
+    document.write("<br>");
+    document.writeln('Nhập vào <strong>cutString</strong> > sau đó nhập chuỗi > Ví dụ: cutString("qưertyyuiopádfghjjkklzxcvxbnn")');
+    document.write("<br><br><br>");
+    function cutString(s){
+            console.log(s.substring(5)+"...");
+    }
+
+    document.write("4. Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.");
+    document.write("<br>");
+    document.writeln('Nhập vào <strong>upperCase1Letter</strong> > sau đó nhập một chuỗi bất kỳ > Ví dụ: upperCase1Letter("techMaster")');
+    document.write("<br><br><br>");
+    function upperCase1Letter(s){
+            console.log(s.charAt(0).toUpperCase()+ s.slice(1).toLowerCase());
+    }
+</script>   
+</html>
