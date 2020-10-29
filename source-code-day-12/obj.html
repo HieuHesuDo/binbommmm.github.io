@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="arrray.js"></script>
+</head>
+<!-- object quan ly phan tu theo ten -->
+<script>
+    let person = {
+        name: "Hieu",
+        age: 24,
+        address: "Hadong",
+        run: () => {console.log('run')},
+    }
+
+    person["city"] = "Hanoi"
+
+    for (const key in person){
+        console.log(key, person[key]);
+    }
+</script>
+<body>
+    
+</body>
+</html>
