@@ -42,16 +42,29 @@
     document.writeln('Nhập vào <strong>cutString</strong> > sau đó nhập chuỗi > Ví dụ: cutString("qwertyuiopasdfg")');
     document.write("<br><br><br>");
     function cutString(s){
-            console.log(s.substring(0,10)+"...");
+        let y;
+        if (typeof(s) == "string"){
+            y = s;
+        }else{
+            y = s.toString();
+        }
+
+        return y.substring(0,10) = "..."
     }
 
     document.write("4. Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.");
     document.write("<br>");
     document.writeln('Nhập vào <strong>upperCase1Letter</strong> > sau đó nhập một chuỗi bất kỳ > Ví dụ: upperCase1Letter("techMaster")');
     document.write("<br><br><br>");
-    function upperCase1Letter(s){
-            console.log(s.charAt(0).toUpperCase()+ s.slice(1).toLowerCase());
+    
+    function capFirstCharacter(a){
+    let b = a.toString().split(" ");
+    for (let i = 0; i < b.length; i++){
+        b[i] = b[i].toLowerCase();
+        b[i] = b[i].charAt(0).toUpperCase()+b[i].slice(1);
     }
+    return b.join(" ");
+}
 </script>  
 <body>
     
