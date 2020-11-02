@@ -21,10 +21,23 @@ document.writeln(
 );
 document.writeln("<br><br>");
 
-function timMaxMin(arrs) {
-  let Max = Math.max.apply(Math, arrs);
-  let Min = Math.min.apply(Math, arrs);
-  return "Số lớn nhất là " + Max + " Số nhỏ nhất là " + Min;
+function minMax(Array1){
+  if (Array1.length < 0) {
+      return "Hay nhap vao mang"
+  }
+  let min = Array1[0];
+  let max = Array1[0];
+  for (let i = 1; i < Array1.length; i++) {
+      if (min > Array1[i]) {
+          min = Array1[i];
+      }        
+  }
+  for (let j = 1; j < Array1.length; j++) {
+      if (max < Array1[j]) {
+          max = Array1[j];
+      }        
+  }
+  return "So nho nhat mang la "+ min + " so lon nhat cua mang la " + max + "."; 
 }
 
 document.write(
@@ -46,6 +59,31 @@ function viTriChanLe(brrs) {
     " Vị trí số chẵn cuối cùng là " +
     brrs.indexOf(soLe.length - 1)
   );
+}
+
+
+//Cach 2
+function oddEven2(arr) {
+  let odd = -1;
+  let even = -1;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+      odd = i;
+      break;
+    }
+  }
+  for (j = arr.length - 1; j >= 0; j--) {
+    if (arr[j] % 2 == 0) {
+      even = j;
+      break;
+    }
+  }
+
+  return `${odd != -1
+    ? `Vị trí số lẻ đầu tiên là ${odd}`
+    : "Không có số lẻ nào"}, ${even != -1
+    ? `Vị trí số chẵn cuối cùng là ${even}`
+    : "Không có số chẵn nào"}`
 }
 
 
