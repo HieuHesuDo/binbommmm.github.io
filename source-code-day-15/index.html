@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input
+      id="guess-number"
+      name="number"
+      placeholder="Đoán một số trong khoảng ký tự từ 1-100"
+      type="text"
+    />
+    <button id="check" onclick="check()">Kiểm tra</button>
+
+    <script>
+      function check(){
+          let random = Math.floor(Math.random()*100)+1
+          let guessNumber = document.getElementById("guess-number").value
+
+          if (guessNumber == ""){
+              alert("Bạn chưa nhập")
+              return
+          }if (guessNumber <1 || guessNumber > 100){
+              alert("Số phải lớn hơn 1 và nhỏ hơn 100")
+              return
+          }if (isNaN(guessNumber)==true){
+              alert("Nhập vào 1 số")
+              return
+          }if (guessNumber > random){
+              alert(`Số random ${random} nhỏ hơn ${guessNumber}`)
+          }else if (guessNumber < random){
+              alert(`Số random ${random} lớn hơn ${guessNumber}`)
+          }else{
+          alert("Check ok " + guessNumber);
+      }
+    }
+    </script> -->
+    <!-- <form id="myForm">
+    <input type="text" id="user-name" name="username" placeholder="Username"><br>
+    <input type="password" id="pass-word" name="password" placeholder="Password"><br>
+    <input type="password" id="confirm" name="confirm" placeholder="Nhập lại mật khẩu">
+    <button id="check" onclick="check()" value="Reset">Kiểm tra</button>
+</form> -->
+
+    <!-- <script>
+        function check(){
+            let userName = document.getElementById("user-name").value;
+            let passWord = document.getElementById("pass-word").value;
+            let confirm = document.getElementById("confirm").value;
+
+            if (userName == "" || passWord == "" || confirm == ""){
+                alert("Bạn chưa nhập đủ thông tin")
+                return
+            // }if(isNaN(userName)== false){
+            //     alert("Username phải là chuỗi")
+            //     return
+            }if (passWord == ""){
+                alert("Bạn chưa nhập password")
+                return
+            }if (userName.length > 20){
+                alert("Username không được quá 20 ký tự")
+                return
+            }if (passWord.length < 6 || passWord.length > 32){
+                alert("Password phải từ 6 đến 32 ký tự")
+                return
+            }if (confirm !== passWord){
+                alert("Nhập lại mật khẩu không đúng")
+            }
+            else{
+                alert("Đăng ký thành công")
+            }
+            
+        }
+    </script> -->
+
+    <!-- <button id="translate" onclick="dich()">Dịch</button>
+    <script>
+      function dich() {
+        let value = prompt("Bạn đến từ quốc gia nào? Anh, Trung Quốc, Nhật, Ý, Nga?")
+        // if (value = "Việt Nam"){
+        //     alert("Xin Chào")
+        // } else if (value = "Trung Quốc"){
+        //     alert("Ni hào")
+        // } else if("Anh"){
+        //     alert("Hello")
+        // }else if (value = "Nhật"){
+        //     alert("Ohaiyo")
+        // }else if (value = "")
+
+        switch (value) {
+          case "Việt Nam":
+            alert("Xin Chào");
+            break;
+          case "Trung Quốc":
+            alert("你好");
+            break;
+          case "Anh":
+            alert("Hello");
+            break;
+          case "Nhật":
+            alert("Kon'nichiwa");
+            break;
+          case "Ý":
+            alert("Ciao");
+            break;
+          case "Nga":
+            alert("Здравствуйте");
+            break;
+        }
+      }
+    </script> -->
+    <!-- <input
+      type="text"
+      name="money"
+      id="money"
+      placeholder="Đơn vị"
+    /><br /> -->
+    <tr>
+      <td>
+        <input type="text" name="fromAmount" id="fromAmount" />
+      </td>
+      <td>
+        <select id="from">
+          <option value="vnd" selected>VND</option>
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+        </select>
+      </td>
+    </tr>
+    <br />
+
+    <tr>
+      <td>
+        <input type="text" name="toAmount" id="toAmount" disabled />
+      </td>
+      <td>
+        <select id="to">
+          <option value="vnd">VND</option>
+          <option value="usd" selected>USD</option>
+          <option value="eur">EUR</option>
+        </select>
+      </td>
+    </tr>
+    <br /><br />
+
+    <button id="convert" onclick="convert()">Quy Đổi</button>
+
+    <script>
+      function convert() {
+        var amountInput = document.getElementById("fromAmount").value;
+        var fromCurrency = document.getElementById("from").value;
+        var toCurrency = document.getElementById("to").value;
+        var result;
+
+        if (fromCurrency == "vnd" && toCurrency == "usd") {
+          result = Math.round((amountInput / 23180.34) * 100) / 100;
+          document.getElementById("toAmount").value = result;
+        }
+        if (fromCurrency == "vnd" && toCurrency == "eur") {
+          result = Math.round((amountInput / 27571.0) * 100) / 100;
+          document.getElementById("toAmount").value = result;
+        }
+        if (fromCurrency == "usd" && toCurrency == "vnd") {
+          result = amountInput * 23180.34;
+          document.getElementById("toAmount").value = result;
+        }
+        if (fromCurrency == "usd" && toCurrency == "eur") {
+          result = Math.round((amountInput / 1.19) * 100) / 100;
+          document.getElementById("toAmount").value = result;
+        }
+        if (fromCurrency == "eur" && toCurrency == "vnd") {
+          result = Math.round(amountInput * 27571.0);
+          document.getElementById("toAmount").value = result;
+        }
+        if (fromCurrency == "eur" && toCurrency == "usd") {
+          result = Math.round((amountInput / 0.84) * 100) / 100;
+          document.getElementById("toAmount").value = result;
+        }
+      }
+    </script>
+  </body>
+</html>

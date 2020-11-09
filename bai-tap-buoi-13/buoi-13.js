@@ -22,10 +22,16 @@ document.write("<br><br>");
 
 function tinhGiaiThua(n) {
   var giaithua = 1;
-  for (let i = 1; i <= n; i++) {
-    giaithua = giaithua * i;
+  if (n > 0) {
+    for (let i = 1; i <= n; i++) {
+      giaithua = giaithua * i;
+    }
+    return "Giai thừa của " + n + " là " + giaithua;
+  } else if (n == 0) {
+    return giaithua;
+  } else {
+    return "không hợp lệ";
   }
-  return "Giai thừa của " + n + " là " + giaithua;
 }
 
 document.write(
@@ -46,8 +52,7 @@ document.write(
   "4. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm."
 );
 document.write("<br>");
-document.writeln("Nhập vào <strong>getSeason()</strong> "
-);
+document.writeln("Nhập vào <strong>getSeason()</strong> ");
 document.write("<br><br>");
 
 function getSeason() {
@@ -108,6 +113,15 @@ function stringReverse(string) {
     .join(""))}`;
 }
 
+// function bai6(string){
+//   var newstring=""
+//   for(var i=string.length-1;i>=0;i--){
+//       newstring +=string[i]
+//       if()
+//   }
+//   return newstring
+// }
+
 document.write(
   "7. Cho một số nguyên dương N, viết hàm kiểm tra N có phải là số nguyên tố."
 );
@@ -118,18 +132,22 @@ document.writeln(
 document.write("<br><br>");
 
 function soNguyenTo(n) {
-  var flag = true;
+  var flag = false;
   if (n < 2) {
     flag = false;
+  } else if (n == 2 || n == 3) {
+    return true;
   } else if (n == 2) {
     flag = true;
   } else if (n % 2 == 0) {
     flag = false;
   } else {
-    for (var i = 2; i < n - 1; i++) {
+    for (var i = 4; i < n - 1; i++) {
       if (n % i == 0) {
         flag = false;
         break;
+      } else {
+        flag = true;
       }
     }
   }
@@ -150,22 +168,29 @@ document.writeln(
 document.write("<br><br>");
 
 function soHoanHao(max) {
-  function calculateDivisors(num) {
+  function uoc(num) {
     var array = [];
-    for (var i = 1; i < num; i++) if (num % i == 0) array.push(i);
-
+    for (var i = 1; i < num; i++) {
+      if (num % i == 0) {
+        array.push(i);
+      }
+    }
     return array;
   }
 
   function sum(nums) {
     var result = 0;
-    for (var i in nums) result += nums[i];
-
+    for (var i in nums) {
+      result += nums[i];
+    }
     return result;
   }
 
-  for (var i = 1; i < max; i++)
-    if (sum(calculateDivisors(i)) == i) console.log(i);
+  for (var i = 1; i < max; i++) {
+    if (sum(uoc(i)) == i) {
+      console.log(i);
+    }
+  }
 }
 
 document.write(
@@ -184,13 +209,12 @@ function chuNhat(rong, cao) {
       for (var j = 0; j < cao; j++) {
         draw += "*";
       }
-      draw += "\n";
+      draw += "<br/>";
     } else {
       return "Chiều rộng và chiều cao phải lớn hơn 1";
     }
   }
-
-  console.log(draw);
+  document.write(draw);
 }
 
 document.write(
@@ -202,14 +226,62 @@ document.writeln(
 );
 document.write("<br><br>");
 
-function tamGiac(cao) {
-  for (let i = 1; i <= cao; i++) {
-    if (cao > 1) {
-      let str = " ".repeat(cao - i);
-      let str2 = "*".repeat(i * 2 - 1);
-      console.log(str + str2 + str);
-    } else {
-      return "Chiều cao nhập vào phải lớn hơn 1";
+// function tamGiac(cao) {
+//   for (let i = 1; i <= cao; i++) {
+//     if (cao > 1) {
+//       let str = " ".repeat(cao - i);
+//       let str2 = "*".repeat(i * 2 - 1);
+//       document.write(str + str2 + str);
+//     } else {
+//       return "Chiều cao nhập vào phải lớn hơn 1";
+//     }
+//   }
+// }
+
+// function tamGiac(cao) {
+//   var y = ((2 * cao) - 1);
+//   for (let i = 0; i < cao; i++) {
+//     if (cao > 1) {
+//       for (let j = 0; j < y; j++) {
+//         if (i <= j && j >= y - i - 1) {
+//           document.write("*");
+//         } else {
+//           document.write(" ");
+//         }
+
+//       }
+//       document.write("<br/>");
+//     } else {
+//       return "Chiều cao nhập vào phải lớn hơn 1";
+//     }
+//   }
+// }
+
+// function tamGiac(h) {
+//   for (let i = 1; i <= h; i++) {
+//     for (let j = i; j < h; j++) {
+//       document.write(" ");
+//     }
+
+//     for (j = 1; j <= (2 *h-1); j++) {
+//       document.write("* ");
+//     }
+//     document.write("<br/>");
+//   }
+// }
+
+function tamGiacCan(h) {
+  var str = "";
+  for (let i = 0; i < h; i++) {
+    for (let j = 0; j < 2 * h - 1; j++) {
+      if (j >= h - 1 - i && j <= h - 1 + i) {
+        str += "*";
+      } else {
+        str += "&nbsp&nbsp";
+      }
     }
+    str += "<br />";
   }
+
+  document.writeln(str);
 }
