@@ -178,6 +178,15 @@
           result = Math.round((amountInput / 0.84) * 100) / 100;
           document.getElementById("toAmount").value = result;
         }
+        if (fromCurrency == "vnd" && toCurrency == "vnd"){
+          document.getElementById("toAmount").value = amountInput;
+        }
+        if (fromCurrency == "usd" && toCurrency == "usd"){
+          document.getElementById("toAmount").value = amountInput;
+        }
+        if (fromCurrency == "eur" && toCurrency == "eur"){
+          document.getElementById("toAmount").value = amountInput;
+        }
       }
     </script>
   </body>

@@ -65,27 +65,42 @@ function dayInMonth(month, year) {
   }
 }
 
-// document.write(
-//   "3. Chèn phần tử có giá trị X vào phía sau phần tử có giá trị lớn nhất trong mảng."
-// );
-// document.writeln("<br>");
-// document.writeln(
-//   "Nhập vào <strong>demSo(a,b)</strong> >> sau đó nhập 2 số >> VD: demSo(1,100)"
-// );
-// document.write("<br><br>");
+document.write(
+  "4. Chèn phần tử có giá trị X vào phía sau phần tử có giá trị lớn nhất trong mảng."
+);
+document.writeln("<br>");
+document.writeln(
+  "Nhập vào <strong>demSo(a,b)</strong> >> sau đó nhập 2 số >> VD: demSo(1,100)"
+);
+document.write("<br><br>");
 
-function soLonNhat(brrs) {
-  let max = brrs[0];
-  for (let i = 1; i < brrs.length; i++) {
-    if (max < brrs[i]) {
-      max = brrs[i];
+function addElement(arr, x) {
+  let maxValue = 0;
+  for (let i = 0; i <= arr.length; i++) {
+    if (maxValue < arr[i]) {
+      maxValue = arr[i];
     }
   }
-  return max;
+  let indexMaxValue = arr.indexOf(maxValue);
+  arr.splice(indexMaxValue + 1, 0, x);
+  return arr;
 }
 
-function add(brrs) {
-  for (i = 0; i < brrs.length; i++) {}
+document.write(
+  "5. Chèn phần tử có giá trị X vào mảng sao cho mảng vẫn có thứ tự tăng dần."
+);
+document.writeln("<br>");
+document.writeln(
+  "Nhập vào <strong>addNewElement(arr, x))</strong> >> VD: addNewElement([21,3,-1,43,5,-2], 10)"
+);
+document.write("<br><br>");
+
+function addNewElement(arr, x) {
+  arr.push(x);
+  arr.sort(function (a, b) {
+    return a - b;
+  });
+  return arr;
 }
 
 document.write("6. Tính tổng các chữ số trong 1 số nguyên dương.");
@@ -172,7 +187,7 @@ function chuNhatRong(n, m) {
     for (j = 1; j <= m; j++) {
       if (i == 1 || i == n || j == 1 || j == m) {
         document.write("*");
-        document.write("&nbsp")
+        document.write("&nbsp");
       } else {
         document.write("&nbsp;&nbsp;&nbsp");
       }
@@ -209,5 +224,27 @@ function tamGiacNguoc(h) {
     for (j = i; j < h; j++) document.write("&nbsp;&nbsp;");
     for (k = i * 2; k > 1; k--) document.write("*");
     document.write("<br>");
+  }
+}
+
+document.writeln(
+  "12. Viết chương trình vẽ một chữ X bằng các dấu * với chiều cao nhập từ bàn phím (chiều cao lớn hơn 0 và là số lẻ)"
+);
+document.writeln("<br>");
+document.writeln(
+  "Nhập vào <strong>veX(h)</strong> >> sau đó nhập chiều cao >> VD: veX(5)"
+);
+document.write("<br><br>");
+
+function veX(h) {
+  for (let i = 0; i < h; i++) {
+    for (let j = 0; j < h; j++) {
+      if (j == i || j == h - i - 1) {
+        document.write("*");
+      } else {
+        document.write("&nbsp");
+      }
+    }
+    document.write("<br/>");
   }
 }
