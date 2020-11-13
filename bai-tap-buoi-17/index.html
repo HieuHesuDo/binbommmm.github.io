@@ -1,40 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body id="b1">
-    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita eum, blanditiis ut hic voluptate labore cumque incidunt saepe enim autem, quas dolore quia, minus adipisci perspiciatis! Amet in ea a cumque optio accusamus laborum voluptate eaque itaque eligendi architecto similique est expedita iste et saepe aliquam placeat, blanditiis ab, hic quasi. Porro laborum voluptas reiciendis necessitatibus modi? Error maiores nihil rerum. Earum, repellendus aliquid illum ex ea fuga labore delectus repudiandae voluptas nulla placeat cumque, accusantium eveniet provident rerum ad beatae vitae dolorem! Vitae natus architecto, ipsum alias fugit cum dolorum rem magni iusto quam aut aspernatur, officiis magnam!</p>
+  </head>
+  <body id="b1">
+    <p id="p1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita eum,
+      blanditiis ut hic voluptate labore cumque incidunt saepe enim autem, quas
+      dolore quia, minus adipisci perspiciatis! Amet in ea a cumque optio
+      accusamus laborum voluptate eaque itaque eligendi architecto similique est
+      expedita iste et saepe aliquam placeat, blanditiis ab, hic quasi. Porro
+      laborum voluptas reiciendis necessitatibus modi? Error maiores nihil
+      rerum. Earum, repellendus aliquid illum ex ea fuga labore delectus
+      repudiandae voluptas nulla placeat cumque, accusantium eveniet provident
+      rerum ad beatae vitae dolorem! Vitae natus architecto, ipsum alias fugit
+      cum dolorum rem magni iusto quam aut aspernatur, officiis magnam!
+    </p>
 
-    <p id="p2">Nulla at volutpat diam ut venenatis tellus in. Donec adipiscing tristique risus nec feugiat. Leo vel orci porta non pulvinar neque laoreet. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. A erat nam at lectus urna duis convallis. Integer feugiat scelerisque varius morbi enim nunc faucibus a. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Sociis natoque penatibus et magnis dis parturient montes. Arcu ac tortor dignissim convallis aenean et tortor at. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Massa sapien faucibus et molestie ac feugiat sed lectus. Mauris vitae ultricies leo integer malesuada.</p>
+    <p id="p2">
+      Nulla at volutpat diam ut venenatis tellus in. Donec adipiscing tristique
+      risus nec feugiat. Leo vel orci porta non pulvinar neque laoreet.
+      Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. A erat nam at
+      lectus urna duis convallis. Integer feugiat scelerisque varius morbi enim
+      nunc faucibus a. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus
+      vitae. Sociis natoque penatibus et magnis dis parturient montes. Arcu ac
+      tortor dignissim convallis aenean et tortor at. Adipiscing elit duis
+      tristique sollicitudin nibh sit amet commodo nulla. Massa sapien faucibus
+      et molestie ac feugiat sed lectus. Mauris vitae ultricies leo integer
+      malesuada.
+    </p>
 
-    <p id="p3">Scelerisque fermentum dui faucibus in. Lorem donec massa sapien faucibus et molestie ac. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Scelerisque varius morbi enim nunc faucibus. Lectus nulla at volutpat diam ut venenatis tellus in metus. Aliquam faucibus purus in massa. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Augue ut lectus arcu bibendum at varius vel pharetra. Massa tincidunt nunc pulvinar sapien et ligula. Ut tortor pretium viverra suspendisse potenti nullam ac. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Ut etiam sit amet nisl purus in mollis nunc sed. Lacus sed viverra tellus in hac. Ac turpis egestas integer eget aliquet. Justo nec ultrices dui sapien eget. Tellus in hac habitasse platea dictumst vestibulum.</p>
+    <p id="p3">
+      Scelerisque fermentum dui faucibus in. Lorem donec massa sapien faucibus
+      et molestie ac. Vitae proin sagittis nisl rhoncus mattis rhoncus urna
+      neque viverra. Elementum curabitur vitae nunc sed velit dignissim sodales
+      ut. Scelerisque varius morbi enim nunc faucibus. Lectus nulla at volutpat
+      diam ut venenatis tellus in metus. Aliquam faucibus purus in massa. Mauris
+      pellentesque pulvinar pellentesque habitant morbi tristique senectus et.
+      Augue ut lectus arcu bibendum at varius vel pharetra. Massa tincidunt nunc
+      pulvinar sapien et ligula. Ut tortor pretium viverra suspendisse potenti
+      nullam ac. Sagittis id consectetur purus ut faucibus pulvinar elementum
+      integer. Ut etiam sit amet nisl purus in mollis nunc sed. Lacus sed
+      viverra tellus in hac. Ac turpis egestas integer eget aliquet. Justo nec
+      ultrices dui sapien eget. Tellus in hac habitasse platea dictumst
+      vestibulum.
+    </p>
 
     <script>
-        function chanceColor(){
-            let p1 = document.getElementById("p1");
-            let p2 = document.getElementById("p2");
-            let p3 = document.getElementById("p3");
-            p1.style.color = "blue";
-            p2.style.color = "yellow";
-            p3.style.color = "red";
-        }
+      document.write(
+        `function changeColor(): Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ. >>> <strong>chanceColor()</strong><br/>`
+      );
+      function chanceColor() {
+        let p1 = document.getElementById("p1");
+        let p2 = document.getElementById("p2");
+        let p3 = document.getElementById("p3");
+        p1.style.color = "blue";
+        p2.style.color = "yellow";
+        p3.style.color = "red";
+      }
 
-        function changeBgColor(color){
-            document.body.style.background = color
-        }
+      document.write(`function changeColor(): function changeBgColor(color): Thay đổi màu nền của trang thành màu color. >>> <strong>changeBgColor("lightblue")
+</strong><br/>`);
+      function changeBgColor(color) {
+        document.body.style.background = color;
+      }
 
-        function copyContent(paragraph1, paragraph2){
-            let content1 = document.getElementById(paragraph1);
-            let content2 = document.getElementById(paragraph2);
-            content1.innerHTML = content2.innerHTML;
-        }
+      document.write(`function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2 (tham số truyền vào là id của 2 đoạn văn hoặc thứ tự của đoạn văn). >>> <strong>copyContent("p1","p2")
+</strong><br/>`);
+      function copyContent(paragraph1, paragraph2) {
+        let content1 = document.getElementById(paragraph1);
+        let content2 = document.getElementById(paragraph2);
+        content1.innerHTML = content2.innerHTML;
+      }
 
-        function changeFontSize(x){
-            document.body.style.fontSize = x
+      document.write(
+        `function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels (x là một số nguyên) >>> <strong>changeFontSize(30)</strong><br/>`
+      );
+      function changeFontSize(x) {
+        document.body.style.fontSize = x + "px";
+      }
+
+      document.write(
+        `function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels  >>> <strong>increaseFontSize("p1")</strong><br/>`
+      );
+      function increaseFontSize(paragraph) {
+        let p4 = document.getElementById(paragraph);
+        if (p4.style.fontSize < "30px") {
+          let style = window
+            .getComputedStyle(p4, null)
+            .getPropertyValue("font-size");
+          currentSize = parseFloat(style);
+
+          p4.style.fontSize = currentSize + 1 + "px";
+        } else {
+          alert("Không được quá 30px");
         }
+      }
+
+      document.write(
+        `function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels. >>> <strong>decreaseFontSize("p1")</strong><br/>`
+      );
+      function decreaseFontSize(paragraph) {
+        let p5 = document.getElementById(paragraph);
+        if (p5.style.fontSize > "10px") {
+          let style = window
+            .getComputedStyle(p5, null)
+            .getPropertyValue("font-size");
+          currentSize = parseFloat(style);
+
+          p5.style.fontSize = currentSize - 1 + "px";
+        } else {
+          alert("Không được nhỏ quá 10px");
+        }
+      }
     </script>
-</body> 
+  </body>
 </html>
