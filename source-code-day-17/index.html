@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write(`Bài 2: Cho 1 mảng có độ dài lớn hơn 2, chứa các số khác nhau. Hãy viết hàm tìm ra số lớn thứ nhì
+trong mảng. >>> <strong>secondLarge(arrs)</strong>`);
+      document.write(`<br/>`);
+
+      function secondLarge(arrs) {
+        let result = arrs.sort(function (a, b) {
+          return a - b;
+        })[arrs.length - 2];
+        return result;
+      }
+
+      document.write(
+        `Bài 3: Cho 1 mảng các chuỗi bất kỳ có độ dài khác nhau. Hãy viết hàm tìm ra chuỗi có độ dài lớn nhất. >>> <strong>longestString(brrs)</strong>`
+      );
+      document.write(`<br/>`);
+
+      function longestString(brrs) {
+        let lgth = 0;
+        let longest;
+
+        for (i = 0; i < brrs.length; i++) {
+          if (brrs[i].length > lgth) {
+            lgth = brrs[i].length;
+            longest = brrs[i];
+          }
+        }
+
+        console.log(longest);
+      }
+
+      document.write(
+        `Bài 4: Viết hàm có 2 tham số là 2 chuỗi string và target khác rỗng, dùng để kiểm tra chuỗi string có kết
+thúc bởi chuỗi target hay không. Kết quả trả về là true hoặc false. >>> <strong>kiemTra(string, target)</strong>`
+      );
+      document.write(`<br/>`);
+
+      //Cách 1
+      function kiemTra(string, target) {
+        return string.substr(string.length - target.length) === target
+          ? true
+          : false;
+      }
+
+      //Cách 2
+      function kiemTra2(string, target) {
+        return string.endsWith(target);
+      }
+
+      document.write(
+        `Bài 5: Cho 1 mảng chỉ chứa các phần tử có kiểu dữ liệu number, string và boolean. Hãy kiểm tra xem
+trong mảng đó có phần tử nào bị lặp lại hay không (xuất hiện 2 lần trở lên). Kết quả trả về true (nếu lặp)
+hoặc false (nếu không lặp). >>> <strong>repeatChecker(hrrs)</strong>`
+      );
+      document.write(`<br/>`);
+      //so sánh 2 phần tử trong mảng, phần tử đầu và phần tử cuối
+      //chỉ khi nào tìm được 2 phần tử giống nhau vòng lặp mới kết thuc
+
+      //cách 1
+      function repeatChecker(hrrs) {
+        for (i = 0; i < hrrs.length; i++) {
+          if (hrrs.indexOf(hrrs[i]) !== hrrs.lastIndexOf(hrrs[i])) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+
+      //cách 2
+      function checkIfArrayIsUnique(myArray) {
+        for (var i = 0; i < myArray.length; i++) {
+          for (var j = i+1; j < myArray.length; j++) {
+            if (i != j) {
+              if (myArray[i] == myArray[j]) {
+                return true;
+              }
+            }
+          }
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b1">
+    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita eum, blanditiis ut hic voluptate labore cumque incidunt saepe enim autem, quas dolore quia, minus adipisci perspiciatis! Amet in ea a cumque optio accusamus laborum voluptate eaque itaque eligendi architecto similique est expedita iste et saepe aliquam placeat, blanditiis ab, hic quasi. Porro laborum voluptas reiciendis necessitatibus modi? Error maiores nihil rerum. Earum, repellendus aliquid illum ex ea fuga labore delectus repudiandae voluptas nulla placeat cumque, accusantium eveniet provident rerum ad beatae vitae dolorem! Vitae natus architecto, ipsum alias fugit cum dolorum rem magni iusto quam aut aspernatur, officiis magnam!</p>
+
+    <p id="p2">Nulla at volutpat diam ut venenatis tellus in. Donec adipiscing tristique risus nec feugiat. Leo vel orci porta non pulvinar neque laoreet. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. A erat nam at lectus urna duis convallis. Integer feugiat scelerisque varius morbi enim nunc faucibus a. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Sociis natoque penatibus et magnis dis parturient montes. Arcu ac tortor dignissim convallis aenean et tortor at. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Massa sapien faucibus et molestie ac feugiat sed lectus. Mauris vitae ultricies leo integer malesuada.</p>
+
+    <p id="p3">Scelerisque fermentum dui faucibus in. Lorem donec massa sapien faucibus et molestie ac. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Scelerisque varius morbi enim nunc faucibus. Lectus nulla at volutpat diam ut venenatis tellus in metus. Aliquam faucibus purus in massa. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Augue ut lectus arcu bibendum at varius vel pharetra. Massa tincidunt nunc pulvinar sapien et ligula. Ut tortor pretium viverra suspendisse potenti nullam ac. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Ut etiam sit amet nisl purus in mollis nunc sed. Lacus sed viverra tellus in hac. Ac turpis egestas integer eget aliquet. Justo nec ultrices dui sapien eget. Tellus in hac habitasse platea dictumst vestibulum.</p>
+
+    <script>
+        function chanceColor(){
+            let p1 = document.getElementById("p1");
+            let p2 = document.getElementById("p2");
+            let p3 = document.getElementById("p3");
+            p1.style.color = "blue";
+            p2.style.color = "yellow";
+            p3.style.color = "red";
+        }
+
+        function changeBgColor(color){
+            document.body.style.background = color
+        }
+
+        function copyContent(paragraph1, paragraph2){
+            let content1 = document.getElementById(paragraph1);
+            let content2 = document.getElementById(paragraph2);
+            content1.innerHTML = content2.innerHTML;
+        }
+
+        function changeFontSize(x){
+            document.body.style.fontSize = x
+        }
+    </script>
+</body> 
+</html>

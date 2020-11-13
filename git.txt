@@ -1,0 +1,8 @@
+(Đẩy code lên github)
+git status
+git add .
+git commit -m "Đây là thư mục web frontend 10"
+git push origin master
+
+(Lấy code về từ github)
+git pull origin master
