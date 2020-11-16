@@ -87,7 +87,7 @@
       );
       function increaseFontSize(paragraph) {
         let p4 = document.getElementById(paragraph);
-        if (p4.style.fontSize < "30px") {
+        if (p4.style.fontSize < parseFloat("30px")) {
           let style = window
             .getComputedStyle(p4, null)
             .getPropertyValue("font-size");

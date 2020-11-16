@@ -45,7 +45,7 @@ thúc bởi chuỗi target hay không. Kết quả trả về là true hoặc fa
 
       //Cách 1
       function kiemTra(string, target) {
-        return string.substr(string.length - target.length) === target
+        return string.substring(string.length - target.length) === target
           ? true
           : false;
       }
@@ -54,6 +54,13 @@ thúc bởi chuỗi target hay không. Kết quả trả về là true hoặc fa
       function kiemTra2(string, target) {
         return string.endsWith(target);
       }
+
+      function kiemTra3(string, target) {
+        return string.slice(string.length - target.length) === target
+          ? true
+          : false;
+      }
+
 
       document.write(
         `Bài 5: Cho 1 mảng chỉ chứa các phần tử có kiểu dữ liệu number, string và boolean. Hãy kiểm tra xem
@@ -79,13 +86,11 @@ hoặc false (nếu không lặp). >>> <strong>repeatChecker(hrrs)</strong>`
       function checkIfArrayIsUnique(myArray) {
         for (var i = 0; i < myArray.length; i++) {
           for (var j = i+1; j < myArray.length; j++) {
-            if (i != j) {
               if (myArray[i] == myArray[j]) {
                 return true;
               }
             }
           }
-        }
         return false;
       }
     </script>
