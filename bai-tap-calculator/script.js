@@ -70,6 +70,7 @@ function point() {
 
 function equal() {
   inputValue.value = eval(inputValue.value);
+  String.replace("*","x")
 }
 
 function square() {
