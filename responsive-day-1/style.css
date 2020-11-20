@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_2_content{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+}
+
+.container_2_content_box{
+    width: calc((100% - 45px) / 4); /* Trừ đi khoảng cách giữa các ô */
+    height: 200px;
+    background-color: blue;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.container_2_content_box:nth-child(4n + 0){
+    margin-right: 0;
+}
+
+.footer{
+    background-color: orange;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px){
+    .container_2_content_box{
+        width: 100%;
+        margin-right: 0;
+    }
+}
