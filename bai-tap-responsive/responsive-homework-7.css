@@ -52,6 +52,9 @@
   display: none;
 }
 
+.container_nav_mobile-menu > a{
+  display: none;
+
 .container_nav_hamburger-button{
   display: none
 }
