@@ -52,6 +52,10 @@
   display: none;
 }
 
+.container_nav_mobile-menu > a{
+  display: none;
+}
+
 .container_nav_hamburger-button{
   display: none
 }
@@ -130,6 +134,10 @@
     background-color: rgb(70, 70, 245);
     border-bottom: solid #000 0.5px;
     margin-top: 20px;
+  }
+  
+  .container_nav_mobile-menu > a{
+  display: block;
   }
 
   .container_nav_mobile-menu > a {
