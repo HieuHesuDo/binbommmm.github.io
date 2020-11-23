@@ -64,7 +64,7 @@
 
 
 /* CSS bài 4 */
-@media (min-width: 200px){
+@media (max-width: 1000px){
   .container_2_nav{
     width: 100%;
     display: flex;
@@ -86,10 +86,12 @@
   .container_2_nav_leftbox{
     height: 100%;
     display: flex;
+    justify-content: space-between;
   }
   
   .container_2_nav_rightbox{
     height: 100%;
+    width: calc(100% / 3);
     display: flex;
     justify-content: flex-end;
   }
