@@ -2,10 +2,6 @@
   width: 100px;
 }
 
-.bg-34465C {
-  background-color: #34465c;
-}
-
 .navbar-collapse {
   justify-content: flex-end;
 }
@@ -31,8 +27,6 @@
   margin-bottom: 20px;
   text-align: center;
 }
-
-
 
 .card img {
   width: 100%;
