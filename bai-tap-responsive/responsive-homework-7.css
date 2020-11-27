@@ -24,6 +24,7 @@
   padding: 10px;
   font-size: 20px;
   color: #fff;
+  z-index: 11;
 }
 
 .container_nav_menu > a {
@@ -139,6 +140,11 @@
     padding: 3px 0px 3px 0px;
     text-decoration: none;
     color: #ffffff;
+  }
+
+  .container_nav_mobile-menu > a:hover{
+    background-color: pink;
+    color: black;
   }
 
   .container_content {

@@ -1,0 +1,51 @@
+.img-brand img {
+  width: 100px;
+}
+
+.bg-34465C {
+  background-color: #34465c;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.padding-right {
+  padding-right: 60px;
+}
+
+.padding-left {
+  padding-left: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.card {
+  height: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+.card img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1600px;
+  }
+}
