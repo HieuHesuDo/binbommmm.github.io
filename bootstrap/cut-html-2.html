@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <style>
+        .container {
+            padding: 0px 34px 0px 34px;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 164px;
+        }
+
+        .navbar-nav a {
+            margin-left: 90px;
+            font-family: "Playfair Display", serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #626262;
+        }
+
+        .navbar-brand {
+            font-family: 'Inconsolata', monospace;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .row h5 {
+            font-family: "Playfair Display", serif;
+            margin-bottom: 39px;
+        }
+
+        .tag {
+            font-family: "Ubuntu", sans-serif;
+            color: #b4ad9e;
+            font-size: 14px;
+        }
+
+        .title {
+            font-family: "Playfair Display", serif;
+            font-weight: 30px;
+        }
+
+        .text {
+            font-family: "Playfair Display", serif;
+            font-size: 14px;
+            margin: 0;
+            word-spacing: 1px;
+        }
+
+        .content-top {
+            margin-bottom: 134px
+        }
+
+        .container-content-top-card {
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .card img {
+            object-fit: cover;
+        }
+
+        .card-img-top {
+            height: 281px;
+        }
+
+        .col-md-6 {
+            padding: 0 15px;
+            height: 610px;
+        }
+
+        .row {
+            padding: 0px 90px 0px 82px;
+        }
+
+        .block {
+            display: flex;
+            justify-content: space-center;
+            padding: 0px 82px 0px 82px;
+        }
+
+        .col-md-6 a {
+            text-decoration: none;
+            color: #626262;
+        }
+
+        .col-md-6 .tag {
+            margin-top: 32px;
+            margin-bottom: 28px;
+        }
+
+        .register_area {
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 287px;
+            position: relative;
+            margin-bottom: 103px;
+        }
+
+        .register_area input {
+            height: 39px;
+            width: 380px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: 0;
+            border-bottom: solid 1px;
+            color: #626262;
+            margin-top: 71px;
+        }
+
+        .load-button {
+            width: 100%;
+            text-align: center;
+        }
+
+        .load-button button {
+            width: 163px;
+            height: 60px;
+            font-family: "Playfair Display", serif;
+            background-color: transparent;
+            border: 1px solid #626262;
+            color: #626262;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 100%;
+            height: 97px;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 110px 0px 220px;
+            margin-top: 500px;
+        }
+
+        footer .terms {
+            width: 200px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .terms p {
+            margin: 0;
+            font-weight: 700px;
+        }
+
+        footer .terms a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+        }
+
+        footer .social {
+            width: 139px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        footer .social a {
+            color: #000;
+        }
+
+        @media (max-width: 767px) {
+
+            /* For mobile */
+            .content-top {
+                padding: 0 !important;
+            }
+
+            .row {
+                padding: 0;
+            }
+
+            .col-md-6 {
+                padding: 0 !important;
+            }
+
+            footer {
+                padding: 0px 34px 0px 34px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+            /* For tablet */
+            .row {
+                padding: 0;
+            }
+
+            footer {
+                padding: 0px 34px 0px 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">minimø</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">photodiary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">travel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <section class="container">
+        <div class="banner align-center"><img src="./img/Screenshot_2.jpg" alt=""></div>
+
+        <div class="content-top" style="padding: 0px 90px 0px 82px;">
+            <p class="tag" style="margin: 99px 0px 28px 0px">PHOTODIARY</p>
+            <h3 class="title" style="margin-bottom: 36px">The perfect weekend getaway</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                vitae
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                ut
+                labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+            <p class="tag" style="margin-top: 52px;">LEAVE A COMMENT</p>
+        </div>
+
+
+        <div class="container-content-top-card">
+            <div class="row">
+                <div class="col-md-6" style="padding-right: 30px;">
+                    <a href="#">
+                        <div class="card border-0">
+                            <img src="./img/Screenshot_3.jpg" class="card-img-top" alt="...">
+                            <div class="card-info px-0">
+                                <p class="tag">LIFESTYLE</p>
+                                <h5 class="title">More than just a music festival </h5>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6" style="padding-left: 30px ;">
+                    <a href="#">
+                        <div class="card border-0">
+                            <img src="./img/Screenshot_4.jpg" class="card-img-top" alt="...">
+                            <div class="card-info p-0">
+                                <p class="tag">LIFESTYLE</p>
+                                <h5 class="title">Life tastes better with coffee</h5>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam,
+                                    quis nostrud exercitation ullamco laboris</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="padding-right: 30px;">
+                    <a href="#">
+                        <div class="card border-0">
+                            <img src="./img/Screenshot_5.jpg" class="card-img-top"
+                                alt="10 kiểu người khó làm việc nhóm trong ngành IT">
+                            <div class="card-info px-0">
+                                <p class="tag">PHOTODIARY</p>
+                                <h5 class="title">American dream</h5>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam,
+                                    quis nostrud exercitation ullamco laboris</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6" style="padding-left: 30px ;">
+                    <a href="#">
+                        <div class="card border-0">
+                            <img src="./img/Screenshot_6.jpg" class="card-img-top"
+                                alt="10 kiểu người khó làm việc nhóm trong ngành IT">
+                            <div class="card-info px-0">
+                                <p class="tag">PHOTODIARY</p>
+                                <h5 class="title">A day exploring the Alps</h5>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam,
+                                    quis nostrud exercitation ullamco laboris</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="register_area">
+        <h5 class="title" style="font-family: Playfair Display, serif; font-size: 30px;">Sign up for our newsletter!
+        </h5>
+
+        <input type="text" placeholder="Enter a valid email address">
+    </div>
+    <div class="container-content-bottom-card container">
+        <div class="row">
+            <div class="col-md-6" style="padding-right: 30px;">
+                <a href="#">
+                    <div class="card border-0">
+                        <img src="./img/Untitled-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-info px-0">
+                            <p class="tag">LIFESTYLE</p>
+                            <h5 class="title">More than just a music festival </h5>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6" style="padding-left: 30px ;">
+                <a href="#">
+                    <div class="card border-0">
+                        <img src="./img/Untitled-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-info p-0">
+                            <p class="tag">LIFESTYLE</p>
+                            <h5 class="title">Life tastes better with coffee</h5>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="load-button">
+            <a href="#"><button>Load more</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="terms">
+            <a href="#">
+                <p class="text">Terms and conditions</p>
+            </a>
+            <a href="#">
+                <p class="text">Privacy</p>
+            </a>
+        </div>
+
+        <div class="social">
+            <p class="text">Follow</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
