@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <style>
+        .container {
+            padding: 0px 34px 0px 34px;
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 74px 34px 71px 34px !important;
+        }
+
+        .navbar-nav a {
+            margin-left: 90px;
+            font-family: "Playfair Display", serif;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .nav-item {
+            color: #000;
+        }
+
+        .nav-item a:hover {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .navbar-brand {
+            font-family: 'Inconsolata', monospace;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .tag {
+            font-family: "Ubuntu", sans-serif;
+            color: #b4ad9e;
+            font-size: 14px;
+        }
+
+        .title {
+            font-family: "Playfair Display", serif;
+            font-weight: 30px;
+        }
+
+        .text {
+            font-family: "Playfair Display", serif;
+            font-size: 14px;
+            margin: 0;
+            word-spacing: 1px;
+        }
+
+        .article_image {
+            margin-bottom: 61px;
+        }
+
+        .article_image img {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .content-top {
+            margin-bottom: 75px;
+            width: 100%;
+            padding: 0px 40px 0px 82px;
+        }
+
+        .content-top_social {
+            width: 199px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-top: 64px;
+            align-items: center;
+        }
+
+        .content-top_social a {
+            text-decoration: none;
+            color: #626262;
+        }
+
+        .content-top_social p {
+            margin: 0;
+        }
+
+        .topic_area {
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 67px;
+            padding: 67px 0px 89px 0px;
+        }
+
+        .topic_area-tag {
+            padding: 0px 124px 0px 116px;
+        }
+
+        .topic_area_block {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 124px 0px 116px;
+        }
+
+        .topic_area_block .block img {
+            width: 100%;
+        }
+
+        .topic_area_block .block h3 {
+            font-size: 20px;
+            font-family: "Playfair Display", serif;
+            margin-top: 24px;
+        }
+
+        .comment_area {
+            width: 100%;
+            padding: 0px 124px 0px 116px;
+        }
+
+        .comment {
+            width: 100%;
+            display: flex;
+        }
+
+        .comment-avt {
+            position: relative;
+        }
+
+        .comment-avt img {
+            width: 100%;
+        }
+
+        .comment-content {
+            width: 100%;
+        }
+
+        .comment-content input {
+            height: 72px;
+            width: 100%;
+            padding: 0px 2.9%;
+            color: #626262;
+            border-radius: 4px;
+            border: solid 1px #626262;
+            outline-color: transparent;
+        }
+
+        .comment-button-social {
+            display: flex;
+            width: 279px;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            margin-top: 33px;
+        }
+
+        .comment-button-social button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            outline-color: transparent;
+        }
+
+        .comment-social {
+            width: 43px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .comment-social a {
+            color: #626262;
+        }
+
+        footer {
+            width: 100%;
+            height: 97px;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 110px 0px 220px;
+            margin-top: 134px;
+        }
+
+        footer .terms {
+            width: 200px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .terms p {
+            margin: 0;
+            font-weight: 700px;
+        }
+
+        footer .terms a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+        }
+
+        footer .social {
+            width: 139px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        footer .social a {
+            color: #000;
+        }
+
+        @media (max-width: 547px) {
+
+            .container {
+                padding: 0px 20px 0px 20px;
+            }
+
+            .content-top {
+                padding: 0 !important;
+            }
+
+            .article-top {
+                flex-wrap: wrap;
+            }
+
+            .article-top .about-author {
+                margin-bottom: 30px;
+            }
+
+            .article-top .top-post {
+                margin-bottom: 30px;
+            }
+
+            .article-top .side-bar {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .topic_area {
+                padding: 10px 0px;
+            }
+
+            .topic_area-tag {
+                padding: 0px 20px;
+            }
+
+            .topic_area_block {
+                display: block;
+                padding: 20px;
+            }
+
+            .topic_area_block .block {
+                margin-bottom: 20px !important;
+            }
+
+            .comment_area {
+                padding: 20px
+            }
+
+            .comment-button-social {
+                margin-top: 10px;
+            }
+
+            .comment-button-social p {
+                display: none;
+            }
+
+            .comment-button-social .comment-social {
+                display: none;
+            }
+
+            .comment-button-social button {
+                margin-left: auto;
+            }
+
+            footer {
+                padding: 0px 34px 0px 34px;
+                margin-top: 67px;
+            }
+
+            footer .terms {
+                margin-right: 15px;
+            }
+        }
+
+        
+        @media (min-width: 540px) and (max-width: 767px) {
+
+            /* For mobile */
+
+            .container {
+                padding: 0px 10px 0px 10px;
+            }
+
+            .content-top {
+                padding: 0 !important;
+            }
+
+            .article-top {
+                flex-wrap: wrap;
+            }
+
+            .article-top .side-bar {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+            .topic_area {
+                padding: 10px 0px;
+            }
+
+            .topic_area-tag {
+                padding: 0px 20px;
+            }
+
+            .topic_area_block {
+                display: block;
+                padding: 20px;
+            }
+
+            .topic_area_block .block {
+                margin-bottom: 20px !important;
+            }
+
+            .comment_area {
+                padding: 20px
+            }
+
+            .comment-button-social {
+                margin-top: 10px;
+            }
+
+            .comment-button-social p {
+                display: none;
+            }
+
+            .comment-button-social .comment-social {
+                display: none;
+            }
+
+            .comment-button-social button {
+                margin-left: auto;
+            }
+
+            footer {
+                padding: 0px 34px 0px 34px;
+                margin-top: 67px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+            /* For tablet */
+
+            .container {
+                padding: 0;
+            }
+
+            .article-top {
+                flex-wrap: wrap;
+            }
+
+            .article-top .side-bar {
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding: 0px 40px 0px 82px;
+            }
+
+            .article-top .about-author {
+                display: flex;
+            }
+
+            .topic_area {
+                padding: 10px 0px;
+            }
+
+            .topic_area_block {
+                display: block;
+            }
+
+            .topic_area_block .block {
+                margin-bottom: 20px !important;
+            }
+
+
+            footer {
+                padding: 0px 34px 0px 34px;
+            }
+        }
+
+        .article-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 99px;
+        }
+
+        .side-bar {
+            width: 272px;
+        }
+
+        .about-author {
+            width: 272px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 75px;
+        }
+
+        .side-bar_social {
+            width: 76px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .side-bar_social a {
+            text-decoration: none;
+            color: #626262;
+        }
+
+        .top-post h6 {
+            font-size: 16px;
+            color: #626262;
+        }
+
+        .top-post ul li p {
+            font-size: 12px;
+            color: #b4ad9e;
+        }
+
+        .top-post ul li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="./cut-html-2.html">minimø</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cut-html-3.html">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">photodiary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">travel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <section class="container">
+        <div class="banner align-center"><img src="./img/Screenshot_2.jpg" alt=""></div>
+        <div class="article-top">
+            <div class="content-top">
+                <p class="tag" style="margin: 0px 0px 28px 0px">PHOTODIARY</p>
+                <h3 class="title" style="margin-bottom: 36px">The perfect weekend getaway</h3>
+                <p class="text" style="margin-bottom: 64px; word-spacing: 2px;">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit,
+                    sed
+                    do eiusmod tempor incididunt
+                    ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit
+                    anim id est laborum. <strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                        doloremque
+                        laudantium</strong>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                    architecto
+                    beatae
+                    vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed
+                    quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                    dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    incidunt
+                    ut
+                    labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                <div class="article_image">
+                    <img src="./img/page-2-1.jpg" alt="pic-1">
+                </div>
+
+                <div class="article_image">
+                    <img src="./img/page-2-2.jpg" alt="pic-2">
+                </div>
+
+                <div class="article_image" style="padding-bottom: 5px;">
+                    <img src="./img/page-2-3.jpg" alt="pic-3">
+                </div>
+
+                <p class="text" style="padding: 0px 20px 33px 20px"><i>“Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                        iste
+                        natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab
+                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.” </i></p>
+
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse
+                    cillum dolore eu fugiat nulla pariatur. <b>Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa
+                        qui officia deserunt mollit anim id est laborum.</b> Sed ut perspiciatis unde omnis iste natus
+                    error
+                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur,
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                    quaerat voluptatem.</p>
+
+                <div class="content-top_social">
+                    <p class="tag">Share</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-tumblr"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+
+            </div>
+            <div class="side-bar">
+                <div class="about-author">
+                    <img src="./img/page-3-side-1.jpg" alt="">
+                    <h3 class="title" style="font-size: 24px; margin: 29px 0px 21px 0px;">About me</h3>
+                    <p class="text" style="font-size: 12px; margin-bottom: 23px; word-spacing: 0px;">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                    <div class="side-bar_social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="top-post">
+                    <p class="tag">TOP POSTS</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h6>A day exploring the Alps</h6>
+                                <p>24 COMMENT</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h6>American dream</h6>
+                                <p>19 COMMENT</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h6>Cold winter days</h6>
+                                <p>15 COMMENT</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="topic_area">
+        <div class="topic_area-tag container">
+            <p class="tag" style="margin-bottom: 39px;">YOU MAY ALSO LIKE</p>
+        </div>
+        <div class="topic_area_block container">
+            <div class="block"><img src="./img/page-2-4.jpg" alt="topic-1">
+                <h3>Cold winter days</h3>
+            </div>
+            <div class="block"><img src="./img/page-2-5.jpg" alt="topic-1">
+                <h3>A day exploring the Alps</h3>
+            </div>
+            <div class="block"><img src="./img/page-2-6.jpg" alt="topic-1">
+                <h3>American dream</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="comment_area container">
+        <p class="tag" style="margin-bottom: 39px;">2 COMMENTS</p>
+        <div class="comment" style="margin-bottom: 57px">
+            <div class="comment-avt" style="margin-right: 36px">
+                <img src="./img/Livello 2.png" alt="avt-1">
+            </div>
+
+            <div class="comment-content">
+                <p class="text" style="margin-bottom: 14px; font-weight: bold;">John Doe</p>
+                <p class="text" style="margin-bottom: 26px;">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo!</p>
+                <p class="tag">REPLY</p>
+            </div>
+        </div>
+        <div class="comment" style="margin-bottom: 57px">
+            <div class="comment-avt" style="margin-right: 36px">
+                <img src="./img/Ellisse 1.png" alt="avt-2">
+            </div>
+
+            <div class="comment-content">
+                <p class="text" style="margin-bottom: 14px; font-weight: bold;">Jane Doe</p>
+                <p class="text" style="margin-bottom: 26px;">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque.</p>
+                <p class="tag">REPLY</p>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avt" style="margin-right: 36px">
+                <img src="./img/Ellisse 1 copia.png" alt="avt-2">
+            </div>
+
+            <div class="comment-content">
+                <input type="text" placeholder="Join the discussion">
+            </div>
+        </div>
+        <div class="comment-button-social">
+            <button><img src="./img/send icon.png" alt=""></button>
+            <p class="tag" style="margin-bottom: 0;">CONNECTED WITH</p>
+            <div class="comment-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="terms">
+            <a href="#">
+                <p class="text">Terms and conditions</p>
+            </a>
+            <a href="#">
+                <p class="text">Privacy</p>
+            </a>
+        </div>
+
+        <div class="social">
+            <p class="text">Follow</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

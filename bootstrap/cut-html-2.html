@@ -22,7 +22,7 @@
 
         .navbar {
             width: 100%;
-            height: 164px;
+            padding: 74px 34px 71px 34px;
         }
 
         .navbar-nav a {
@@ -34,6 +34,11 @@
 
         .nav-item {
             color: #000;
+        }
+
+        .nav-item a:hover {
+            color: #000;
+            font-weight: bold;
         }
 
         .navbar-brand {
@@ -82,6 +87,12 @@
 
         .card {
             width: 100%;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
         }
 
         .card img {
@@ -128,6 +139,27 @@
             margin-bottom: 103px;
         }
 
+        .input_area{
+            display: flex;
+            align-items: baseline;
+            position: relative;
+        }
+
+        .input_area button{
+            height: 39px;
+            background-color: transparent;
+            border: 0;
+            position: absolute;
+            top: 70px;
+            left: 90%;
+            cursor: pointer;
+            outline-color: transparent;
+        }
+
+        .input_area button:hover{
+            transform: scale(1.2);
+        }
+
         .register_area input {
             height: 39px;
             width: 380px;
@@ -135,9 +167,11 @@
             align-items: center;
             background-color: transparent;
             border: 0;
-            border-bottom: solid 1px;
+            border-bottom: solid 1px #000;
             color: #626262;
             margin-top: 71px;
+            outline-color: transparent;
+            padding: 0px 40px 0px 2px;
         }
 
         .load-button {
@@ -154,6 +188,14 @@
             color: #626262;
             font-size: 20px;
             cursor: pointer;
+            outline-color: transparent;
+            transition: 0.5s;
+        }
+
+        .load-button button:hover {
+            background-color: #626262;
+            color: #fff;
+            transition: 0.5s;
         }
 
         footer {
@@ -164,7 +206,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0px 110px 0px 220px;
-            margin-top: 500px;
+            margin-top: 103px;
         }
 
         footer .terms {
@@ -203,6 +245,10 @@
         @media (max-width: 767px) {
 
             /* For mobile */
+        .nav-link:hover{
+            transition: 0.5s;
+        }
+
             .content-top {
                 padding: 0 !important;
             }
@@ -246,16 +292,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Lifestyle</a>
+                        <a class="nav-link" href="./cut-html-3.html">Lifestyle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">photodiary</a>
+                        <a class="nav-link" href="./cut-html-4.html">photodiary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">music</a>
+                        <a class="nav-link" href="#">music</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">travel</a>
+                        <a class="nav-link" href="#">travel</a>
                     </li>
                 </ul>
             </div>
@@ -367,8 +413,10 @@
     <div class="register_area">
         <h5 class="title" style="font-family: Playfair Display, serif; font-size: 30px;">Sign up for our newsletter!
         </h5>
-
-        <input type="text" placeholder="Enter a valid email address">
+        <div class="input_area">
+            <input type="text" placeholder="Enter a valid email address"><button><img src="./img/send icon.png"
+                    alt="Send"></button>
+        </div>
     </div>
     <div class="container-content-bottom-card container">
         <div class="row">
@@ -406,7 +454,7 @@
         </div>
 
         <div class="load-button">
-            <a href="#"><button>Load more</button></a>
+            <button>Load more</button>
         </div>
     </div>
     <footer>
