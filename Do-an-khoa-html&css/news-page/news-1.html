@@ -1,242 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Việt Nam cần coi bảo tồn đa dạng sinh học là một vấn đề đạo đức</title>
-    <link rel="shortcut icon" href="https://www.brotherearth.com/en/about/images/hdg-main-logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.brotherearth.com/en/about/images/hdg-main-logo1.png"
+        type="image/x-icon">
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
-.navbar{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-}
+        .navbar {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
 
-.logo img{
-    width: 90%;
-    margin-left: 30px ;
-}
+        .logo img {
+            width: 90%;
+            margin-left: 30px;
+        }
 
-.menu ul{
-    display: flex;  
-    transform: translate(30%);
-}
+        .menu ul {
+            display: flex;
+            transform: translate(30%);
+        }
 
-.menu li{
-    list-style-type: none;
-    padding-left: 25px;
-    font-weight: 500;
-} 
+        .menu li {
+            list-style-type: none;
+            padding-left: 25px;
+            font-weight: 500;
+        }
 
-.menu li a:hover{
-    background-color: #3FC588;
-    color: #fff;
-}
+        .menu li a:hover {
+            background-color: #3FC588;
+            color: #fff;
+        }
 
-.menu li a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    color: green;
-    border-radius: 50% 0 50% 0;
-    transition: 0.5s;
-}
+        .menu li a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+            color: green;
+            border-radius: 50% 0 50% 0;
+            transition: 0.5s;
+        }
 
 
-.navbar button{
-    width: 200px;
-    height: 70px;
-    transform: translate(110%);
-    border: none;
-    background-color: #175743;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: large;
-}
+        .navbar button {
+            width: 200px;
+            height: 70px;
+            transform: translate(110%);
+            border: none;
+            background-color: #175743;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: large;
+        }
 
-.navbar button:hover{
-    background-color: #3FC588;
-    color: #000;
-    transition: 0.5s;
-}
+        .navbar button:hover {
+            background-color: #3FC588;
+            color: #000;
+            transition: 0.5s;
+        }
 
-.content{
-    width: 70%;
-    margin-top: 50px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
-}
+        .content {
+            width: 70%;
+            margin-top: 50px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            padding: 10px;
+        }
 
-.content figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .content figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.content figcaption{
-    font-size: 13px;
-    width: 500px;
-    text-align: center;
-    margin: 5px;
-}
+        .content figcaption {
+            font-size: 13px;
+            width: 500px;
+            text-align: center;
+            margin: 5px;
+        }
 
-.content figure img{
-    width: 100%;
-}
+        .content figure img {
+            width: 100%;
+        }
 
-.company-info{
-    width: 100%;
-    height: 550px;
-    background-color: #def5ee;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+        .company-info {
+            width: 100%;
+            height: 550px;
+            background-color: #def5ee;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
 
-.register-form form{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .register-form form {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.company-address{
-    width: 600px;
-    height: 400px;
-    margin-left: 20px;
-}
+        .company-address {
+            width: 600px;
+            height: 400px;
+            margin-left: 20px;
+        }
 
-.block-about-us{
-    width: 600px;
-    margin-bottom: 15px;
-}
+        .block-about-us {
+            width: 600px;
+            margin-bottom: 15px;
+        }
 
-form h2{
-    width: 300px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-#firstname{
-    width: 70%;
-    height: 40px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    background-color: #F5F6F7;
-    border: solid #ccd0d5 1px;
-    margin-bottom: 15px;
-}
+        form h2 {
+            width: 300px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
 
-#lastname{
-    width: 70%;
-    height: 40px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    background-color: #F5F6F7;
-    border: solid #ccd0d5 1px;
-    margin-bottom: 15px;
-}
+        #firstname {
+            width: 70%;
+            height: 40px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 16px;
+            background-color: #F5F6F7;
+            border: solid #ccd0d5 1px;
+            margin-bottom: 15px;
+        }
 
-#email{
-    width: 70%;
-    height: 40px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    background-color: #F5F6F7;
-    border: solid #ccd0d5 1px;
-    margin-bottom: 15px;
-}
+        #lastname {
+            width: 70%;
+            height: 40px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 16px;
+            background-color: #F5F6F7;
+            border: solid #ccd0d5 1px;
+            margin-bottom: 15px;
+        }
 
-form button{
-    width: 280px;
-    height: 40px;
-    border: none;
-    background-color: #24C482;
-    color: #000000;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
-    text-transform: uppercase; 
-    transition: 0.5s;
-}
+        #email {
+            width: 70%;
+            height: 40px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 16px;
+            background-color: #F5F6F7;
+            border: solid #ccd0d5 1px;
+            margin-bottom: 15px;
+        }
 
-form button:hover{
-    color: #fff;
-    transition: 0.5s;
-}
+        form button {
+            width: 280px;
+            height: 40px;
+            border: none;
+            background-color: #24C482;
+            color: #000000;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
 
-.social-media{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        form button:hover {
+            color: #fff;
+            transition: 0.5s;
+        }
 
-.social-media i{
-    font-size: 50px;
-    color: #3FC588;
-}
+        .social-media {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.social-media a{
-    margin: 10px;
-}
+        .social-media i {
+            font-size: 50px;
+            color: #3FC588;
+        }
 
-.icon-up {
-    font-size: 40px;
-    color: #464646;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-  }
+        .social-media a {
+            margin: 10px;
+        }
 
-.bottom-logo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 60px;
-}
+        .icon-up {
+            font-size: 40px;
+            color: #464646;
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+        }
 
-.bottom-logo img{
-    width: 300px;
-}
+        .bottom-logo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 60px;
+        }
 
+        .bottom-logo img {
+            width: 300px;
+        }
     </style>
 
 </head>
+
 <body>
     <div class="main">
         <div class="navbar">
             <div class="logo">
-                <a href="/Do-an-khoa-html&css/main-page/index.html"><img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89" alt="brother-earth-logo"></a>
+                <a href="/Do-an-khoa-html&css/main-page/index.html"><img
+                        src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89"
+                        alt="brother-earth-logo"></a>
             </div>
 
             <div class="menu">
                 <ul class="list">
                     <li><a href="/Do-an-khoa-html&css/about-us-page/about-us.html">VỀ CHÚNG TÔI</a></li>
                     <li><a href="/Do-an-khoa-html&css/activities-page/activities.html">HOẠT ĐỘNG</a></li>
-                    <li><a style="background-color: #3FC588; border-radius: 50% 0 50% 0; color: #fff;" href="#">TIN TỨC</a></li>
+                    <li><a style="background-color: #3FC588; border-radius: 50% 0 50% 0; color: #fff;" href="#">TIN
+                            TỨC</a></li>
                     <li><a href="/Do-an-khoa-html&css/image-gallery-page/image-gallery.html">HÌNH ẢNH</a></li>
                     <li><a href="/Do-an-khoa-html&css/contact-page/contact.html">LIÊN HỆ</a></li>
                 </ul>
@@ -248,44 +254,81 @@ form button:hover{
         </div>
 
         <div class="content">
-            <h1 style="font-size: 40px; text-align: center;">“Việt Nam cần coi bảo tồn đa dạng sinh học là một vấn đề đạo đức”</h1>
+            <h1 style="font-size: 40px; text-align: center;">“Việt Nam cần coi bảo tồn đa dạng sinh học là một vấn đề
+                đạo đức”</h1>
             <br><br>
-            <h2 style="font-weight: 400;">Bộ trưởng Trần Hồng Hà phát biểu trong video trực tuyến tại Hội nghị Thượng đỉnh Liên Hợp Quốc về Đa dạng Sinh học.</h2>
+            <h2 style="font-weight: 400;">Bộ trưởng Trần Hồng Hà phát biểu trong video trực tuyến tại Hội nghị Thượng
+                đỉnh Liên Hợp Quốc về Đa dạng Sinh học.</h2>
             <br>
-            <p><b>“Chúng ta đang đối diện với những thách thức to lớn liên quan đến đa dạng sinh học do chính con người tạo ra. Đã đến lúc chúng ta, bên cạnh việc sử dụng chính sách và pháp luật, thì cần phải coi bảo tồn đa dạng sinh học là một vấn đề đạo đức, trước hết ở cấp lãnh đạo, sau đến mọi người dân”</b>Bộ trưởng Trần Hồng Hà phát biểu trong video trực tuyến tại Hội nghị Thượng đỉnh Liên Hợp Quốc về Đa dạng Sinh học.</p>
+            <p><b>“Chúng ta đang đối diện với những thách thức to lớn liên quan đến đa dạng sinh học do chính con người
+                    tạo ra. Đã đến lúc chúng ta, bên cạnh việc sử dụng chính sách và pháp luật, thì cần phải coi bảo tồn
+                    đa dạng sinh học là một vấn đề đạo đức, trước hết ở cấp lãnh đạo, sau đến mọi người dân”</b>Bộ
+                trưởng Trần Hồng Hà phát biểu trong video trực tuyến tại Hội nghị Thượng đỉnh Liên Hợp Quốc về Đa dạng
+                Sinh học.</p>
             <br>
-            <p> Trong bài phát biểu này, thay mặt cho chính phủ Việt Nam, Bộ trưởng cam kết: “Việt Nam coi đa dạng sinh học là một phần quan trọng trong các giải pháp về kinh tế và ứng phó với biến đổi khí hậu, là thước đo những nỗ lực trong phát triển bền vững và cam kết xây dựng một nền kinh tế xanh trên cơ sở đầu tư vào nguồn vốn tự nhiên; chuyển đổi sang nền kinh tế dựa trên hệ sinh thái, cân bằng với tự nhiên; và thực thi các giải pháp hữu hiệu nhằm ngăn chặn khẩn cấp tình trạng ô nhiễm chất thải nhựa đại dương hiện nay.”</p>
+            <p> Trong bài phát biểu này, thay mặt cho chính phủ Việt Nam, Bộ trưởng cam kết: “Việt Nam coi đa dạng sinh
+                học là một phần quan trọng trong các giải pháp về kinh tế và ứng phó với biến đổi khí hậu, là thước đo
+                những nỗ lực trong phát triển bền vững và cam kết xây dựng một nền kinh tế xanh trên cơ sở đầu tư vào
+                nguồn vốn tự nhiên; chuyển đổi sang nền kinh tế dựa trên hệ sinh thái, cân bằng với tự nhiên; và thực
+                thi các giải pháp hữu hiệu nhằm ngăn chặn khẩn cấp tình trạng ô nhiễm chất thải nhựa đại dương hiện
+                nay.”</p>
             <br>
             <figure>
-                <img src="https://wwfasia.awsassets.panda.org/img/dsc_2240__741576.jpg" alt="Bộ trưởng Bộ TN&MT, ông Trần Hồng Hà và Giám đốc Quốc gia WWF-Việt Nam, ông Văn Ngọc Thịnh cùng tham dự Hội nghị Thượng đỉnh về Đa dạng Sinh học của Liên Hợp Quốc theo phương thức họp trực tuyến – 30/9/2020">
-                <figcaption>Bộ trưởng Bộ TN&MT, ông Trần Hồng Hà và Giám đốc Quốc gia WWF-Việt Nam, ông Văn Ngọc Thịnh cùng tham dự Hội nghị Thượng đỉnh về Đa dạng Sinh học của Liên Hợp Quốc theo phương thức họp trực tuyến – 30/9/2020</figcaption>
+                <img src="https://wwfasia.awsassets.panda.org/img/dsc_2240__741576.jpg"
+                    alt="Bộ trưởng Bộ TN&MT, ông Trần Hồng Hà và Giám đốc Quốc gia WWF-Việt Nam, ông Văn Ngọc Thịnh cùng tham dự Hội nghị Thượng đỉnh về Đa dạng Sinh học của Liên Hợp Quốc theo phương thức họp trực tuyến – 30/9/2020">
+                <figcaption>Bộ trưởng Bộ TN&MT, ông Trần Hồng Hà và Giám đốc Quốc gia WWF-Việt Nam, ông Văn Ngọc Thịnh
+                    cùng tham dự Hội nghị Thượng đỉnh về Đa dạng Sinh học của Liên Hợp Quốc theo phương thức họp trực
+                    tuyến – 30/9/2020</figcaption>
             </figure>
             <br>
-            <p>Hội nghị Liên Hợp Quốc về Đa dạng Sinh học được tổ chức vào ngày hôm nay, 30 tháng 9 năm 2020 ở cấp nguyên thủ quốc gia và chính phủ với chủ đề Hành động Khẩn cấp về Đa dạng Sinh học vì sự Phát triển Bền vững. </p>
+            <p>Hội nghị Liên Hợp Quốc về Đa dạng Sinh học được tổ chức vào ngày hôm nay, 30 tháng 9 năm 2020 ở cấp
+                nguyên thủ quốc gia và chính phủ với chủ đề Hành động Khẩn cấp về Đa dạng Sinh học vì sự Phát triển Bền
+                vững. </p>
             <br>
-            <p>Hội nghị được tổ chức khi chúng ta tiến gần đến cuối Thập kỷ của Liên Hợp Quốc về Đa dạng Sinh học 2011-2020 với toàn bộ mục tiêu mà 190 nước cùng đặt ra từ 10 năm trước đều không đạt được.</p>
+            <p>Hội nghị được tổ chức khi chúng ta tiến gần đến cuối Thập kỷ của Liên Hợp Quốc về Đa dạng Sinh học
+                2011-2020 với toàn bộ mục tiêu mà 190 nước cùng đặt ra từ 10 năm trước đều không đạt được.</p>
             <br>
-            <p>Trước đó, ngày 28 tháng 9, các nhà lãnh đạo từ nhiều quốc gia cũng tham gia sự kiện của các nhà lãnh đạo và thông qua Cam kết của các Nhà lãnh đạo vì Thiên nhiên. Việt Nam cũng bày tỏ sự quan tâm tới cam kết này. Bản cam kết là một phần của chương trình Nature for Life Hub, và là một hồi đáp trực tiếp đối với Tình trạng Khẩn cấp trên toàn cầu, nêu bật tính cấp thiết của việc giải quyết các cuộc khủng hoảng có sự liên hệ mật thiết với nhau: đa dạng sinh học, khí hậu và y tế.</p>
+            <p>Trước đó, ngày 28 tháng 9, các nhà lãnh đạo từ nhiều quốc gia cũng tham gia sự kiện của các nhà lãnh đạo
+                và thông qua Cam kết của các Nhà lãnh đạo vì Thiên nhiên. Việt Nam cũng bày tỏ sự quan tâm tới cam kết
+                này. Bản cam kết là một phần của chương trình Nature for Life Hub, và là một hồi đáp trực tiếp đối với
+                Tình trạng Khẩn cấp trên toàn cầu, nêu bật tính cấp thiết của việc giải quyết các cuộc khủng hoảng có sự
+                liên hệ mật thiết với nhau: đa dạng sinh học, khí hậu và y tế.</p>
             <br>
             <figure>
-                <img src="https://wwfasia.awsassets.panda.org/img/1_original_ww2138125_741548.jpg" alt="Cháy rừng ở Bowraville, NSW, Australia.">
+                <img src="https://wwfasia.awsassets.panda.org/img/1_original_ww2138125_741548.jpg"
+                    alt="Cháy rừng ở Bowraville, NSW, Australia.">
                 <figcaption>Cháy rừng ở Bowraville, NSW, Australia.</figcaption>
             </figure>
             <br>
-            <p>Trong năm qua, một loạt các báo cáo lớn đã hướng sự chú ý của toàn cầu vào cuộc khủng hoảng đa dạng sinh học, cùng với việc thiên nhiên hiện đang suy giảm trên toàn cầu với tốc độ chưa từng có trong lịch sử nhân loại. Báo cáo Sức sống Hành tinh 2020 của WWF, được công bố vào đầu tháng này, cho thấy quần thể động vật có xương sống đã suy giảm 68% trên toàn cầu kể từ năm 1970 do hoạt động sản xuất và tiêu dùng hiện tại của chúng ta.</p>
-            <p>Bản cam kết nhấn mạnh rằng cuộc khủng hoảng ngày càng nghiêm trọng này đang gây ra những tổn hại không thể thay đổi đối với các hệ thống hỗ trợ cuộc sống của chúng ta, làm trầm trọng thêm tình trạng nghèo đói và bất bình đẳng, làm tăng nguy cơ bùng phát đại dịch lây truyền từ động vật sang người trong tương lai và góp phần đáng kể gây ra biến đổi khí hậu. Chi phí gia tăng đối với xã hội và nền kinh tế đòi hỏi chúng ta phải ngăn chặn và khắc phục sự mất đa dạng sinh học một cách khẩn cấp, nếu chúng ta muốn đạt được các mục tiêu khí hậu và mục tiêu phát triển bền vững.</p>
+            <p>Trong năm qua, một loạt các báo cáo lớn đã hướng sự chú ý của toàn cầu vào cuộc khủng hoảng đa dạng sinh
+                học, cùng với việc thiên nhiên hiện đang suy giảm trên toàn cầu với tốc độ chưa từng có trong lịch sử
+                nhân loại. Báo cáo Sức sống Hành tinh 2020 của WWF, được công bố vào đầu tháng này, cho thấy quần thể
+                động vật có xương sống đã suy giảm 68% trên toàn cầu kể từ năm 1970 do hoạt động sản xuất và tiêu dùng
+                hiện tại của chúng ta.</p>
+            <p>Bản cam kết nhấn mạnh rằng cuộc khủng hoảng ngày càng nghiêm trọng này đang gây ra những tổn hại không
+                thể thay đổi đối với các hệ thống hỗ trợ cuộc sống của chúng ta, làm trầm trọng thêm tình trạng nghèo
+                đói và bất bình đẳng, làm tăng nguy cơ bùng phát đại dịch lây truyền từ động vật sang người trong tương
+                lai và góp phần đáng kể gây ra biến đổi khí hậu. Chi phí gia tăng đối với xã hội và nền kinh tế đòi hỏi
+                chúng ta phải ngăn chặn và khắc phục sự mất đa dạng sinh học một cách khẩn cấp, nếu chúng ta muốn đạt
+                được các mục tiêu khí hậu và mục tiêu phát triển bền vững.</p>
             <br>
             <figure>
-                <img src="https://wwfasia.awsassets.panda.org/img/2_original_ww2131042__741555.jpg" alt="Thợ lặn thu gom rác thải nhựa dưới đáy biển. Công viên Quốc gia Mljet, đảo Mljet, Croatia. Tháng 5, 2015.">
-                <figcaption>Thợ lặn thu gom rác thải nhựa dưới đáy biển. Công viên Quốc gia Mljet, đảo Mljet, Croatia. Tháng 5, 2015.</figcaption>
+                <img src="https://wwfasia.awsassets.panda.org/img/2_original_ww2131042__741555.jpg"
+                    alt="Thợ lặn thu gom rác thải nhựa dưới đáy biển. Công viên Quốc gia Mljet, đảo Mljet, Croatia. Tháng 5, 2015.">
+                <figcaption>Thợ lặn thu gom rác thải nhựa dưới đáy biển. Công viên Quốc gia Mljet, đảo Mljet, Croatia.
+                    Tháng 5, 2015.</figcaption>
             </figure>
             <br>
-            <p>Tại Việt Nam, WWF đang thực hiện nhiều sáng kiến với mục tiêu phục hồi đa dạng sinh học, trong đó có BIODEV2030 hướng tới sự tham gia của Chính phủ, các ngành kinh tế, khu vực kinh tế tư nhân và các tổ chức xã hội-nghề nghiệp để lồng ghép vấn đề bảo tồn đa dạng sinh học vào chiến lược, kế hoạch hoạt động của các ngành kinh tế có tác động tới đa dạng sinh học. </p>
+            <p>Tại Việt Nam, WWF đang thực hiện nhiều sáng kiến với mục tiêu phục hồi đa dạng sinh học, trong đó có
+                BIODEV2030 hướng tới sự tham gia của Chính phủ, các ngành kinh tế, khu vực kinh tế tư nhân và các tổ
+                chức xã hội-nghề nghiệp để lồng ghép vấn đề bảo tồn đa dạng sinh học vào chiến lược, kế hoạch hoạt động
+                của các ngành kinh tế có tác động tới đa dạng sinh học. </p>
         </div>
     </div>
 
     <div class="bottom-logo">
-        <img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89" alt="brother-earth-logo">
+        <img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89"
+            alt="brother-earth-logo">
         <p><i>Xây dựng một tương lai trong đó con người sống hài hoà với thiên nhiên</i></p>
     </div>
 
@@ -294,13 +337,13 @@ form button:hover{
             <form action="#" method="POST">
                 <h2>Để luôn được cập nhật thông tin mới nhất về các chiến dịch của chúng tôi</h2>
                 <br>
-                <input id="firstname" type="text" placeholder="Họ" name="firstname" required/>
+                <input id="firstname" type="text" placeholder="Họ" name="firstname" required />
 
-                <input id="lastname" type="text" placeholder="Tên" name="lastname" required/>
+                <input id="lastname" type="text" placeholder="Tên" name="lastname" required />
 
-                <input id="email" type="text" placeholder="Email" name="email" required/>
+                <input id="email" type="text" placeholder="Email" name="email" required />
 
-                <a href=""><button>Đăng ký</button></a>
+                <a href="#"><button>Đăng ký</button></a>
                 <br>
 
                 <div class="social-media">
@@ -309,22 +352,27 @@ form button:hover{
                     <a title="Twitter" href="#"><i class="fab fa-twitter-square"></i></a>
                     <a title="Pinterest" href="#"><i class="fab fa-pinterest-square"></i></a>
                     <a title="Youtube" href="#"><i class="fab fa-youtube-square"></i></a>
-            </div>
+                </div>
             </form>
         </div>
 
         <div class="company-address">
             <div class="block-about-us">
-                <p> <b>Trụ sở tại Việt Nam:</b> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội  </p>
+                <p> <b>Trụ sở tại Việt Nam:</b> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài,
+                    Hà Nội </p>
                 <p><b>Trụ sở tại Anh:</b> 1st Floor, The Printworks, 139 Clapham Road, London, SW9 0HP</p>
             </div>
 
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8642858745443!2d105.79223651424478!3d20.998076594202576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8f8064667b%3A0x65f8f955fb2e87c1!2zVml3YXNlZW4gVG93ZXIgNDggdOG7kSBo4buvdQ!5e0!3m2!1svi!2s!4v1602926106732!5m2!1svi!2s" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8642858745443!2d105.79223651424478!3d20.998076594202576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8f8064667b%3A0x65f8f955fb2e87c1!2zVml3YXNlZW4gVG93ZXIgNDggdOG7kSBo4buvdQ!5e0!3m2!1svi!2s!4v1602926106732!5m2!1svi!2s"
+                    width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
         </div>
 
     </div>
     <a href="#top"><i title="Về đầu trang" class="fas fa-arrow-circle-up icon-up"></i></a>
 </body>
+
 </html>

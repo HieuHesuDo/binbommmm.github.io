@@ -1,242 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhựa đã xâm lấn đến những vùng biển xa nhất</title>
-    <link rel="shortcut icon" href="https://www.brotherearth.com/en/about/images/hdg-main-logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.brotherearth.com/en/about/images/hdg-main-logo1.png"
+        type="image/x-icon">
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
-.navbar{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-}
+        .navbar {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
 
-.logo img{
-    width: 90%;
-    margin-left: 30px ;
-}
+        .logo img {
+            width: 90%;
+            margin-left: 30px;
+        }
 
-.menu ul{
-    display: flex;  
-    transform: translate(30%);
-}
+        .menu ul {
+            display: flex;
+            transform: translate(30%);
+        }
 
-.menu li{
-    list-style-type: none;
-    padding-left: 25px;
-    font-weight: 500;
-} 
+        .menu li {
+            list-style-type: none;
+            padding-left: 25px;
+            font-weight: 500;
+        }
 
-.menu li a:hover{
-    background-color: #3FC588;
-    color: #fff;
-}
+        .menu li a:hover {
+            background-color: #3FC588;
+            color: #fff;
+        }
 
-.menu li a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    color: green;
-    border-radius: 50% 0 50% 0;
-    transition: 0.5s;
-}
+        .menu li a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+            color: green;
+            border-radius: 50% 0 50% 0;
+            transition: 0.5s;
+        }
 
 
-.navbar button{
-    width: 200px;
-    height: 70px;
-    transform: translate(110%);
-    border: none;
-    background-color: #175743;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: large;
-}
+        .navbar button {
+            width: 200px;
+            height: 70px;
+            transform: translate(110%);
+            border: none;
+            background-color: #175743;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: large;
+        }
 
-.navbar button:hover{
-    background-color: #3FC588;
-    color: #000;
-    transition: 0.5s;
-}
+        .navbar button:hover {
+            background-color: #3FC588;
+            color: #000;
+            transition: 0.5s;
+        }
 
-.content{
-    width: 70%;
-    margin-top: 50px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
-}
+        .content {
+            width: 70%;
+            margin-top: 50px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            padding: 10px;
+        }
 
-.content figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .content figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.content figcaption{
-    font-size: 13px;
-    width: 500px;
-    text-align: center;
-    margin: 5px;
-}
+        .content figcaption {
+            font-size: 13px;
+            width: 500px;
+            text-align: center;
+            margin: 5px;
+        }
 
-.content figure img{
-    width: 100%;
-}
+        .content figure img {
+            width: 100%;
+        }
 
-.company-info{
-    width: 100%;
-    height: 550px;
-    background-color: #def5ee;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+        .company-info {
+            width: 100%;
+            height: 550px;
+            background-color: #def5ee;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
 
-.register-form form{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .register-form form {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.company-address{
-    width: 600px;
-    height: 400px;
-    margin-left: 20px;
-}
+        .company-address {
+            width: 600px;
+            height: 400px;
+            margin-left: 20px;
+        }
 
-.block-about-us{
-    width: 600px;
-    margin-bottom: 15px;
-}
+        .block-about-us {
+            width: 600px;
+            margin-bottom: 15px;
+        }
 
-form h2{
-    width: 300px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-#firstname{
-    width: 70%;
-    height: 40px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    background-color: #F5F6F7;
-    border: solid #ccd0d5 1px;
-    margin-bottom: 15px;
-}
+        form h2 {
+            width: 300px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
 
-#lastname{
-    width: 70%;
-    height: 40px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    background-color: #F5F6F7;
-    border: solid #ccd0d5 1px;
-    margin-bottom: 15px;
-}
+        #firstname {
+            width: 70%;
+            height: 40px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 16px;
+            background-color: #F5F6F7;
+            border: solid #ccd0d5 1px;
+            margin-bottom: 15px;
+        }
 
-#email{
-    width: 70%;
-    height: 40px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    background-color: #F5F6F7;
-    border: solid #ccd0d5 1px;
-    margin-bottom: 15px;
-}
+        #lastname {
+            width: 70%;
+            height: 40px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 16px;
+            background-color: #F5F6F7;
+            border: solid #ccd0d5 1px;
+            margin-bottom: 15px;
+        }
 
-form button{
-    width: 280px;
-    height: 40px;
-    border: none;
-    background-color: #24C482;
-    color: #000000;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
-    text-transform: uppercase; 
-    transition: 0.5s;
-}
+        #email {
+            width: 70%;
+            height: 40px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 16px;
+            background-color: #F5F6F7;
+            border: solid #ccd0d5 1px;
+            margin-bottom: 15px;
+        }
 
-form button:hover{
-    color: #fff;
-    transition: 0.5s;
-}
+        form button {
+            width: 280px;
+            height: 40px;
+            border: none;
+            background-color: #24C482;
+            color: #000000;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
 
-.social-media{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        form button:hover {
+            color: #fff;
+            transition: 0.5s;
+        }
 
-.social-media i{
-    font-size: 50px;
-    color: #3FC588;
-}
+        .social-media {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.social-media a{
-    margin: 10px;
-}
+        .social-media i {
+            font-size: 50px;
+            color: #3FC588;
+        }
 
-.icon-up {
-    font-size: 40px;
-    color: #464646;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-  }
+        .social-media a {
+            margin: 10px;
+        }
 
-.bottom-logo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 60px;
-}
+        .icon-up {
+            font-size: 40px;
+            color: #464646;
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+        }
 
-.bottom-logo img{
-    width: 300px;
-}
+        .bottom-logo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 60px;
+        }
 
+        .bottom-logo img {
+            width: 300px;
+        }
     </style>
 
 </head>
+
 <body>
     <div class="main">
         <div class="navbar">
             <div class="logo">
-                <a href="/Do-an-khoa-html&css/main-page/index.html"><img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89" alt="brother-earth-logo"></a>
+                <a href="/Do-an-khoa-html&css/main-page/index.html"><img
+                        src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89"
+                        alt="brother-earth-logo"></a>
             </div>
 
             <div class="menu">
                 <ul class="list">
                     <li><a href="/Do-an-khoa-html&css/about-us-page/about-us.html">VỀ CHÚNG TÔI</a></li>
                     <li><a href="/Do-an-khoa-html&css/activities-page/activities.html">HOẠT ĐỘNG</a></li>
-                    <li><a style="background-color: #3FC588; border-radius: 50% 0 50% 0; color: #fff;" href="#">TIN TỨC</a></li>
+                    <li><a style="background-color: #3FC588; border-radius: 50% 0 50% 0; color: #fff;" href="#">TIN
+                            TỨC</a></li>
                     <li><a href="/Do-an-khoa-html&css/image-gallery-page/image-gallery.html">HÌNH ẢNH</a></li>
                     <li><a href="/Do-an-khoa-html&css/contact-page/contact.html">LIÊN HỆ</a></li>
                 </ul>
@@ -252,34 +258,73 @@ form button:hover{
             <br><br>
             <h2 style="font-weight: 400;">Bản đồ tương tác thế giới cho thấy ô nhiễm nhựa trong các đại dương.</h2>
             <br>
-            <p>Ô nhiễm rác thải nhựa đại dương là một trong những vấn đề môi trường lớn nhất hiện nay. Hôm nay, WWF - Tổ chức Quốc tế về Bảo tồn Thiên nhiên - đã ra mắt một bản đồ tương tác miễn phí tại trang web plasticnavigator.wwf.de, giúp chúng ta có thể thấy rõ vấn đề ô nhiễm rác thải nhựa một cách toàn diện hơn. Bản đồ Định vị Nhựa Toàn cầu cho thấy những quốc gia nào đang thải lượng lớn rác thải nhựa vào môi trường, những con sông nào đưa nhiều rác thải nhựa nhất ra các đại dương, và mức độ phổ biến của nhựa trên các bề mặt đại dương. Ông Bernhard Bauske, Điều phối viên Dự án về Rác thải Nhựa tại WWF-Đức nhận xét: “Bản đồ thể hiện trực quan các dữ liệu khoa học mới nhất, qua đó, nạn ô nhiễm nhựa có thể thấy được bằng mắt thường, từ việc cung cấp cái nhìn tổng quan về nhựa trong các đại dương trên toàn thế giới cho tới thông tin về lượng nhựa thải ra trên bề mặt của từng con sông riêng lẻ. Kết quả thực sự gây sốc: <b>nhựa xâm lấn đến những vùng biển xa nhất của chúng ta ”.</b></p>
+            <p>Ô nhiễm rác thải nhựa đại dương là một trong những vấn đề môi trường lớn nhất hiện nay. Hôm nay, WWF - Tổ
+                chức Quốc tế về Bảo tồn Thiên nhiên - đã ra mắt một bản đồ tương tác miễn phí tại trang web
+                plasticnavigator.wwf.de, giúp chúng ta có thể thấy rõ vấn đề ô nhiễm rác thải nhựa một cách toàn diện
+                hơn. Bản đồ Định vị Nhựa Toàn cầu cho thấy những quốc gia nào đang thải lượng lớn rác thải nhựa vào môi
+                trường, những con sông nào đưa nhiều rác thải nhựa nhất ra các đại dương, và mức độ phổ biến của nhựa
+                trên các bề mặt đại dương. Ông Bernhard Bauske, Điều phối viên Dự án về Rác thải Nhựa tại WWF-Đức nhận
+                xét: “Bản đồ thể hiện trực quan các dữ liệu khoa học mới nhất, qua đó, nạn ô nhiễm nhựa có thể thấy được
+                bằng mắt thường, từ việc cung cấp cái nhìn tổng quan về nhựa trong các đại dương trên toàn thế giới cho
+                tới thông tin về lượng nhựa thải ra trên bề mặt của từng con sông riêng lẻ. Kết quả thực sự gây sốc:
+                <b>nhựa xâm lấn đến những vùng biển xa nhất của chúng ta ”.</b></p>
             <br>
-            <p>Để ngăn chặn cơn lũ rác nhựa, WWF đang kêu gọi một thỏa thuận quốc tế nhằm chấm dứt việc xả rác thải nhựa ra các đại dương. Bản đồ Định vị Nhựa Toàn cầu cho thấy những quốc gia nào ủng hộ thỏa thuận này, bao gồm các quốc gia thành viên của Liên minh châu Âu và Liên minh châu Phi. Ông Bauske cũng cho biết: “Nhờ vào bản đồ, chúng ta có thể thấy rõ sự ủng hộ mạnh mẽ đối với một thỏa thuận quốc tế nhằm chấm dứt việc xả rác thải nhựa ra các đại dương. Bản đồ tương tác cho phép mọi người biết được chính phủ nước mình đã có cam kết với khung thoả thuận chống lại rác nhựa đại dương này chưa. Điều này còn có ý nghĩa rất lớn đối với các quốc gia vẫn đang do dự về thỏa thuận”.</p>
+            <p>Để ngăn chặn cơn lũ rác nhựa, WWF đang kêu gọi một thỏa thuận quốc tế nhằm chấm dứt việc xả rác thải nhựa
+                ra các đại dương. Bản đồ Định vị Nhựa Toàn cầu cho thấy những quốc gia nào ủng hộ thỏa thuận này, bao
+                gồm các quốc gia thành viên của Liên minh châu Âu và Liên minh châu Phi. Ông Bauske cũng cho biết: “Nhờ
+                vào bản đồ, chúng ta có thể thấy rõ sự ủng hộ mạnh mẽ đối với một thỏa thuận quốc tế nhằm chấm dứt việc
+                xả rác thải nhựa ra các đại dương. Bản đồ tương tác cho phép mọi người biết được chính phủ nước mình đã
+                có cam kết với khung thoả thuận chống lại rác nhựa đại dương này chưa. Điều này còn có ý nghĩa rất lớn
+                đối với các quốc gia vẫn đang do dự về thỏa thuận”.</p>
             <br>
             <figure>
-                <img src="https://wwfasia.awsassets.panda.org/img/map_thumb1_741212.png" alt="Hiển thị Bản đồ Định vị Nhựa Toàn cầu trên trang web plasticnavigator.wwf.de">
+                <img src="https://wwfasia.awsassets.panda.org/img/map_thumb1_741212.png"
+                    alt="Hiển thị Bản đồ Định vị Nhựa Toàn cầu trên trang web plasticnavigator.wwf.de">
                 <figcaption>Hiển thị Bản đồ Định vị Nhựa Toàn cầu trên trang web plasticnavigator.wwf.de</figcaption>
             </figure>
             <br>
-            <p>Lượng nhựa khổng lồ trong các đại dương là một vấn đề toàn cầu chỉ có thể được giải quyết thông qua hợp tác quốc tế. Do đó, WWF đang vận động cho sự ra đời của một thoả thuận quốc tế, theo đó việc giảm thiểu chất thải và cải thiện quản lý chất thải trở thành một yêu cầu có tính pháp lý trên toàn thế giới. Một trong các kết quả của việc tham gia thỏa thuận này là việc quản lý chất thải sẽ được cải thiện ở nhiều quốc gia – mang lại các tác động tích cực cho con người, môi trường và sức khỏe.</p>
+            <p>Lượng nhựa khổng lồ trong các đại dương là một vấn đề toàn cầu chỉ có thể được giải quyết thông qua hợp
+                tác quốc tế. Do đó, WWF đang vận động cho sự ra đời của một thoả thuận quốc tế, theo đó việc giảm thiểu
+                chất thải và cải thiện quản lý chất thải trở thành một yêu cầu có tính pháp lý trên toàn thế giới. Một
+                trong các kết quả của việc tham gia thỏa thuận này là việc quản lý chất thải sẽ được cải thiện ở nhiều
+                quốc gia – mang lại các tác động tích cực cho con người, môi trường và sức khỏe.</p>
             <br>
-            <p>Tại Việt Nam, lượng rác thải đã lên tới trên 31 triệu tấn rác thải sinh hoạt và gần 5 triệu tấn rác thải nhựa trong năm 2018. Trong khi đó, chỉ có một tỉ lệ rất nhỏ được phân loại và tái chế, còn lại có đến 60-70% lượng rác thải sau khi thu gom sẽ được xử lý bằng cách chôn lấp ở những bãi không hợp vệ sinh, và thậm chí là thải trực tiếp ra môi trường. Với khoảng 0,28 đến 0,73 triệu tấn rác nhựa thải trực tiếp ra đại dương mỗi năm, Việt Nam là một trong các quốc gia có lượng nhựa thải ra đại dương nhiều nhất thế giới.</p>
+            <p>Tại Việt Nam, lượng rác thải đã lên tới trên 31 triệu tấn rác thải sinh hoạt và gần 5 triệu tấn rác thải
+                nhựa trong năm 2018. Trong khi đó, chỉ có một tỉ lệ rất nhỏ được phân loại và tái chế, còn lại có đến
+                60-70% lượng rác thải sau khi thu gom sẽ được xử lý bằng cách chôn lấp ở những bãi không hợp vệ sinh, và
+                thậm chí là thải trực tiếp ra môi trường. Với khoảng 0,28 đến 0,73 triệu tấn rác nhựa thải trực tiếp ra
+                đại dương mỗi năm, Việt Nam là một trong các quốc gia có lượng nhựa thải ra đại dương nhiều nhất thế
+                giới.</p>
             <br>
-            <p>Mặc dù thời gian gần đây, Việt Nam đã nỗ lực xúc tiến hoàn thiện khung pháp lý cũng như đề ra các kế hoạch cụ thể thông qua việc ban hành Chiến lược Quốc gia về Quản lý Tổng hợp Chất thải Rắn đến năm 2025, Tầm nhìn đến năm 2050; Kế hoạch Hành động Quốc gia về Quản lý Rác thải Nhựa Đại dương đến 2030; Chương trình Hành động Quốc gia về Sản xuất và Tiêu dùng Bền vững, v.v., nhưng vấn đề giải thiểu rác thải nhựa đại dương rất khó có thể giải quyết đơn thuần bởi các chính sách của chính phủ, mà còn cần đến sự chung tay và đồng hành của toàn xã hội, bao gồm sự thay đổi hành vi của cộng đồng, các chương trình giáo dục vì sự phát triển bền vững, cũng như vai trò và trách nhiệm của doanh nghiệp, để cùng giải quyết vấn nạn “ô nhiễm trắng” đang ngày một trở nên nghiêm trọng hơn tại Việt Nam.</p>
+            <p>Mặc dù thời gian gần đây, Việt Nam đã nỗ lực xúc tiến hoàn thiện khung pháp lý cũng như đề ra các kế
+                hoạch cụ thể thông qua việc ban hành Chiến lược Quốc gia về Quản lý Tổng hợp Chất thải Rắn đến năm 2025,
+                Tầm nhìn đến năm 2050; Kế hoạch Hành động Quốc gia về Quản lý Rác thải Nhựa Đại dương đến 2030; Chương
+                trình Hành động Quốc gia về Sản xuất và Tiêu dùng Bền vững, v.v., nhưng vấn đề giải thiểu rác thải nhựa
+                đại dương rất khó có thể giải quyết đơn thuần bởi các chính sách của chính phủ, mà còn cần đến sự chung
+                tay và đồng hành của toàn xã hội, bao gồm sự thay đổi hành vi của cộng đồng, các chương trình giáo dục
+                vì sự phát triển bền vững, cũng như vai trò và trách nhiệm của doanh nghiệp, để cùng giải quyết vấn nạn
+                “ô nhiễm trắng” đang ngày một trở nên nghiêm trọng hơn tại Việt Nam.</p>
             <br>
             <figure>
-                <img src="https://wwfasia.awsassets.panda.org/img/_dng_quc_binh___wwf_vit_nam_741219.jpg" alt="Ảnh chụp tại bến tàu cũ tại Phú Quốc, Kiên Giang, 2019. Đây là nơi tàu thuyền neo đậu, cũng là nơi cửa sông đổ ra biển nên trở thành điểm nóng rác thải nhựa.">
-                <figcaption>Ảnh chụp tại bến tàu cũ tại Phú Quốc, Kiên Giang, 2019. Đây là nơi tàu thuyền neo đậu, cũng là nơi cửa sông đổ ra biển nên trở thành điểm nóng rác thải nhựa.</figcaption>
+                <img src="https://wwfasia.awsassets.panda.org/img/_dng_quc_binh___wwf_vit_nam_741219.jpg"
+                    alt="Ảnh chụp tại bến tàu cũ tại Phú Quốc, Kiên Giang, 2019. Đây là nơi tàu thuyền neo đậu, cũng là nơi cửa sông đổ ra biển nên trở thành điểm nóng rác thải nhựa.">
+                <figcaption>Ảnh chụp tại bến tàu cũ tại Phú Quốc, Kiên Giang, 2019. Đây là nơi tàu thuyền neo đậu, cũng
+                    là nơi cửa sông đổ ra biển nên trở thành điểm nóng rác thải nhựa.</figcaption>
             </figure>
             <br>
-            <p>Là một trong những tổ chức Phi Chính phủ Quốc tế hoạt động đầu tiên tại Việt Nam, WWF-Việt Nam đã nỗ lực triển khai các dự án và chương trình nhằm góp phần giải quyết vấn nạn ô nhiễm rác thải nhựa, bao gồm Dự án Phú Quốc – Hướng tới Hòn đảo không Rác thải Nhựa, Dự án Đô thị giảm Nhựa (NORAD), chương trình Vì một Cộng đồng không Rác thải Nhựa, Dự án Quản lý Rác thải Nhựa tại Long An, Dự án Đô thị giảm Nhựa – Huế, và Dự án Giảm thiểu Rác thải Nhựa Đại dương phối hợp cùng Bộ Tài nguyên và Môi Trường. </p>
+            <p>Là một trong những tổ chức Phi Chính phủ Quốc tế hoạt động đầu tiên tại Việt Nam, WWF-Việt Nam đã nỗ lực
+                triển khai các dự án và chương trình nhằm góp phần giải quyết vấn nạn ô nhiễm rác thải nhựa, bao gồm Dự
+                án Phú Quốc – Hướng tới Hòn đảo không Rác thải Nhựa, Dự án Đô thị giảm Nhựa (NORAD), chương trình Vì một
+                Cộng đồng không Rác thải Nhựa, Dự án Quản lý Rác thải Nhựa tại Long An, Dự án Đô thị giảm Nhựa – Huế, và
+                Dự án Giảm thiểu Rác thải Nhựa Đại dương phối hợp cùng Bộ Tài nguyên và Môi Trường. </p>
             <br>
-            
+
         </div>
     </div>
 
     <div class="bottom-logo">
-        <img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89" alt="brother-earth-logo">
+        <img src="https://www.brother.ie/-/media/images/brother-ie/modules/secondary-navigation/brotherearthlogosecondarynavhorizontal.png?h=120&la=en-IE&w=320&hash=C9E8DE2B502E1089B7703AC497852C1E7C999B89"
+            alt="brother-earth-logo">
         <p><i>Xây dựng một tương lai trong đó con người sống hài hoà với thiên nhiên</i></p>
     </div>
 
@@ -288,13 +333,13 @@ form button:hover{
             <form action="#" method="POST">
                 <h2>Để luôn được cập nhật thông tin mới nhất về các chiến dịch của chúng tôi</h2>
                 <br>
-                <input id="firstname" type="text" placeholder="Họ" name="firstname" required/>
+                <input id="firstname" type="text" placeholder="Họ" name="firstname" required />
 
-                <input id="lastname" type="text" placeholder="Tên" name="lastname" required/>
+                <input id="lastname" type="text" placeholder="Tên" name="lastname" required />
 
-                <input id="email" type="text" placeholder="Email" name="email" required/>
+                <input id="email" type="text" placeholder="Email" name="email" required />
 
-                <a href=""><button>Đăng ký</button></a>
+                <a href="#"><button>Đăng ký</button></a>
                 <br>
 
                 <div class="social-media">
@@ -303,22 +348,27 @@ form button:hover{
                     <a title="Twitter" href="#"><i class="fab fa-twitter-square"></i></a>
                     <a title="Pinterest" href="#"><i class="fab fa-pinterest-square"></i></a>
                     <a title="Youtube" href="#"><i class="fab fa-youtube-square"></i></a>
-            </div>
+                </div>
             </form>
         </div>
 
         <div class="company-address">
             <div class="block-about-us">
-                <p> <b>Trụ sở tại Việt Nam:</b> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội  </p>
+                <p> <b>Trụ sở tại Việt Nam:</b> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài,
+                    Hà Nội </p>
                 <p><b>Trụ sở tại Anh:</b> 1st Floor, The Printworks, 139 Clapham Road, London, SW9 0HP</p>
             </div>
 
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8642858745443!2d105.79223651424478!3d20.998076594202576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8f8064667b%3A0x65f8f955fb2e87c1!2zVml3YXNlZW4gVG93ZXIgNDggdOG7kSBo4buvdQ!5e0!3m2!1svi!2s!4v1602926106732!5m2!1svi!2s" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8642858745443!2d105.79223651424478!3d20.998076594202576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8f8064667b%3A0x65f8f955fb2e87c1!2zVml3YXNlZW4gVG93ZXIgNDggdOG7kSBo4buvdQ!5e0!3m2!1svi!2s!4v1602926106732!5m2!1svi!2s"
+                    width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
         </div>
 
     </div>
     <a href="#top"><i title="Về đầu trang" class="fas fa-arrow-circle-up icon-up"></i></a>
 </body>
+
 </html>

@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 7</title>
-    <link rel="stylesheet" href="responsive-homework-7.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 7</title>
+  <link rel="stylesheet" href="responsive-homework-7.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="container_nav">
-            <div class="container_nav_logo">LOGO</div>
-            <div class="container_nav_hamburger-button" onclick="hamburger()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            
-        <div class="container_nav_mobile-menu" id="mobile-menu">
-            <a href="">Trang chủ</a>
-            <a href="">Menu 1</a>
-            <a href="">Menu 2</a>
-            <a href="">Menu 3</a>
-            <a href="">Login</a>
-            <a href="">Register</a>
-          </div>
-            <div class="container_nav_menu">
-                <a href="">Menu 1</a>|
-                <a href="">Menu 2</a>|
-                <a href="">Menu 3</a>
-            </div>
+  <div class="container">
+    <div class="container_nav">
+      <div class="container_nav_logo">LOGO</div>
+      <div class="container_nav_hamburger-button" onclick="hamburger()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-            <div class="container_nav_login"><a href="">Login | Register</a></div>
-        </div>
-        
+      <div class="container_nav_mobile-menu" id="mobile-menu">
+        <a href="#">Trang chủ</a>
+        <a href="#">Menu 1</a>
+        <a href="#">Menu 2</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+      </div>
+      <div class="container_nav_menu">
+        <a href="#">Menu 1</a>|
+        <a href="#">Menu 2</a>|
+        <a href="#">Menu 3</a>
+      </div>
 
-        <div class="container_content">
-            <div class="container_content_block"></div>
-            <div class="container_content_sidebar"></div>
-        </div>
+      <div class="container_nav_login"><a href="#">Login | Register</a></div>
     </div>
 
-    <script>
-        function hamburger() {
-          var x = document.getElementById("mobile-menu");
-          if (x.style.display === "flex") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "flex";
-          }
-        }
-        </script>
+
+    <div class="container_content">
+      <div class="container_content_block"></div>
+      <div class="container_content_sidebar"></div>
+    </div>
+  </div>
+
+  <script>
+    function hamburger() {
+      var x = document.getElementById("mobile-menu");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+  </script>
 </body>
+
 </html>
