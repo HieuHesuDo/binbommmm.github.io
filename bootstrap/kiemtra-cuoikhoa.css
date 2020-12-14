@@ -700,6 +700,7 @@ body {
     height: 171px;
     background-color: #fff;
     padding: 0 30px;
+    margin-bottom: 81px;
   }
 
   .nav__menu-area{
@@ -749,6 +750,7 @@ body {
     display: block;
     width: 100%;
     background-color: #fff;
+    margin-bottom: 81px;
   }
 
   .head__nav__menu {
