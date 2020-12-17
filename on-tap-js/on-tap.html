@@ -33,9 +33,9 @@
         // Bai 1 cach 2
         function sum2(num1, num2) {
             var result = 0; //Khai báo biến 
-            let min = Math.min(num1,num2);
-            let max = Math.max(num1,num2);
-            for (var i = (min + 1); i < max; i++){
+            let min = Math.min(num1, num2);
+            let max = Math.max(num1, num2);
+            for (var i = (min + 1); i < max; i++) {
                 result += i; //Mỗi lần i lặp lại thêm vào result
             }
             return result;
@@ -45,6 +45,17 @@
         function sumUoc(num) {
             var sum = 0;
             for (var i = 1; i <= num; i++) {
+                if ((num % i)) {
+                    sum += i;
+                }
+            }
+            console.log(sum);
+        }
+
+        // Bai 2 cách 2
+        function sumUoc2(num) {
+            var sum = 0;
+            for (var i = 1; i <= (num / 2); i++) { //rút gọn được một nửa vòng lặp
                 if ((num % i)) {
                     sum += i;
                 }
@@ -98,14 +109,17 @@
             return b.join("-");
         }
 
-        // // Bai 7
-        // function doiXung(str) {
-        //     var len = Math.floor(str.length / 2);
-        //     for (var i = 0; i < len; i++)
-        //         if (str[i] !== str[str.length - i - 1])
-        //             return false;
-        //     return true;
-        // }
+        // Bai 7
+        function doiXung(str)
+            {
+                var a = str.toLowerCase();
+                var palin = a.split("").reverse().join(""); //đảo ngược chuỗi
+                if (palin === a) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
 
     </script>
 </body>
