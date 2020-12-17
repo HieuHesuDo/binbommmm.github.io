@@ -43,8 +43,6 @@
 
         // Bai 3
         function soNguyenTo(num) {
-
-            //test if number is prime
             for (var i = 2; i < num; i++) {
                 if (num % i === 0) {
                     return false;
@@ -57,11 +55,11 @@
         function sumSNT(num) {
             var sum = 0;
 
-            //loop through all numbers from 2 to input value
+            //vong lap bat dau tu so 2 den so nhap vao
 
             for (var i = 2; i <= num; i++) {
 
-                //sum only prime numbers, skip all others
+                //cong so nguyen to
                 if (soNguyenTo(i)) {
                     sum += i;
                 }
@@ -71,10 +69,10 @@
 
         //Bai 5
         function vietHoa(a) {
-            let b = a.toString().split(" ");
+            let b = a.toString().split(" ");  //chia tung ky tu ra
             for (let i = 0; i < b.length; i++) {
                 b[i] = b[i].toLowerCase();
-                b[i] = b[i].charAt(0).toUpperCase() + b[i].slice(1);
+                b[i] = b[i].charAt(0).toUpperCase() + b[i].slice(1);  //ky tu dau tien viet hoa
             }
             return b.join(" ");
         }
