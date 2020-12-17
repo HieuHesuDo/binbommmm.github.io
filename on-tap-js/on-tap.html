@@ -33,7 +33,9 @@
         // Bai 1 cach 2
         function sum2(num1, num2) {
             var result = 0; //Khai báo biến 
-            for (var i = (num1 + 1); i < num2; i++){
+            let min = Math.min(num1,num2);
+            let max = Math.max(num1,num2);
+            for (var i = (min + 1); i < max; i++){
                 result += i; //Mỗi lần i lặp lại thêm vào result
             }
             return result;
@@ -43,7 +45,7 @@
         function sumUoc(num) {
             var sum = 0;
             for (var i = 1; i <= num; i++) {
-                if (!(num % i)) {
+                if ((num % i)) {
                     sum += i;
                 }
             }
