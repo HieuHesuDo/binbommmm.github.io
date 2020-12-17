@@ -81,7 +81,7 @@
         //Bai 5
         function vietHoa(a) {
             let b = a.toString().split(" ");  //chia tung ky tu ra
-            for (let i = 0; i < b.length; i++) {
+            for (var i = 0; i < b.length; i++) {
                 b[i] = b[i].toLowerCase();
                 b[i] = b[i].charAt(0).toUpperCase() + b[i].slice(1);  //ky tu dau tien viet hoa
             }
@@ -91,7 +91,7 @@
         //Bai 6
         function spinalCase(a) {
             let b = a.toString().split(" ");
-            for (let i = 0; i < b.length; i++) {
+            for (var i = 0; i < b.length; i++) {
                 b[i] = b[i].toLowerCase();
                 b[i] = b[i].charAt(0).toLowerCase() + b[i].slice(1);
             }
