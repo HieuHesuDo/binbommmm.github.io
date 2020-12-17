@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 1: Viết hàm truyền vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng. => sum(num1,num2) <br>
+    Bài 2: Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó. => sumUoc(num) <br>
+    Bài 3: Cho 1 số nguyên dương, kiểm tra xem số đó có phải là số nguyên tố hay không, kết quả trả về true hoặc false.
+    => soNguyenTo(num)<br>
+    Bài 4: Cho 1 số nguyên dương. Tính tổng tất cả các số nguyên tố nhỏ hơn hoặc bằng tham số truyền vào. =>
+    sumSNT(num)<br>
+    Bài 5: Chuyển 1 chuỗi gồm nhiều từ thành chuỗi mới viết hoa các chữ cái đầu tiên của mỗi từ. => vietHoa("HELLO
+    world") <br>
+    Bài 6: Chuyển 1 chuỗi gồm nhiều từ thành dạng Spinal case. Ví dụ: ''HELLO world'' => ''hello-world''. =>
+    spinalCase("HELLO
+    world")
+    <br>
+    <script>
+        // Bai 1
+        function sum(num1, num2) {
+            if (num1 < num2) {
+                return ((((num2 - num1) + 1) * (num1 + num2) / 2) - (num1 + num2));
+            } else {
+                return ((((num1 - num2) + 1) * (num1 + num2) / 2) - (num1 + num2));
+            }
+        }
+
+        // Bai 2
+        function sumUoc(num) {
+            var sum = 0;
+            for (var i = 1; i <= num; i++) {
+                if (!(num % i)) {
+                    sum += i;
+                }
+            }
+            console.log(sum);
+        }
+
+        // Bai 3
+        function soNguyenTo(num) {
+
+            //test if number is prime
+            for (var i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        //Bai 4
+        function sumSNT(num) {
+            var sum = 0;
+
+            //loop through all numbers from 2 to input value
+
+            for (var i = 2; i <= num; i++) {
+
+                //sum only prime numbers, skip all others
+                if (soNguyenTo(i)) {
+                    sum += i;
+                }
+            }
+            return sum;
+        }
+
+        //Bai 5
+        function vietHoa(a) {
+            let b = a.toString().split(" ");
+            for (let i = 0; i < b.length; i++) {
+                b[i] = b[i].toLowerCase();
+                b[i] = b[i].charAt(0).toUpperCase() + b[i].slice(1);
+            }
+            return b.join(" ");
+        }
+
+        //Bai 6
+        function spinalCase(a) {
+            let b = a.toString().split(" ");
+            for (let i = 0; i < b.length; i++) {
+                b[i] = b[i].toLowerCase();
+                b[i] = b[i].charAt(0).toLowerCase() + b[i].slice(1);
+            }
+            return b.join("-");
+        }
+
+        // // Bai 7
+        // function doiXung(str) {
+        //     var len = Math.floor(str.length / 2);
+        //     for (var i = 0; i < len; i++)
+        //         if (str[i] !== str[str.length - i - 1])
+        //             return false;
+        //     return true;
+        // }
+
+    </script>
+</body>
+
+</html>
