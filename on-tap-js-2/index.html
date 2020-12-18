@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On tap JS 2</title>
+  </head>
+  <body>
+    <script>
+      //Bai 1
+      function longest(arr) {
+        var newArr = [];
+        var largestLeng = 0;
+        var lengthOfChar = arr.map((item) => item.length); //Lấy độ dài của từng ký tự trong mảng
+        for (var i = lengthOfChar[0]; i < lengthOfChar.length; i++) {
+          //Vòng lặp tìm độ dài lớn nhất
+          if (lengthOfChar[i] > largestLeng) {
+            largestLeng = lengthOfChar[i];
+          }
+        }
+
+        //Vòng lặp tìm phần tử có độ dài = độ dài lớn nhất
+        for (i = 0; i < arr.length; i++) {
+          if (arr[i].length == largestLeng) {
+            newArr.push(arr[i])
+          }
+        }
+        return newArr;
+      }
+
+      //Bai 2
+      function difference(arr1, arr2) {
+        return arr1.concat(arr2).filter(function (val) {
+          //ghép 2 mảng lại với nhau
+          if (!(arr1.includes(val) && arr2.includes(val)))
+            //lọc ra phần tử mà 2 mảng không giống nhau
+            return val;
+        });
+      }
+
+      //Bai 4
+      var student = [
+        { name: "Binh", gender: "Male", age: 20 },
+        { name: "An", gender: "Male", age: 13 },
+        { name: "Hung", gender: "Male", age: 34 },
+      ];
+
+      function ageTB() {
+        let result = student.reduce((ac, a) => a.age + ac, 0) / student.length;
+        return result;
+      }
+
+      //Bai 5
+      function ageSort() {
+        student.sort((a, b) => {
+          return b.age - a.age; //Xắp xếp mảng theo thứ tự tuổi giảm dần
+        });
+
+        student.forEach((e) => {
+          console.log(`${e.name} ${e.gender} ${e.age}`);
+        });
+      }
+
+
+      // Bai 6
+      function nameSort() {
+        student.sort((a, b) => {
+          let fa = a.name.toLowerCase(), //chuyển tên thành lowercase
+            fb = b.name.toLowerCase();
+
+          if (fa < fb) {
+            //so sánh tên và gán gia trị
+            return -1;
+          }
+          if (fa > fb) {
+            return 1;
+          }
+          return 0;
+        });
+
+        student.forEach((e) => {
+          console.log(`${e.name} ${e.gender} ${e.age}`);
+        });
+      }
+    </script>
+  </body>
+</html>
