@@ -6,6 +6,20 @@
     <title>On tap JS 2</title>
   </head>
   <body>
+    Bài 1: Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất
+    => longest(arr) <br />
+    Bài 2: Viết hàm so sánh mảng, truyền vào 2 mảng bất kỳ (chỉ chứa số nguyên),
+    kết quả trả về là 1 mảng chỉ chứa những phần tử không đồng thời nằm trong 2
+    mảng truyền vào => difference(arr1, arr2) <br />
+    Bài 4: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'',
+    gender: ''Male'', age: 20 }. Viết hàm tính ra số tuổi trung bình của toàn bộ
+    sinh viên => ageTB() <br />
+    Bài 5: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'',
+    gender: ''Male'', age: 20 }. Viết hàm sắp xếp lại mảng trên theo tuổi học
+    viên từ cao đến thấp => ageSort() <br />
+    Bài 6: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'',
+    gender: ''Male'', age: 20 }. Viết hàm sắp xếp lại mảng trên theo tên học
+    viên (không phân biệt hoa thường) => nameSort()<br />
     <script>
       //Bai 1
       function longest(arr) {
@@ -22,7 +36,7 @@
         //Vòng lặp tìm phần tử có độ dài = độ dài lớn nhất
         for (i = 0; i < arr.length; i++) {
           if (arr[i].length == largestLeng) {
-            newArr.push(arr[i])
+            newArr.push(arr[i]);
           }
         }
         return newArr;
@@ -46,8 +60,28 @@
       ];
 
       function ageTB() {
-        let result = student.reduce((ac, a) => a.age + ac, 0) / student.length;
-        return result;
+        //Cách 1
+        var count = 0,    //Khởi tạo biến đếm và biến gán tổng tuổi
+            sumAge = 0;
+        for (var key in student) {
+          if (student.hasOwnProperty(key)) {
+            if (student[key].hasOwnProperty("age")) {
+              sumAge += student[key].age;
+              count += 1;
+            }
+          }
+        }
+        console.log(sumAge/ count);
+
+        //Cách 2
+        // let result = student.reduce((ac, a) => a.age + ac, 0) / student.length;
+        // return result;
+
+        //Cách 3
+        // var arr = Object.values(student);
+        // var sum = (prev, cur) => ({ age: prev.age + cur.age });
+        // var avg = arr.reduce(sum).age / arr.length;
+        // console.log(avg);
       }
 
       //Bai 5
@@ -56,11 +90,10 @@
           return b.age - a.age; //Xắp xếp mảng theo thứ tự tuổi giảm dần
         });
 
-        student.forEach((e) => {
-          console.log(`${e.name} ${e.gender} ${e.age}`);
+        student.forEach((student) => {
+          console.log(`${student.name} ${student.gender} ${student.age}`);
         });
       }
-
 
       // Bai 6
       function nameSort() {
@@ -69,7 +102,7 @@
             fb = b.name.toLowerCase();
 
           if (fa < fb) {
-            //so sánh tên và gán gia trị
+            //so sánh tên và gán giá trị
             return -1;
           }
           if (fa > fb) {
@@ -78,8 +111,8 @@
           return 0;
         });
 
-        student.forEach((e) => {
-          console.log(`${e.name} ${e.gender} ${e.age}`);
+        student.forEach((student) => {
+          console.log(`${student.name} ${student.gender} ${student.age}`);
         });
       }
     </script>
