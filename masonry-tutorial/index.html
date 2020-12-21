@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Step 1: start with resetting some defaults */
+
+      * {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
+      }
+
+      /* Step 2: center things inside the grid and clear some space around it by setting a device based max-width and margin*/
+
+      .grid {
+        text-align: center;
+        max-width: 95vw;
+        margin: 2.5vw auto;
+      }
+
+      /* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
+
+      .grid-item {
+        padding: 5px;
+        box-sizing: border-box;
+        display: inline;
+      }
+
+      /* Step 4: Add media queries (subjective) to make the whole grid resposive. */
+
+      @media (min-width: 500px) {
+        .grid-item {
+          width: 50%;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .grid-item {
+          width: 33.333%;
+        }
+      }
+
+      @media (min-width: 1700px) {
+        .grid-item {
+          width: 25%;
+        }
+      }
+
+      @media (min-width: 2100px) {
+        .grid-item {
+          width: 20%;
+        }
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Step 2: Then load imagesloaded. imagesloaded makes sure the images are not displayed until they are fully loaded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Step 3: we load masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Part 2: Create the grid -->
+
+    <!-- Step 1: Start with a the main grid wrapper-->
+    <div class="grid">
+      <!-- Step 2: Add grid items--->
+
+      <div class="grid-item">
+        <img
+          src="https://lh3.googleusercontent.com/proxy/86L4y1DRFgTDOyhEI07aSlJlARWVgj4rymVLa9OrujDjAWmJLuBkg1uVQMl7Tves1LhUSbZHuoHpb119p_yl9HXEEVFR53jvYYg5GtYltc8yoX0CPKMEYRALuxGCtLchpA"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://lh3.googleusercontent.com/proxy/Q7AnYDBrqmzUlvlInIJK-ib8_aNQJIU5522M94m0eERpEfBfxnLvSxjP9_OtxxsLdYKgGcNcOA4Lb3UYIayC4VduDH6qymhOmy_4dTeNHqXVEQGTdN4EFxn1ffw"
+        />
+      </div>
+
+      <!-- Step 3: repeat...--->
+      <div class="grid-item">
+        <img
+          src="https://23bstudio.com/wp-content/uploads/2019/09/23bstudio_a%CC%89nh-the%CC%89-cao-ca%CC%82%CC%81p_Chu%CC%A3p-a%CC%89nh-doanh-nha%CC%82n_profile_Corporate_portrait_portrait_photography_a%CC%89nh-cha%CC%82n-dung_007-683x1024.jpg"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://mayanhxachtaynhat.com/wp-content/uploads/2019/12/N%C3%AAn-t%E1%BA%ADp-trung-v%C3%A0o-%C3%A1nh-m%E1%BA%AFt-m%E1%BA%ABu.jpg"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://br-art.vn/wp-content/uploads/2017/11/bo-anh-chan-dung-cua-nag-thai-duy-4.jpg"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://cdnimg.vietnamplus.vn/t660/uploaded/fsmsr/2018_04_14/thuy_linh_1.jpg"
+        />
+      </div>
+
+      
+    </div>
+
+    <!-- Part 3: the script call -->
+
+    <!-- Now that everything is loaded we create a script to trigger masonary on $grid. Note that this simply says: "if the images are fully loaded, trigger masnory on $grid. -->
+    <script>
+      $(".grid").imagesLoaded(function () {
+        $(".grid").masonry({
+          itemSelector: ".grid-item",
+        });
+      });
+    </script>
+  </body>
+</html>
