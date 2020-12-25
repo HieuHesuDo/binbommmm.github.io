@@ -52,33 +52,38 @@
         });
       }
 
+      //Bai 3
+      function mang2Chieu(m,n){
+        let arr = []
+        for(i=0;i<4;i++){
+          for (j=0;j<4;j++){
+            arr.push(j + m * i +1)
+          }
+        }
+      }
+
       //Bai 4
-      var student = [
-        { name: "Binh", gender: "Male", age: 20 },
-        { name: "An", gender: "Male", age: 13 },
-        { name: "Hung", gender: "Male", age: 34 },
-      ];
+        // var students = [
+        //   { name: "Binh", gender: "Male", age: 20 },
+        //   { name: "An", gender: "Male", age: 13 },
+        //   { name: "Hung", gender: "Male", age: 34 },
+        // ];
 
       function ageTB() {
         //Cách 1
-        var count = 0,    //Khởi tạo biến đếm và biến gán tổng tuổi
+        var len = students.length,    //Khởi tạo biến đếm và biến gán tổng tuổi
             sumAge = 0;
-        for (var key in student) {
-          if (student.hasOwnProperty(key)) {
-            if (student[key].hasOwnProperty("age")) {
-              sumAge += student[key].age;
-              count += 1;
-            }
-          }
+        for (var key in students) {
+              sumAge += students[key].age;
         }
-        console.log(sumAge/ count);
+        return Math.ceil(sumAge/ len);
 
         //Cách 2
-        // let result = student.reduce((ac, a) => a.age + ac, 0) / student.length;
+        // let result = students.reduce((ac, a) => a.age + ac, 0) / students.length;
         // return result;
 
         //Cách 3
-        // var arr = Object.values(student);
+        // var arr = Object.values(students);
         // var sum = (prev, cur) => ({ age: prev.age + cur.age });
         // var avg = arr.reduce(sum).age / arr.length;
         // console.log(avg);
@@ -86,18 +91,18 @@
 
       //Bai 5
       function ageSort() {
-        student.sort((a, b) => {
+        students.sort((a, b) => {
           return b.age - a.age; //Xắp xếp mảng theo thứ tự tuổi giảm dần
         });
 
-        student.forEach((student) => {
-          console.log(`${student.name} ${student.gender} ${student.age}`);
+        students.forEach((students) => {
+          return(`${students.name} ${students.gender} ${students.age}`);
         });
       }
 
       // Bai 6
       function nameSort() {
-        student.sort((a, b) => {
+        students.sort((a, b) => {
           let fa = a.name.toLowerCase(), //chuyển tên thành lowercase
             fb = b.name.toLowerCase();
 
@@ -111,9 +116,22 @@
           return 0;
         });
 
-        student.forEach((student) => {
-          console.log(`${student.name} ${student.gender} ${student.age}`);
+        students.forEach((students) => {
+          return(`${students.name} ${students.gender} ${students.age}`);
         });
+      }
+
+      //Bai 7
+
+      function startWith(string){
+        var studentName = ""
+        var start = []
+        for (var key in students) {
+          studentName = students[key].name.toLowerCase();
+          if(studentName.startsWith(string,0)){
+            return students[key].name
+          }
+        }   
       }
     </script>
   </body>

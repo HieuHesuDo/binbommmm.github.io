@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách học viên</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+        padding: 10px;
+        color: #fff;
+        background-color: #00A751;
+        border: none;
+        border-radius: 4px;
+        margin: 15px 0;
+        cursor: pointer;
+        outline-color: transparent;
+    }
+
+    #addStudent:hover{
+        background-color: #0c8647;
+    }
+
+    .container {
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table {
+        margin: auto;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    #students {
+      border-collapse: collapse;
+      border: solid 1px;
+    }
+
+    #students tr:nth-child(even) {
+      background-color: #F2F2F2;
+    }
+
+    #students td,
+    #students th {
+      padding-left: 10px;
+    }
+
+    #students th {
+        /* width: 200px; */
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #333a40;
+      color: white;
+    }
+
+    #students tr{
+        height: 43px;
+    }
+
+    #name{
+        width: 200px;
+    }
+
+    #DOB {
+        width: 120px;
+    }
+
+    #email{
+        width: 260px;
+    }
+
+    #phone {
+        width: 180px;
+    }
+
+    #customise{
+        width: 200px;
+    }
+
+    #students a{
+        text-decoration: none;
+    }
+  </style>
+  <body>
+      <div class="container">
+          <h1>Danh sách học viên</h1>
+      
+      <div class="table">
+        <button id="addStudent" onclick="addStudent()"><i class="fas fa-plus-circle"></i> Thêm học viên</button>
+    <table id="students">
+      <tr>
+        <th id="name">Họ tên</th>
+        <th id="DOB">Năm sinh</th>
+        <th id="email">Email</th>
+        <th id="phone">Số điện thoại</th>
+        <th id="customise"></th>
+      </tr>
+
+      <tr>
+        <td>Winnifred Tribe</td>
+        <td>2000</td>
+        <td>wtrobe0@kickstarter.com</td>
+        <td>867-130-6017</td>
+        <td><a style="color:#03A5B7;" href="#"><i class="far fa-edit"></i> Chỉnh sửa</a> | <a style="color: #EC6E81;" href="#"><i class="fas fa-trash-alt"></i> Xóa</a></td>
+      </tr>
+
+      <tr>
+        <td>Jodie Nicklin</td>
+        <td>2005</td>
+        <td>jnicklin1@hao123.com</td>
+        <td>472-237-6018</td>
+        <td><a style="color:#03A5B7;" href="#"><i class="far fa-edit"></i> Chỉnh sửa</a> | <a style="color: #EC6E81;" href="#"><i class="fas fa-trash-alt"></i> Xóa</a></td>
+      </tr>
+
+      <tr>
+        <td>Fernanda Howton</td>
+        <td>2001</td>
+        <td>fhowton@ebay.co.uk</td>
+        <td>172-134-4609</td>
+        <td><a style="color:#03A5B7;" href="#"><i class="far fa-edit"></i> Chỉnh sửa</a> | <a style="color: #EC6E81;" href="#"><i class="fas fa-trash-alt"></i> Xóa</a></td>
+      </tr>
+    </table>
+</div>
+</div>
+<script>
+    function addStudent(){
+        location.href = "./add-sv.html"
+    }
+</script>
+  </body>
+</html>
