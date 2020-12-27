@@ -74,15 +74,15 @@
     }
 
     #name{
-        width: 200px;
+        width: 220px;
     }
 
     #DOB {
-        width: 120px;
+        width: 150px;
     }
 
     #email{
-        width: 260px;
+        width: 300px;
     }
 
     #phone {
@@ -129,32 +129,30 @@
         <th id="customise"></th>
       </tr>
 
-      <tr>
-        <td>Winnifred Tribe</td>
-        <td>2000</td>
-        <td>wtrobe0@kickstarter.com</td>
-        <td>867-130-6017</td>
-        <td><span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span></td>
-      </tr>
-
-      <tr>
-        <td>Jodie Nicklin</td>
-        <td>2005</td>
-        <td>jnicklin1@hao123.com</td>
-        <td>472-237-6018</td>
-        <td><span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span></td>      </tr>
-
-      <tr>
-        <td>Fernanda Howton</td>
-        <td>2001</td>
-        <td>fhowton@ebay.co.uk</td>
-        <td>172-134-4609</td>
-        <td><span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span></td>      </tr>
+      
     </table>
 </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script>
-    function addStudent(){
+  $(document).ready(function(){
+    $.getJSON("http://localhost:3000/users", function(data){
+      var students_data = '';
+      $.each(data, function(key, value){
+        students_data += '<tr>';
+          students_data += '<td>'+value.name+'</td>;'
+          students_data += '<td>'+value.birthday+'</td>;'
+          students_data += '<td>'+value.email+'</td>;'
+          students_data += '<td>'+value.phone+'</td>;'
+          students_data += '<td>'+'<span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span>'+'</td>;'
+          students_data += '</tr>';
+      });
+      $('#students').append(students_data);
+    })
+  })
+</script>
+<script>
+  function addStudent(){
         location.href = "./add-sv.html"
     }
 </script>
