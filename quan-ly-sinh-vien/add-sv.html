@@ -46,62 +46,62 @@
       align-items: center;
     }
 
-    label span{
-        margin-left: 3px;
+    label span {
+      margin-left: 3px;
     }
 
     form input {
       width: 600px;
       height: 40px;
       margin-bottom: 10px;
-      border: 1px solid #CDD4DA;
+      border: 1px solid #cdd4da;
       border-radius: 5px;
-      outline-color: #CDD4DA;
+      outline-color: #cdd4da;
       padding: 10px;
       font-size: 16px;
     }
 
-    #back-button{
-        padding: 10px;
-        color: #fff;
-        background-color: #6B767D;
-        font-size: 18px;
-        border: none;
-        border-radius: 4px;
-        margin: 15px 0;
-        cursor: pointer;
-        outline-color: transparent;
+    #back-button {
+      padding: 10px;
+      color: #fff;
+      background-color: #6b767d;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      margin: 15px 0;
+      cursor: pointer;
+      outline-color: transparent;
     }
 
-    #back-button:hover{
-        background-color: #505152;
+    #back-button:hover {
+      background-color: #505152;
     }
 
-    #save-button:hover{
-        background-color: #0c8647;
+    #save-button:hover {
+      background-color: #0c8647;
     }
 
-    #save-button{
-        padding: 10px;
-        color: #fff;
-        background-color: #00A751;
-        font-size: 18px;
-        border: none;
-        border-radius: 4px;
-        margin: 15px 0;
-        cursor: pointer;
-        outline-color: transparent;
+    #submit {
+      padding: 10px;
+      color: #fff;
+      background-color: #00a751;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      margin: 15px 0;
+      cursor: pointer;
+      outline-color: transparent;
     }
   </style>
   <body>
     <div class="container">
       <h1>Thêm mới học viên</h1>
-      <div class="form">
+      <div class="form" id="form">
         <form action="POST">
           <label for="name">Họ tên <span style="color: red">*</span></label>
           <input type="text" name="name" id="name" /><br />
           <label for="DOB">Năm sinh</label>
-          <input type="text" name="DOB" id="DOB" /><br />
+          <input type="text" name="birthday" id="birthday" /><br />
           <label for="email">Email <span style="color: red">*</span></label>
           <input type="text" name="email" id="email" /><br />
           <label for="phone"
@@ -111,46 +111,52 @@
         </form>
       </div>
       <div class="button">
-        <button id="back-button" onclick="back()"><i class="fas fa-chevron-left"></i> Quay lại</button>
-        <button id="save-button" onclick="save()"><i class="fas fa-save"></i> Lưu</button>
+        <button id="back-button" onclick="back()">
+          <i class="fas fa-chevron-left"></i> Quay lại
+        </button>
+        <button
+          id="submit"
+          name="submit"
+          value="submit"
+          type="submit"
+        >
+          <i class="fas fa-save"></i> Lưu
+        </button>
       </div>
     </div>
 
-    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script>
-        function back(){
-            location.href = "./index.html"
-        }
-        function save(){
-            let fullname = document.getElementById('name').value;
-            let birth = document.getElementById('DOB').value;
-            let email = document.getElementById('email').value;
-            let phone = document.getElementById('phone').value;
+      function back() {
+        location.href = "./index.html";
+      }
+      $(document).ready(function () {
+        $("#submit").click(function (e) {
+          e.preventDefault();
+          var form = $(this);
+          var url = form.attr("action");
 
-            if(_.isEmpty(fullname)){
-                document.getElementById('name').style.borderColor = 'red'
-                alert('Vui lòng nhập họ tên')
-            }
-            else {
-                document.getElementById('name').style.borderColor = '#CDD4DA'
-            }
-            if(_.isEmpty(email)){
-                document.getElementById('email').style.borderColor = 'red'
-                alert('Vui lòng nhập Email')
-            }else {
-                document.getElementById('email').style.borderColor = '#CDD4DA'
-            }
-            if(_.isEmpty(phone)){
-                document.getElementById('phone').style.borderColor = 'red'
-                alert('Vui lòng nhập Số Điện thoại')
-            }else {
-                document.getElementById('phone').style.borderColor = '#CDD4DA'
-            }
-
-            if(fullname && birth && email && phone){
-
-            }
-        }
+          $.ajax({
+            type: "POST",
+            url: "https://student-managerment.herokuapp.com/users",
+            data: {
+              name: document.getElementById('name').value,
+              birthday: document.getElementById('birthday').value,
+              email: document.getElementById('email').value,
+              phone: document.getElementById('phone').value
+            },
+            success: function (data) {
+              alert('Thêm học viên thành công');
+              window.location.href = './index.html'
+            },
+          });
+        });
+      });
     </script>
   </body>
 </html>

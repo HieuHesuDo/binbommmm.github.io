@@ -136,7 +136,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function(){
-    $.getJSON("http://localhost:3000/users", function(data){
+    $.getJSON("https://student-managerment.herokuapp.com/users", function(data){
       var students_data = '';
       $.each(data, function(key, value){
         students_data += '<tr>';
@@ -144,7 +144,7 @@
           students_data += '<td>'+value.birthday+'</td>;'
           students_data += '<td>'+value.email+'</td>;'
           students_data += '<td>'+value.phone+'</td>;'
-          students_data += '<td>'+'<span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span>'+'</td>;'
+          students_data += '<td>'+'<span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a id="delete-student" href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span>'+'</td>;'
           students_data += '</tr>';
       });
       $('#students').append(students_data);
