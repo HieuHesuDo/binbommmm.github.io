@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh sách học viên</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <style>
@@ -14,37 +22,37 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
     }
 
     button {
-        padding: 10px;
-        color: #fff;
-        background-color: #00A751;
-        border: none;
-        border-radius: 4px;
-        margin: 15px 0;
-        cursor: pointer;
-        outline-color: transparent;
+      padding: 10px;
+      color: #fff;
+      background-color: #00a751;
+      border: none;
+      border-radius: 4px;
+      margin: 15px 0;
+      cursor: pointer;
+      outline-color: transparent;
     }
 
-    #addStudent:hover{
-        background-color: #0c8647;
+    #addStudent:hover {
+      background-color: #0c8647;
     }
 
     .container {
-        width: 100%;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
+      width: 100%;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     .table {
-        margin: auto;
+      margin: auto;
     }
 
-    .container h1{
-        text-align: center;
+    .container h1 {
+      text-align: center;
     }
 
     #students {
@@ -52,7 +60,7 @@
     }
 
     #students tr:nth-child(even) {
-      background-color: #F2F2F2;
+      background-color: #f2f2f2;
     }
 
     #students td,
@@ -61,7 +69,7 @@
     }
 
     #students th {
-        /* width: 200px; */
+      /* width: 200px; */
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
@@ -69,92 +77,147 @@
       color: white;
     }
 
-    #students tr{
-        height: 43px;
+    #students tr {
+      height: 43px;
     }
 
-    #name{
-        width: 220px;
+    #name {
+      width: 220px;
     }
 
     #DOB {
-        width: 150px;
+      width: 150px;
     }
 
-    #email{
-        width: 300px;
+    #email {
+      width: 300px;
     }
 
     #phone {
-        width: 180px;
+      width: 180px;
     }
 
-    #customise{
-        width: 200px;
+    #customise {
+      width: 200px;
     }
 
-    #students a{
-        text-decoration: none;
+    #students a {
+      text-decoration: none;
     }
 
-    .edit a{
-      color: #03A5B7;
+    .edit a {
+      color: #03a5b7;
     }
 
-    .edit a:hover{
+    .edit a:hover {
       color: #0b3d42;
     }
 
-    .delete a{
-      color: #EC6E81;
+    .delete a {
+      color: #ec6e81;
     }
 
-    .delete a:hover{
+    .delete a:hover {
       color: #e91636;
     }
-    
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8)
+        url("https://lh4.googleusercontent.com/proxy/f9OECgPTpd-q-ulHyOBC6eWlzra68aWvsmZyHbu65t_LZOeeEQQDFv6PJ45KZqIrr7xUFhCi79f0u-1w52U3NtY0gC6SYf_W0lx7ArghJru9g4p32jVCJJ4Y-vHp10uqsqfT2g=s0-d")
+        50% 50% no-repeat;
+    }
+
+    body.loading .modal {
+      overflow: hidden;
+    }
+
+    body.loading .modal {
+      display: block;
+    }
   </style>
   <body>
-      <div class="container">
-          <h1>Danh sách học viên</h1>
-      
-      <div class="table">
-        <button id="addStudent" onclick="addStudent()"><i class="fas fa-plus-circle"></i> Thêm học viên</button>
-    <table id="students">
-      <tr>
-        <th id="name">Họ tên</th>
-        <th id="DOB">Năm sinh</th>
-        <th id="email">Email</th>
-        <th id="phone">Số điện thoại</th>
-        <th id="customise"></th>
-      </tr>
+    <div class="container">
+      <h1>Danh sách học viên</h1>
 
-      
-    </table>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script>
-  $(document).ready(function(){
-    $.getJSON("https://student-managerment.herokuapp.com/users", function(data){
-      var students_data = '';
-      $.each(data, function(key, value){
-        students_data += '<tr>';
-          students_data += '<td>'+value.name+'</td>;'
-          students_data += '<td>'+value.birthday+'</td>;'
-          students_data += '<td>'+value.email+'</td>;'
-          students_data += '<td>'+value.phone+'</td>;'
-          students_data += '<td>'+'<span class="edit"><a href="#"><i class="far fa-edit"></i> Chỉnh sửa</a></span> | <span class="delete"><a id="delete-student" href="#"><i class="fas fa-trash-alt"></i> Xóa</a></span>'+'</td>;'
-          students_data += '</tr>';
+      <div class="table">
+        <button id="addStudent" onclick="addStudent()">
+          <i class="fas fa-plus-circle"></i> Thêm học viên
+        </button>
+        <table id="students">
+          <tr>
+            <th id="name">Họ tên</th>
+            <th id="DOB">Năm sinh</th>
+            <th id="email">Email</th>
+            <th id="phone">Số điện thoại</th>
+            <th id="customise"></th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="modal"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.tableit.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.getJSON(
+          "https://student-managerment.herokuapp.com/users",
+          function (data) {
+            var students_data = "";
+            $.each(data, function (key, value) {
+              students_data += `<tr>
+                <td>${value.name}</td>
+                <td>${value.birthday}</td>
+                <td>${value.email}</td>
+                <td>${value.phone}</td>
+                <td><span class="edit"><a href="#"onclick="editStudent()"><i class="far fa-edit"></i>  Chỉnh sửa</a></span> | <span class="delete"><a href="#" id="${value.id}" onclick="deleteStudent(${value.id})"><i class="far fa-trash-alt"></i> Xóa</a></span></td>
+                </tr>`;
+            });
+            $("#students").append(students_data);
+          }
+        );
       });
-      $('#students').append(students_data);
-    })
-  })
-</script>
-<script>
-  function addStudent(){
-        location.href = "./add-sv.html"
-    }
-</script>
+
+      function deleteStudent(id) {
+        let answer = confirm('Bạn có chắc muốn xóa học viên này?')
+        if (answer == true){
+        $.ajax({
+          method: "DELETE",
+          url: "https://student-managerment.herokuapp.com/users/" + id,
+
+          success: function (data) {
+            alert("Xóa học viên thành công");
+            window.location.href = "./index.html";
+          },
+        });
+      }
+      }
+
+      $body = $("body");
+      $(document).on({
+        ajaxStart: function () {
+          $body.addClass("loading");
+        },
+        ajaxStop: function () {
+          $body.removeClass("loading");
+        },
+      });
+    </script>
+    <script>
+      function addStudent() {
+        location.href = "./add-sv.html";
+      }
+    </script>
   </body>
 </html>

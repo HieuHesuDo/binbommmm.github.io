@@ -95,7 +95,7 @@
   </style>
   <body>
     <div class="container">
-      <h1>Thêm mới học viên</h1>
+      <h1>Chỉnh sửa học viên</h1>
       <div class="form" id="form">
         <form action="POST">
           <label for="name">Họ tên <span style="color: red">*</span></label>
@@ -135,27 +135,26 @@
       function back() {
         location.href = "./index.html";
       }
-      $(document).ready(function () {
-        $("#submit").click(function (e) {
-          e.preventDefault();
-          var form = $(this);
-          var url = form.attr("action");
 
-          $.ajax({
-            type: "POST",
-            url: "https://student-managerment.herokuapp.com/users",
-            data: {
-              name: $('#name').val(),
-              birthday: $('#birthday').val(),
-              email: $('#email').val(),
-              phone: $('#phone').val()
-            },
-            success: function (data) {
-              alert('Thêm học viên thành công');
-              window.location.href = './index.html'
-            },
-          });
-        });
+      $.getJSON(
+          "https://student-managerment.herokuapp.com/users",
+          function (data) {
+            var students_data = "";
+            $.each(data, function (key, value) {
+              students_data += `
+                <input placeholder="${value.name}">
+                <td>${value.birthday}</td>
+                <td>${value.email}</td>
+                <td>${value.phone}</td>
+                `;
+            });
+            $("#students").append(students_data);
+          }
+        );
+
+
+      $(document).ready(function () {
+        $("#name").innerHTML(value.name)
       });
     </script>
   </body>
