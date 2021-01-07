@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   </head>
 
   <style>
@@ -141,9 +142,131 @@
     body.loading .modal {
       display: block;
     }
+
+    .delete-form {
+      margin-left: 38%;
+      /* transform: translateX(-50%); */
+      transform: translateY(-50%);
+      margin-top: 20%;
+      width: 25%;
+      height: 150px;
+      display: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #fff;
+      position: fixed;
+      z-index: 2;
+      /* border-radius: 10px; */
+    }
+
+    .confirm-btn {
+      background-color: #37c180 !important;
+    }
+
+    .confirm-btn:hover {
+      background-color: #07884c !important;
+    }
+
+    .cancel-btn {
+      background-color: #e45253 !important;
+    }
+
+    .cancel-btn:hover {
+      background-color: #cc1818 !important;
+    }
+
+    .delete-form-text {
+      background-color: #f0f0f0;
+      color: #000;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .delete-group-btn {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    .delete-group-btn button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      margin: 5px;
+    }
+
+    .freezer {
+      width: 100%;
+      height: 200%;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      z-index: 1;
+      display: none;
+    }
+
+    .alert {
+      background-color: #fff;
+      width: 300px;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      margin-left: 40%;
+      transform: translateX(-50%);
+      transform: translateY(-50%);
+      margin-top: 20%;
+      display: none;
+      z-index: 1;
+      border-radius: 8px;
+    }
+
+    .alert-header{
+      background-color: #F0F0F0;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+    }
+
+    .alert-confirm button{
+      width: 100px;
+    }
+
+    .alert-confirm button:hover {
+      background-color: #068644;
+    }
   </style>
   <body>
+    <div class="freezer"></div>
     <div class="container">
+      <div class="delete-form">
+        <div class="delete-form-text">
+          <p>Bạn có chắc muốn xóa học viên này?</p>
+        </div>
+
+        <div class="delete-group-btn">
+          <button class="confirm-btn" onclick="realDelete()">
+            <i class="fas fa-check"></i>
+          </button>
+          <button class="cancel-btn" onclick="cancelDelete()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+
       <h1>Danh sách học viên</h1>
 
       <div class="table">
@@ -161,8 +284,21 @@
         </table>
       </div>
 
+      <div class="alert alert-success">
+        <div class="alert-header">
+          <strong>Xóa học viên thành công.</strong>
+        </div>
+        <div class="alert-confirm">
+          <button class="ok-button" onclick="ok()"><i class="fas fa-check"></i></button>
+        </div>
+      </div>
+
       <div class="modal"></div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -181,7 +317,7 @@
                 <td>${value.birthday}</td>
                 <td>${value.email}</td>
                 <td>${value.phone}</td>
-                <td><span class="edit"><a href="#"onclick="editStudent()"><i class="far fa-edit"></i>  Chỉnh sửa</a></span> | <span class="delete"><a href="#" id="${value.id}" onclick="deleteStudent(${value.id})"><i class="far fa-trash-alt"></i> Xóa</a></span></td>
+                <td><span class="edit"><a href="./edit-sv.html?id=${value.id}" id="${value.id}" onclick="editStudent(${value.id})"><i class="far fa-edit"></i>  Chỉnh sửa</a></span> | <span class="delete"><a href="#" id="${value.id}" onclick="deleteStudent(${value.id})"><i class="far fa-trash-alt"></i> Xóa</a></span></td>
                 </tr>`;
             });
             $("#students").append(students_data);
@@ -189,20 +325,44 @@
         );
       });
 
-      function deleteStudent(id) {
-        let answer = confirm('Bạn có chắc muốn xóa học viên này?')
-        if (answer == true){
-        $.ajax({
-          method: "DELETE",
-          url: "https://student-managerment.herokuapp.com/users/" + id,
+      function deleteStudent(id, element) {
+        deleteElement = $(element).parent().parent()  
+        $(".freezer").css("display", "flex");
+        $(".delete-form").css("display", "flex");
+        $(".confirm-btn").click(() => {
+          $.ajax({
+            method: "DELETE",
+            url: "https://student-managerment.herokuapp.com/users/" + id,
+          }).done(() => {
+            $(".alert").css("display","flex")
+            $(".ok-button").click(()=>{
+              window.location.href = './index.html'
+            })
+          });
+          $(".delete-form").css("display", "none");
+          // $(".freezer").css("display", "none");
+        });
 
-          success: function (data) {
-            alert("Xóa học viên thành công");
-            window.location.href = "./index.html";
-          },
+        $(".cancel-btn").click(() => {
+          $(".delete-form").css("display", "none");
+          $(".freezer").css("display", "none");
         });
       }
-      }
+
+      // function realDelete() {
+      //   $.ajax({
+      //     method: "DELETE",
+      //     url: "https://student-managerment.herokuapp.com/users/" + id,
+      //   }).done(() => {
+      //     ($(element).parent().parent()).remove();
+      //   });
+
+      //   $(".delete-form").css("display", "none");
+      // }
+
+      // function cancelDelete() {
+      //   $(".delete-form").css("display", "none");
+      // }
 
       $body = $("body");
       $(document).on({
