@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-article {
+  width: 1349px;
+  padding: 0 6.25rem 0 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+    font-family: bigCaslon;
+    src: url(/font/BigCaslon-Regular.otf);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(/font/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(/font/Helvetica-Bold.ttf);
+    font-weight: bold;
+}
+
+.font-1{
+    font-family: bigCaslon;
+    font-weight: normal;
+}
+
+.font-2{
+    font-family: Helvetica;
+}
+
+.navbar {
+  width: 100%;
+  height: 3.688rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 14px;
+  padding-left: 34px;
+  /* position: fixed; */
+  z-index: 11111;
+}
+
+.navbar-find_cart {
+  width: 74px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navbar-hamburger {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 17.5rem;
+    background-color: #e5e5e5;
+    margin-top: 5.875rem;
+    padding: 0 6.25rem;
+    padding-top: 3.875rem;
+  }
+  
+  .footer-container {
+    width: 1145px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    margin-bottom: 1.75rem;
+  }
+  
+  .footer-address {
+    display: flex;
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-address img {
+    position: absolute;
+  }
+  
+  .footer-address p {
+    line-height: 1.625rem;
+    margin-left: 2.344rem;
+    height: 3.25rem;
+    width: 16.344rem;
+  }
+  
+  .footer-hotline {
+    display: flex;
+  }
+  
+  .footer-hotline img {
+    position: absolute;
+  }
+  
+  .footer-hotline p {
+    line-height: 1.625rem;
+    margin-left: 2.344rem;
+    height: 3.25rem;
+    width: 16.344rem;
+  }
+  
+  .social-link {
+    width: 160px;
+    height: 31.94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;  
+  }
+
+  footer p{
+      font-size: 18px;
+  }
+
+  footer h3{
+      font-size: 20px;
+      font-weight: 6000;
+  }

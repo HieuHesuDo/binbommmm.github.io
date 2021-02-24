@@ -1,0 +1,60 @@
+.main-banner {
+  width: 100%;
+  height: 33.5rem;
+  background-color: cadetblue;
+}
+
+.product-list {
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.product-filter {
+  width: 163px;
+  height: 374px;
+  background-color: blue;
+}
+
+.product-card-grid {
+  display: grid;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 2.625rem;
+  grid-template-columns: 276px 276px 276px;
+}
+
+.product-card {
+  background-color: crimson;
+  height: 29.75rem;
+}
+
+.product-thumbnail {
+  width: 100%;
+  height: 24.188rem;
+}
+
+.product-thumnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pruduct-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14.35px;
+  padding-bottom: 14.35px;
+  height: 5.563rem;
+  width: 100%;
+  background-color: black;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
