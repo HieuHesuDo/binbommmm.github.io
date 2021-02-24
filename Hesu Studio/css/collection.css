@@ -1,0 +1,45 @@
+.collection-description{
+    width: 100%;
+    height: 741px;
+    background-color: aqua;
+    margin-top: 74px;
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-detail{
+    width: 543px;
+    height: 350px;
+    background-color: black;
+}
+
+.description-thumbnail{
+    width: 573px;
+    height: 100%;
+    background-color: bisque;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+figure img{
+    grid-row: 1 / -2;
+    grid-column: 1;
+}
+
+.masonry-grid{
+    column-count: 2;
+    column-gap: 20px;
+}

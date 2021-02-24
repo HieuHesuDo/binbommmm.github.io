@@ -26,8 +26,14 @@ h3 {
 
 .category-grid {
   display: grid;
-  grid-column-gap: 1.25rem;
-  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-template-columns: 272px 272px 272px 272px;
+}
+
+.category-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .category-box:hover img{
@@ -65,7 +71,7 @@ h3 {
   display: grid;
   grid-column-gap: 1.25rem;
   grid-row-gap: 2.625rem;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 272px 272px 272px 272px;
 }
 
  a{
