@@ -13,17 +13,17 @@
 
 @font-face {
     font-family: bigCaslon;
-    src: url("/font/BigCaslon-Regular.otf");
+    src: url("font/BigCaslon-Regular.otf");
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url("/font/Helvetica.ttf");
+    src: url("font/Helvetica.ttf");
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url("/font/Helvetica-Bold.ttf");
+    src: url("font/Helvetica-Bold.ttf");
     font-weight: bold;
 }
 
