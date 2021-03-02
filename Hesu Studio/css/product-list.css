@@ -1,12 +1,22 @@
 .main-banner {
   width: 100%;
   height: 33.5rem;
-  background-color: cadetblue;
+  position: relative;
+}
+
+.main-banner .main-banner-img{
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/top-thumb.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
 }
 
 .product-list {
-  width: 100%;
-  background-color: beige;
   display: flex;
   justify-content: space-between;
   margin-top: 72px;
@@ -18,27 +28,30 @@
   background-color: blue;
 }
 
-.product-card-grid {
-  display: grid;
-  grid-column-gap: 1.25rem;
-  grid-row-gap: 2.625rem;
-  grid-template-columns: 276px 276px 276px;
+.product-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items:center;
+  flex-wrap: wrap;
 }
 
 .product-card {
   background-color: crimson;
-  height: 29.75rem;
+  width: 272px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .product-thumbnail {
   width: 100%;
-  height: 24.188rem;
+  height: 381px;
+  background-size: cover;
+  background-position: center;
 }
 
 .product-thumnail img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .pruduct-info {
@@ -57,4 +70,64 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-banner {
+    height: 248px;
+  }
+
+  .main-banner .main-banner-img{
+    font-size: 50px;
+  }
+  
+  .main-article {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .product-container{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2,48%);
+    justify-content: space-between;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-thumbnail{
+    height: 216px;
+  }
+
+  .product-thumbnail img{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .main-banner {
+    height: 248px;
+  }
+
+  .main-article {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .product-container{
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template-columns: repeat(3,32%);
+    justify-content: space-between;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-thumbnail{
+    height: 275px;
+  }
 }
