@@ -717,26 +717,25 @@ a {
   }
 
   .collection-1-title {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: left;
-    margin-top: 20px;
+    position: absolute;
+    top: 25%;
+    left: 55%;
   }
 
   .collection-1-title h3 {
-    font-size: 35px;
+    font-size: 4.2vw;
   }
 
   .collection-1-info {
-    display: none;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 2.5vw;
   }
 
   .collection-1-thumbnail {
-    width: 100%;
-    /* height: 427px; */
+    width: 50%;
+    height: auto;
     position: relative;
   }
 
@@ -750,30 +749,34 @@ a {
 
   .collection-2 {
     width: 100%;
-    height: min-content;
+    height: auto;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .collection-2-title {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 20px;
-    text-align: left;
+    position: absolute;
+    top: 25%;
+    right: 55%;
   }
 
   .collection-2-title h3 {
-    font-size: 30px;
+    font-size: 4.2vw;
+    text-align: right;
   }
 
   .collection-2-info {
-    display: none;
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    font-size: 2.5vw;
   }
 
   .collection-2-thumbnail {
-    width: 100%;
-    /* height: 427px; */
+    width: 50%;
+    height: auto;
     position: relative;
   }
 
@@ -791,26 +794,208 @@ a {
   }
 
   .collection-3-title {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: left;
-    margin-top: 20px;
+    position: absolute;
+    top: 25%;
+    left: 55%;
   }
 
   .collection-3-title h3 {
-    font-size: 30px;
+    font-size: 4.2vw;
   }
 
   .collection-3-info {
-    display: none;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 2.5vw;
   }
 
   .collection-3-thumbnail {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+
+  .collection-1-thumbnail img {
     width: 100%;
-    /* height: 427px; */
+  }
+
+  .article-button-left {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    text-align: center;
+  }
+
+  .main-article {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .hero-crousel {
+    width: 100%;
+    height: 248px;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+  }
+
+  .category-box .text {
+    display: block;
+    font-size: 16px !important;
+  }
+
+  .category-box img {
+    opacity: 31%;
+  }
+
+  .new-arrivals-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+  }
+
+  .new-arrivals {
+    width: 100%;
+  }
+
+  .new-arrivals-img {
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+  }
+
+  .new-arrivals-info .new-arrivals-title{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .new-arrivals-info .new-arrivals-price{
+    font-size: 14px;
+  }
+
+  .background-box1-container {
+    display: none;
+  }
+  .background-box2-container {
+    display: none;
+  }
+  .background-box3-container {
+    display: none;
+  }
+
+  .collection-1 {
+    width: 100%;
+    height: min-content;
+    margin-bottom: 60px;
+  }
+
+  .collection-1-title {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+  }
+
+  .collection-1-title h3 {
+    font-size: 4.2vw;
+  }
+
+  .collection-1-info {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 2.5vw;
+  }
+
+  .collection-1-thumbnail {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+
+  .collection-1-thumbnail img {
+    width: 100%;
+  }
+
+  .article-button-right {
+    display: none;
+  }
+
+  .collection-2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .collection-2-title {
+    position: absolute;
+    top: 25%;
+    right: 55%;
+  }
+
+  .collection-2-title h3 {
+    font-size: 4.2vw;
+    text-align: right;
+  }
+
+  .collection-2-info {
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    font-size: 2.5vw;
+  }
+
+  .collection-2-thumbnail {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+
+  .collection-2-thumbnail img {
+    width: 100%;
+  }
+
+  .article-button-right {
+    display: none;
+  }
+
+  .collection-3 {
+    width: 100%;
+    height: min-content;
+  }
+
+  .collection-3-title {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+  }
+
+  .collection-3-title h3 {
+    font-size: 4.2vw;
+  }
+
+  .collection-3-info {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 2.5vw;
+  }
+
+  .collection-3-thumbnail {
+    width: 50%;
+    height: auto;
     position: relative;
   }
 

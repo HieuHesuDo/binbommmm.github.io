@@ -1,111 +1,256 @@
-a{
-    font-style: normal;
-    text-decoration: none;
-    color: #fff;
-  }
-
-.product-detail{
-    display: flex;
-    background-color: blanchedalmond;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 119px;
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
 }
 
-.product-image-container{
-    width: 465px;
-    height: 575px;
-    background-color: blue;
+.navbar {
+  margin-bottom: 68px;
 }
 
-.product-info{
-    width: 494px;
-    height: 433px;
-    background-color: cadetblue;
+.product-detail {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 119px;
+}
+
+.product-image-container {
+  width: 465px;
+  height: 575px;
+  background-size: cover;
+  background-position: center;
+  background-image:url('/img/Cable Round Cardigan.png');
+}
+
+.product-info {
+  width: fit-content;
+}
+
+.product-name{
+  margin-bottom: 32px;
+}
+
+.product-name .name {
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .price {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.quantity {
-    width: 75px;
-    height: 25px;
-    background-color: crimson;
-    margin-top: 42px;
+.product-name .price span {
+  font-size: 20px;
 }
 
-.size-and-button{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 4px;
+.product-quantity {
+  margin-bottom: 34px;
 }
 
-.size{
-    width: 163px;
-    height: 25px;
-    background-color: coral;
+.product-quantity p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 
-.size-and-button button{
-    width: 231px;
-    height: 45px;
-    background-color: #000;
-    color: #fff;
-    font-size: 18px;
-    font-weight:00;
-    border: none;
-    cursor: pointer;
+.product-quantity .counter {
+  width: 75px;
+  height: 25px;
+  background-color: crimson;
 }
 
-hr{
+.description .title {
+  margin-bottom: 11px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.description p {
+  font-size: 18px;
+}
+
+hr {
+  width: 100%;
+}
+
+.product-suggest-title p {
+  text-align: center;
+  margin: 44px 0px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-card {
+  background-color: crimson;
+  width: 272px;
+  height: auto;
+}
+
+.product-thumbnail {
+  width: 100%;
+  height: 381px;
+  background-size: cover;
+  background-position: center;
+}
+
+.pruduct-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14.35px;
+  padding-bottom: 14.35px;
+  height: 5.563rem;
+  width: 100%;
+  background-color: black;
+}
+
+.product-size {
+  margin-bottom: 26px;
+}
+
+.product-size button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.product-size p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.add-to-cart-button {
+  margin-bottom: 36px;
+}
+
+.add-to-cart-button button {
+  width: 231px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    margin-bottom: 42px;
+  }
+
+  .product-detail {
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  .product-image-container {
     width: 100%;
-}
+    height: 466px;
+    margin-bottom: 24px;
+  }
 
-.product-suggest-title p{
-    text-align: center;
-    margin: 44px 0px;
-}
+  .product-name .name {
+    font-size: 25px;
+    font-weight: 600;
+  }
 
-.product-card-grid {
+  .product-name .price p {
+    font-size: 20px;
+  }
+
+  .product-name .price span {
+    font-size: 10px;
+  }
+
+  .product-container {
     display: grid;
-    grid-column-gap: 1.25rem;
-    grid-row-gap: 2.625rem;
-    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
   }
-  
+
   .product-card {
-    background-color: crimson;
-    height: 29.75rem;
-  }
-  
-  .product-thumbnail {
     width: 100%;
-    height: 24.188rem;
   }
-  
+
+  .product-thumbnail {
+    height: 216px;
+  }
+
   .product-thumbnail img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
-  
-  .pruduct-info {
-    display: flex;
-    flex-direction: column;
+
+  .description p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .navbar {
+    margin-bottom: 42px;
+  }
+
+  .product-info{
+    margin-left: 20px;
+  }
+
+  .product-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 22%);
     justify-content: space-between;
-    align-items: center;
-    padding-top: 14.35px;
-    padding-bottom: 14.35px;
-    height: 5.563rem;
+  }
+
+  .product-name .name {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .product-name .price p {
+    font-size: 20px;
+  }
+
+  .product-name .price span {
+    font-size: 10px;
+  }
+
+  .product-card {
     width: 100%;
-    background-color: black;
   }
-  
-  .product-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .product-thumbnail {
+    height: 216px;
   }
+
+  .product-thumbnail img {
+    width: 100%;
+  }
+
+  .description p {
+    font-size: 14px;
+  }
+}
