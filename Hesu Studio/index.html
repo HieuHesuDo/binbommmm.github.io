@@ -12,78 +12,84 @@
     <div class="container">
       <header>
         <div class="navbar">
-          <div class="navbar-hamburger">
-            <img src="img/hamburger.png" alt="hamburger" />
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu font-2">
+              <div>
+                <!-- <div class="menu-thumbnail">
+                <img src="img/menu-thumb.png" alt="menu-thumb" />
+              </div> -->
+                <div class="menu-submenu">
+                  <div class="category">
+                    <h4 onclick="openSubmenu()" class="dropbtn">CATEGORY</h4>
+                    <div id="submenu" class="category-submenu">
+                      <div class="top-container">
+                        <ul>
+                          <a href=""><li>ÁO THUN</li></a>
+                          <a href=""><li>ÁO SƠMI</li></a>
+                          <a href=""><li>ÁO LEN</li></a>
+                          <a href=""><li>ÁO KHOÁC</li></a>
+                        </ul>
+                      </div>
+                      <div class="bottom-container">
+                        <ul>
+                          <a href=""><li>QUẦN VẢI</li></a>
+                          <a href=""><li>QUẦN JEAN</li></a>
+                          <a href=""><li>QUẦN SHORT</li></a>
+                        </ul>
+                      </div>
+                      <div class="accessories-container">
+                        <ul>
+                          <a href=""><li>GIÀY</li></a>
+                          <a href=""><li>PHỤ KIỆN</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new-arivals"></div>
+                  <h4>NEW ARRIVALS</h4>
+                  <div class="best-sellers">
+                    <h4>BEST SELLERS</h4>
+                  </div>
+                  <div class="collection">
+                    <h4>COLLECTION</h4>
+                  </div>
+                  <div class="blog">
+                    <h4>BLOG</h4>
+                  </div>
+                  <div class="about-us">
+                    <h4>ABOUT US</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="navbar-logo">
             <img src="img/HESUSTUDIO.png" alt="logo" />
           </div>
-          <div class="navbar-find_cart">
-            <div class="find-icon">
-              <img
-                style="cursor: pointer"
-                src="img/find-icon.png"
-                alt="find"
-              />
+          <div class="search-and-cart-wrap">
+            <div class="navbar-search-wrap">
+              <input type="checkbox" class="toggler">
+              <div class="find-icon-wrap">
+              <img src="img/find-icon.png" alt="">
             </div>
-            <img style="cursor: pointer" src="img/bag-icon.png" alt="cart" />
-          </div>
-        </div>
-
-        <!-- <div class="menu font-2">
-        <div class="menu-thumbnail">
-          <img src="img/menu-thumb.png" alt="menu-thumb">
-        </div>
-        <div class="menu-submenu">
-          <div class="category">
-            <h4 onclick="openSubmenu()" class="dropbtn">CATEGORY</h4>
-            <div id="submenu" class="category-submenu">
-              <div class="top-container">
-                <ul>
-                  <a href=""><li>ÁO THUN</li></a>
-                  <a href=""><li>ÁO SƠMI</li></a>
-                  <a href=""><li>ÁO LEN</li></a>
-                  <a href=""><li>ÁO KHOÁC</li></a>
-                </ul>
-              </div>
-              <div class="bottom-container">
-                <ul>
-                  <a href=""><li>QUẦN VẢI</li></a>
-                  <a href=""><li>QUẦN JEAN</li></a>
-                  <a href=""><li>QUẦN SHORT</li></a>
-                </ul>
-              </div>
-              <div class="accessories-container">
-                <ul>
-                  <a href=""><li>GIÀY</li></a>
-                    <a href=""><li>PHỤ KIỆN</li></a>
-                </ul>
+              <div class="search" id="search">
+                <p class="font-2">TÌM KIẾM</p>
+                <input class="font-2" type="text" placeholder="Tên sản phẩm" autofocus>
               </div>
             </div>
-          </div>
-          <div class="new-arivals"></div>
-          <h4>NEW ARRIVALS</h4>
-          <div class="best-sellers">
-            <h4>BEST SELLERS</h4>
-          </div>
-          <div class="collection">
-            <h4>COLLECTION</h4>
-          </div>
-          <div class="blog">
-            <h4>BLOG</h4>
-          </div>
-          <div class="about-us">
-            <h4>ABOUT US</h4>
+            <div class="navbar-cart-wrap"></div>
           </div>
         </div>
-        </div> -->
       </header>
 
       <main>
         <div class="hero-crousel">
-          <img src="img/banner.png" alt="">
-        </div>  
-        
+          <img src="img/banner.png" alt="" />
+        </div>
+
         <div class="main-article">
           <h2
             class="font-2"
@@ -93,148 +99,144 @@
           </h2>
           <div class="category-container">
             <div class="category-grid">
-              <a href="product-list.html"><div class="category-box">
-                <img src="img/top thumbnail.png" alt="top-thumnail">
-                <div class="category-box-1-overlay"></div>
-                <div class="font-1 text">TOP</div>
-              </div></a>
+              <a href="product-list.html"
+                ><div class="category-box">
+                  <img src="img/top thumbnail.png" alt="top-thumnail" />
+                  <div class="category-box-1-overlay"></div>
+                  <div class="font-1 text">TOP</div>
+                </div></a
+              >
 
-              <a href=""><div class="category-box">
-                <img src="img/bottom thumbnail.png" alt="bottpm-thumnail">
-                <div class="category-box-2-overlay"></div>
-                <div class="font-1 text">BOTTOM</div>
-              </div></a>
+              <a href=""
+                ><div class="category-box">
+                  <img src="img/bottom thumbnail.png" alt="bottpm-thumnail" />
+                  <div class="category-box-2-overlay"></div>
+                  <div class="font-1 text">BOTTOM</div>
+                </div></a
+              >
 
-              <a href=""><div class="category-box">
-                <img src="img/shoes thumbnail.png" alt="shoes-thumnail">
-                <div class="category-box-3-overlay"></div>
-                <div class="font-1 text">SHOES</div>
-              </div></a>
+              <a href=""
+                ><div class="category-box">
+                  <img src="img/shoes thumbnail.png" alt="shoes-thumnail" />
+                  <div class="category-box-3-overlay"></div>
+                  <div class="font-1 text">SHOES</div>
+                </div></a
+              >
 
-              <a href=""><div class="category-box">
-                <img src="img/accesories thumbnail.png" alt="accesories-thumnail">
-                <div class="category-box-4-overlay"></div>
-                <div class="font-1 text" style="font-size: 35px;">ACCESSORIES</div>
-              </div></a>
-              
+              <a href=""
+                ><div class="category-box">
+                  <img
+                    src="img/accesories thumbnail.png"
+                    alt="accesories-thumnail"
+                  />
+                  <div class="category-box-4-overlay"></div>
+                  <div class="font-1 text" style="font-size: 35px">
+                    ACCESSORIES
+                  </div>
+                </div></a
+              >
             </div>
           </div>
           <h2 class="font-2" style="margin: 84px 0px 16px 0px; font-size: 30px">
             NEW ARRIVALS
           </h2>
-            
+
           <div class="new-arrivals-container">
-              <a href="/product-detail.html"><div class="new-arrivals">
+            <a href="product-detail.html"
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Cable Round Cardigan.png" alt="">
+                  <img src="img/Cable Round Cardigan.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Cable Round Cardigan
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">Cable Round Cardigan</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
-              
-              <a href=""><div class="new-arrivals">
-                <div class="new-arrivals-img">
-                  <img src="img/House Knit Zipup.png" alt="">
-                </div>
-                <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    House Knit Zipup  
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
-                </div>
-              </div></a>
+              </div></a
+            >
 
-              <a href=""><div class="new-arrivals">
+            <a href=""
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Mercy Cara Knit.png" alt="">
+                  <img src="img/House Knit Zipup.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Mercy Cara Knit
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">House Knit Zipup</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
+              </div></a
+            >
 
-              <a href=""><div class="new-arrivals">
+            <a href=""
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Slimfit Down Padding.png" alt="">
+                  <img src="img/Mercy Cara Knit.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Slimfit Down Padding
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">Mercy Cara Knit</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
+              </div></a
+            >
 
-              <a href=""><div class="new-arrivals">
+            <a href=""
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Traveler Balmacan Court.png" alt="">
+                  <img src="img/Slimfit Down Padding.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Traveler Balmacan Court
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">Slimfit Down Padding</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
+              </div></a
+            >
 
-              <a href=""><div class="new-arrivals">
+            <a href=""
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/wave cotton trouser.png" alt="">
+                  <img src="img/Traveler Balmacan Court.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Wave Cotton Trouser
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">Traveler Balmacan Court</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
+              </div></a
+            >
 
-              <a href=""><div class="new-arrivals">
+            <a href=""
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Zipup Kara Tee.png" alt="">
+                  <img src="img/wave cotton trouser.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Zipup Kara Tee
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">Wave Cotton Trouser</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
+              </div></a
+            >
 
-              <a href=""><div class="new-arrivals">
+            <a href=""
+              ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Cable Round Cardigan.png" alt="">
+                  <img src="img/Zipup Kara Tee.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">
-                    Cable Round Cardigan
-                  </div>
-                  <div class="new-arrivals-price">
-                    420.000<span>đ</span>
-                  </div>
+                  <div class="new-arrivals-title">Zipup Kara Tee</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
-              </div></a>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="new-arrivals">
+                <div class="new-arrivals-img">
+                  <img src="img/Cable Round Cardigan.png" alt="" />
+                </div>
+                <div class="new-arrivals-info font-2">
+                  <div class="new-arrivals-title">Cable Round Cardigan</div>
+                  <div class="new-arrivals-price">420.000<span>đ</span></div>
+                </div>
+              </div></a
+            >
           </div>
           <h2 class="font-2" style="margin: 84px 0px 16px 0px; font-size: 30px">
             COLLECTION
@@ -245,15 +247,21 @@
                 <div class="collection-1-background-box1"></div>
                 <div class="collection-1-background-box2"></div>
               </div>
-              <a href="collection.html"><div class="collection-1-thumbnail">
-                <img src="img/DROP_2_750X1125_03.jpg" alt="collection-1-thumbnail">
-                <div class="collection-1-overlay"></div>
-              </div></a>
+              <a href="collection.html"
+                ><div class="collection-1-thumbnail">
+                  <img
+                    src="img/DROP_2_750X1125_03.jpg"
+                    alt="collection-1-thumbnail"
+                  />
+                  <div class="collection-1-overlay"></div></div
+              ></a>
               <div class="collection-1-title">
-                <a href="collection.html"><h3>
-                  <span class="font-1"> WINTER</span> <br />
-                  <span class="font-2">COLLECTION 2020</span>
-                </h3></a>
+                <a href="collection.html"
+                  ><h3>
+                    <span class="font-1"> WINTER</span> <br />
+                    <span class="font-2">COLLECTION 2020</span>
+                  </h3></a
+                >
               </div>
               <div class="collection-1-info">
                 <p class="font-2">
@@ -264,12 +272,13 @@
 
               <div class="article-button-right">
                 <div class="backgroud-line"></div>
-                <a href="collection.html"><p class="font-2" style="font-size: 18px; font-weight: bold;">
-                  XEM TIẾP
-                </p></a>
+                <a href="collection.html"
+                  ><p class="font-2" style="font-size: 18px; font-weight: bold">
+                    XEM TIẾP
+                  </p></a
+                >
               </div>
             </div>
-
 
             <div class="collection-2">
               <div class="background-box2-container">
@@ -277,7 +286,10 @@
                 <div class="collection-2-background-box2"></div>
               </div>
               <div class="collection-2-thumbnail">
-                <img src="img/collection-thumb-2.png" alt="collection-2-thumbnail">
+                <img
+                  src="img/collection-thumb-2.png"
+                  alt="collection-2-thumbnail"
+                />
               </div>
               <div class="collection-2-title">
                 <h3>
@@ -301,14 +313,16 @@
               </div>
             </div>
 
-
             <div class="collection-3">
               <div class="background-box3-container">
                 <div class="collection-3-background-box1"></div>
                 <div class="collection-3-background-box2"></div>
               </div>
               <div class="collection-3-thumbnail">
-                <img src="img/collection-thumb-3.png" alt="collection-3-thumbnail">
+                <img
+                  src="img/collection-thumb-3.png"
+                  alt="collection-3-thumbnail"
+                />
               </div>
               <div class="collection-3-title">
                 <h3>
@@ -335,63 +349,60 @@
       </main>
 
       <footer>
-          <div class="footer-shop-info">
-            <div class="footer-logo">
-              <img src="img/HESUSTUDIO.png" alt="logo" />
-            </div>
-            <div class="footer-address">
-              <img src="img/location-logo.png" alt="location-logo" />
-              <p class="font-2">
-                <strong>Địa chỉ:</strong> 177 Phố Huế - Hoàn Kiếm - Hà Nội
-              </p>
-            </div>
-            <div class="footer-hotline">
-              <img src="img/phone-logo.png" alt="phone-logo" />
-              <p class="font-2">
-                <strong>Hotline:</strong> 19008320 (9h - 17h)
-              </p>
-            </div>
+        <div class="footer-shop-info">
+          <div class="footer-logo">
+            <img src="img/HESUSTUDIO.png" alt="logo" />
           </div>
-
-          <hr>
-
-          <div class="footer-shop-customer_support; font-2">
-            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
-            <ul style="margin-top: 12px">
-              <li style="margin-bottom: 8px">Chính sách đổi trả</li>
-              <li>Hướng dẫn chọn size</li>
-            </ul>
+          <div class="footer-address">
+            <img src="img/location-logo.png" alt="location-logo" />
+            <p class="font-2">
+              <strong>Địa chỉ:</strong> 177 Phố Huế - Hoàn Kiếm - Hà Nội
+            </p>
           </div>
-
-          <hr>
-
-          <div class="footer-shop-info_detail; font-2">
-            <h3>GIỚI THIỆU</h3>
-            <ul style="margin-top: 12px">
-              <li style="margin-bottom: 8px">Giới thiệu về Hesu Studio</li>
-              <li style="margin-bottom: 8px">Chính sách thanh toán</li>
-              <li style="margin-bottom: 8px">Chính sách vận chuyển</li>
-              <li>Chính sách bảo mật</li>
-            </ul>
+          <div class="footer-hotline">
+            <img src="img/phone-logo.png" alt="phone-logo" />
+            <p class="font-2"><strong>Hotline:</strong> 19008320 (9h - 17h)</p>
           </div>
+        </div>
 
-          <hr>
+        <hr />
 
+        <div class="footer-shop-customer_support; font-2">
+          <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+          <ul style="margin-top: 12px">
+            <li style="margin-bottom: 8px">Chính sách đổi trả</li>
+            <li>Hướng dẫn chọn size</li>
+          </ul>
+        </div>
 
-          <div class="footer-shop-social; font-2">
-            <h3 style="margin-bottom: 12px">FOLLOW US</h3>
-            <div class="social-link">
-              <a href="#"
-                ><img src="img/facebook-logo.png" alt="facebook-link"
-              /></a>
-              <a href="#"><img src="img/insta-logo.png" alt="insta-link" /></a>
-              <a href="#"
-                ><img src="img/youtube-logo.png" alt="youtube-link"
-              /></a>
-            </div>
+        <hr />
+
+        <div class="footer-shop-info_detail; font-2">
+          <h3>GIỚI THIỆU</h3>
+          <ul style="margin-top: 12px">
+            <li style="margin-bottom: 8px">Giới thiệu về Hesu Studio</li>
+            <li style="margin-bottom: 8px">Chính sách thanh toán</li>
+            <li style="margin-bottom: 8px">Chính sách vận chuyển</li>
+            <li>Chính sách bảo mật</li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div class="footer-shop-social; font-2">
+          <h3 style="margin-bottom: 12px">FOLLOW US</h3>
+          <div class="social-link">
+            <a href="#"
+              ><img src="img/facebook-logo.png" alt="facebook-link"
+            /></a>
+            <a href="#"><img src="img/insta-logo.png" alt="insta-link" /></a>
+            <a href="#"
+              ><img src="img/youtube-logo.png" alt="youtube-link"
+            /></a>
           </div>
+        </div>
       </footer>
     </div>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
