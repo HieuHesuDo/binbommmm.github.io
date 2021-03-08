@@ -71,16 +71,27 @@
           </div>
           <div class="search-and-cart-wrap">
             <div class="navbar-search-wrap">
-              <input type="checkbox" class="toggler">
+              <!-- <input type="checkbox" class="toggler"> -->
               <div class="find-icon-wrap">
               <img src="img/find-icon.png" alt="">
             </div>
               <div class="search" id="search">
                 <p class="font-2">TÌM KIẾM</p>
+                <div class="exit-icon-wrap">
+                  <img src="img/exit-icon.png" alt="">
+                </div>
                 <input class="font-2" type="text" placeholder="Tên sản phẩm" autofocus>
               </div>
             </div>
-            <div class="navbar-cart-wrap"></div>
+            <div class="navbar-cart-wrap">
+              <input type="checkbox" class="toggler">
+              <div class="cart-icon-wrap">
+                <img src="img/bag-icon.png" alt="">
+              </div>
+              <div class="cart">
+                <p class="font-2">GIỎ HÀNG</p>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -404,5 +415,38 @@
       </footer>
     </div>
     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".navbar-search-wrap").click(function(){
+          $(".navbar-search-wrap .search").toggle("fast")
+        });
+        $(".navbar-cart-wrap").click(function(){
+          $(".navbar-search-wrap .search").hide("fast")
+        });
+      });
+
+      $(document).ready(function(){
+        $(".navbar-cart-wrap").click(function(){
+          $(".navbar-cart-wrap .cart").toggle("fast")
+        });
+        $(".navbar-search-wrap").click(function(){
+          $(".navbar-cart-wrap .cart").hide("fast")
+        });
+      });
+
+      $(document).ready(function(){
+        $(".menu-wrap .toggler").click(function(){
+          $(".navbar-search-wrap .search").css("display","none")
+          $(".navbar-cart-wrap .cart").css("display","none")
+        })
+      });
+
+      $(document).ready(function(){
+        $(".menu-wrap .toggler").click(function(){
+          $(".menu-wrap .menu").toggle("slow")
+          $(".menu-wrap .menu").css("display","flex")
+        });
+      });
+    </script>
   </body>
 </html>

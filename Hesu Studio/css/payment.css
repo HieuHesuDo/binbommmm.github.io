@@ -6,8 +6,8 @@
 }
 
 .customer-information-container{
-    background-color: green;
-    width: 60vw;
+    /* background-color: green; */
+    width: 765px;
     height: 100vh;
 }
 
@@ -21,11 +21,153 @@
 .customer-information{
     width: 100%;
     height: 100vh;
-    background-color: aqua;
-    padding-left: auto;
+    /* background-color: aqua; */
+    text-align: left;
+    padding: 0 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
 }
 
 .selected-product{
     background-color: gray;
-    width: 603px;
+    width: 100%;
 }
+
+.customer-name {
+    width: 100%;
+}
+
+.payment-info input {
+    height: 59px;
+    padding: 0 14px;
+    margin-bottom: 12px;
+    outline: transparent;
+    border: solid #909090 1px;
+}
+
+.payment-info input ::placeholder{
+    font-size: 16px;
+    color: #909090;
+}
+
+select {
+    height: 59px;
+    width: 206px;
+    padding: 0 14px;
+    background: url("/img/down-icon.png") no-repeat right;
+    -webkit-appearance: none;
+    background-color: #fff;
+    overflow: hidden;
+    outline: transparent;
+}
+
+
+.customer-name input{
+    width: 100%;
+}
+
+.customer-email input{
+    width: 381px;
+}
+
+.customer-phone-number input{
+    width: 250px;
+}
+
+.customer-address-detail input{
+    width: 100%;
+}
+
+.customer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-city {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-button {
+    width: 100%;
+}
+
+.submit-button button{
+    width: 100%;
+    height: 61px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: transparent;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+label, input[type="radio"], input[type="checkbox"] {
+    line-height: 2.1ex;
+ }
+ 
+ input[type="radio"] + label,
+ input[type="checkbox"] + label {
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ input[type="radio"] + label::before,
+ input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: white;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 4px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+    /* margin-right: 0.5em; */
+ }
+ 
+ input[type="radio"]:checked + label::before {
+    background: radial-gradient(circle at center, #1062a4 .6ex, white .7ex);
+ }
+ 
+ input[type="radio"] + label::before {
+    border-radius: 50%;
+ }
+ 
+ input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid #1062a4;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }

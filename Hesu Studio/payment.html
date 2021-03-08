@@ -18,20 +18,129 @@
 
           <div class="payment-title">
             <h3 class="font-2">THÔNG TIN GIAO HÀNG</h3>
-            <p class="font-2" style="font-weight: bold">Thông tin khách hàng</p>
-            <div class="customer-name">
-              <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                placeholder="Họ và tên"
-              />
-            </div>
 
-            .customer-email
+            <div class="payment-info">
+              <p class="font-2" style="font-weight: bold">
+                Thông tin khách hàng
+              </p>
+              <div class="customer-name">
+                <input
+                  class="font-2"
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Họ và tên"
+                />
+              </div>
+
+              <div class="customer-contact">
+                <div class="customer-email">
+                  <input
+                    class="font-2"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="customer-phone-number">
+                  <input
+                    class="font-2"
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Số điện thoại"
+                  />
+                </div>
+              </div>
+
+              <div class="customer-address-detail">
+                <input
+                  class="font-2"
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Địa chỉ"
+                />
+              </div>
+
+              <div class="customer-city">
+                <div class="city">
+                  <select class="font-2">
+                    <option value="0">Tỉnh / Thành</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Hồ Chí Minh</option>
+                    <option value="3">Đà Nẵng</option>
+                    <option value="4">Huế</option>
+                    <option value="5">Thanh Hóa</option>
+                    <option value="6">Vinh</option>
+                    <option value="7">Hải Phòng</option>
+                    <option value="8">Lào Cai</option>
+                    <option value="9">Hòa Bình</option>
+                    <option value="10">Nam Định</option>
+                    <option value="11">Hưng Yên</option>
+                    <option value="12">Nghệ An</option>
+                  </select>
+                </div>
+
+                <div class="district">
+                  <select class="font-2">
+                    <option value="0">Quận / Huyện</option>
+                    <option value="1">Ba Đình</option>
+                    <option value="2">Tây Hồ</option>
+                    <option value="3">Đống Đa</option>
+                    <option value="4">Hoàn Kiếm</option>
+                    <option value="5">Thanh Xuân</option>
+                    <option value="6">Hoàng Mai</option>
+                    <option value="7">Hà Đông</option>
+                    <option value="8">Thường Tín</option>
+                    <option value="9">Nam Từ Liêm</option>
+                    <option value="10">Bắc Từ Liêm</option>
+                    <option value="11">Thanh Trì</option>
+                    <option value="12">Thanh Oai</option>
+                  </select>
+                </div>
+
+                <div class="ward">
+                  <select class="font-2">
+                    <option value="0">Phường / Xã</option>
+                    <option value="1">Thanh Xuân Trung</option>
+                    <option value="2">Thanh Xuân Bắc</option>
+                    <option value="3">Thượng Đình</option>
+                    <option value="4">Thanh Xuân Nam</option>
+                    <option value="5">Thanh Xuân</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-method font-2">
+            <p class="font-2">Phương thức thanh toán</p>
+
+            <label
+              ><input
+                type="radio"
+                id="card-pay"
+                name="payment-method"
+                value="1"
+              />
+              Thanh toán thẻ (ATM nội địa, Visa, Matercard)</label
+            ><br />
+
+            <label
+              ><input type="radio" id="cod" name="payment-method" value="2" />
+              Thanh toán khi giao hàng (COD)</label
+            >
+          </div>
+
+          <div class="submit-button font-2">
+            <button>HOÀN TẤT ĐƠN HÀNG</button>
           </div>
         </div>
       </div>
+
       <div class="selected-product-container">
         <div class="selected-product"></div>
       </div>
