@@ -12,23 +12,86 @@
     <div class="container">
       <header>
         <div class="navbar">
-          <div class="navbar-hamburger">
-            <img src="img/hamburger.png" alt="hamburger" />
-          </div>
-          <div class="navbar-logo">
-            <a href="index.html"
-              ><img src="img/HESUSTUDIO.png" alt="logo"
-            /></a>
-          </div>
-          <div class="navbar-find_cart">
-            <div class="find-icon">
-              <img
-                style="cursor: pointer"
-                src="img/find-icon.png"
-                alt="find"
-              />
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu font-2">
+              <div>
+                <!-- <div class="menu-thumbnail">
+                <img src="img/menu-thumb.png" alt="menu-thumb" />
+              </div> -->
+                <div class="menu-submenu">
+                  <div class="category">
+                    <h4 onclick="openSubmenu()" class="dropbtn">CATEGORY</h4>
+                    <div id="submenu" class="category-submenu">
+                      <div class="top-container">
+                        <ul>
+                          <a href=""><li>ÁO THUN</li></a>
+                          <a href=""><li>ÁO SƠMI</li></a>
+                          <a href=""><li>ÁO LEN</li></a>
+                          <a href=""><li>ÁO KHOÁC</li></a>
+                        </ul>
+                      </div>
+                      <div class="bottom-container">
+                        <ul>
+                          <a href=""><li>QUẦN VẢI</li></a>
+                          <a href=""><li>QUẦN JEAN</li></a>
+                          <a href=""><li>QUẦN SHORT</li></a>
+                        </ul>
+                      </div>
+                      <div class="accessories-container">
+                        <ul>
+                          <a href=""><li>GIÀY</li></a>
+                          <a href=""><li>PHỤ KIỆN</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new-arivals"></div>
+                  <h4>NEW ARRIVALS</h4>
+                  <div class="best-sellers">
+                    <h4>BEST SELLERS</h4>
+                  </div>
+                  <div class="collection">
+                    <h4>COLLECTION</h4>
+                  </div>
+                  <div class="blog">
+                    <h4>BLOG</h4>
+                  </div>
+                  <div class="about-us">
+                    <h4>ABOUT US</h4>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img style="cursor: pointer" src="img/bag-icon.png" alt="cart" />
+          </div>
+
+          <div class="navbar-logo">
+            <a href="index.html"><img src="img/HESUSTUDIO.png" alt="logo" /></a>
+          </div>
+          <div class="search-and-cart-wrap">
+            <div class="navbar-search-wrap">
+              <!-- <input type="checkbox" class="toggler"> -->
+              <div class="find-icon-wrap">
+              <img src="img/find-icon.png" alt="">
+            </div>
+              <div class="search" id="search">
+                <p class="font-2">TÌM KIẾM</p>
+                <div class="exit-icon-wrap">
+                  <img src="img/exit-icon.png" alt="">
+                </div>
+                <input class="font-2" type="text" placeholder="Tên sản phẩm" autofocus>
+              </div>
+            </div>
+            <div class="navbar-cart-wrap">
+              <input type="checkbox" class="toggler">
+              <div class="cart-icon-wrap">
+                <img src="img/bag-icon.png" alt="">
+              </div>
+              <div class="cart">
+                <p class="font-2">GIỎ HÀNG</p>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -39,68 +102,68 @@
         </div>
         <div class="main-article">
           <div class="product-list">
-            <div class="product-container">
+            <div class="product-container font-2">
                 <a href=""><div class="product-card">
                     <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Cable Round Cardigan</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">House Knit Zipup</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Mercy Cara Knit</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Slimfit Down Padding</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Traveler Balmacan Court</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Wave Cotton Trouser</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Zipup Kara Tee</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Cable Round Cardigan</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
                 <a href=""><div class="product-card">
-                    <div class="product-thumbnail"></div>
+                    <div class="product-thumbnail" style="background-image:url('/img/Cable Round Cardigan.png');"></div>
                     <div class="suggest-product-info">
-                        <div class="product-name"></div>
-                        <div class="product-price"></div>
+                        <div class="product-name">Wave Cotton Trouser</div>
+                        <div class="product-price">420.000<span>đ</span></div>
                     </div>
                 </div></a>
               </div>
@@ -166,5 +229,6 @@
         </div>
     </footer>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

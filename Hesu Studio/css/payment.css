@@ -8,19 +8,19 @@
 .customer-information-container{
     /* background-color: green; */
     width: 765px;
-    height: 100vh;
+    height: 100%;
 }
 
 .selected-product-container{
-    background-color: hotpink;
+    background-color: #ededed;
     width: 40vw;
-    height: 100vh;
-    display: flex;
-    justify-content: left;
+    /* height:70vmax; */
+    /* display: flex;
+    justify-content: left; */
 }
 .customer-information{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* background-color: aqua; */
     text-align: left;
     padding: 0 61px;
@@ -29,9 +29,30 @@
     justify-content: right;
 }
 
-.selected-product{
-    background-color: gray;
-    width: 100%;
+.payment-title h3{
+    margin-bottom: 61px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.payment-info-title{
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+.payment-info {
+    margin-bottom: 42px;
+}
+
+.payment-method-title {
+    margin-bottom: 22px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.customer-information .logo{
+    margin-bottom: 42px;
+    margin-top: 10px;
 }
 
 .customer-name {
@@ -60,6 +81,20 @@ select {
     background-color: #fff;
     overflow: hidden;
     outline: transparent;
+}
+
+.payment-method {
+    margin-bottom: 34px;
+}
+
+.payment-method label{
+    font-size: 18px;
+}
+
+.payment-method input{
+    margin-bottom: 16px;
+    margin-right: 23px;
+    width: 19px;
 }
 
 
@@ -105,69 +140,357 @@ select {
     outline: transparent;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: #F87DA9;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
 
-label, input[type="radio"], input[type="checkbox"] {
-    line-height: 2.1ex;
+ .selected-product {
+     padding-left: 61px;
+     padding-right: 85px;
+     width: 100%;
  }
- 
- input[type="radio"] + label,
- input[type="checkbox"] + label {
+
+ .selected-product-title {
+     margin-top: 93px;
+     font-weight: 600;
+     font-size: 25px;
+     margin-bottom: 62px;
+ }
+
+ .product-in-cart {
+    width: 100%;
+    height: auto;
+ }
+
+ .product-in-cart-grid {
+     display: grid;
+     grid-template-columns: 438px;
+     grid-row-gap: 20px;
+ }
+
+ .grid-item {
+     height: 150px;
+     border-bottom: solid 1px rgba(0, 0, 0, 56%);
+     display: flex;
+ }
+
+ .item-image {
+     width: 118px;
+     height: 150px;
+     background-image: url("/img/Cable\ Round\ Cardigan.png");
+     background-position: center;
+     background-size: cover;
+ }
+
+ .item-info {
+     width: calc(438px - 118px);
+     height: 100%;
+     padding: 0 47px 0 27px;
      position: relative;
-     overflow: hidden;
-     cursor: pointer;
  }
- 
- input[type="radio"] + label::before,
- input[type="checkbox"] + label::before {
-    content: "";
-    display: inline-block;
-    vertical-align: -25%;
-    height: 2ex;
-    width: 2ex;
-    background-color: white;
-    border: 1px solid rgb(166, 166, 166);
-    border-radius: 4px;
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
-    /* margin-right: 0.5em; */
+
+ .item-name{
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 12px;
  }
- 
- input[type="radio"]:checked + label::before {
-    background: radial-gradient(circle at center, #1062a4 .6ex, white .7ex);
+
+ .item-detail{
+    color: #5b5b5b;
+    font-size: 18px;
+    margin-bottom: 12px;
  }
- 
- input[type="radio"] + label::before {
-    border-radius: 50%;
+
+ .item-quantity-and-price{
+    color: #5b5b5b;
+    font-size: 18px;
+    margin-bottom: 12px;
  }
- 
- input[type="checkbox"]:checked + label::after {
-    content: '';
-    position: absolute;
-    width: 1.2ex;
-    height: 0.4ex;
-    background: rgba(0, 0, 0, 0);
-    top: 0.9ex;
-    left: 0.4ex;
-    border: 3px solid #1062a4;
-    border-top: none;
-    border-right: none;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+
+ .item-price {
+     display: flex;
+     align-items: center;
+     justify-content: center;
  }
+
+ .item-price span{
+     font-size: 11px;
+ }
+
+ .item-quantity-and-price {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .delete-item {
+     width: 17px;
+     height: 20px;
+     background-image: url("/img/delete-icon.png");
+     position: absolute;
+     bottom: 5px;
+     right: 20px;
+ }
+
+ .total-price {
+     width: 100%;
+     height: 64px;
+     background-color: #000;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 34px 0 54px;
+     font-size: 25px;
+     margin-top: 86px;
+ }
+
+ .total-price-price{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .total-price-price span{
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .payment-container{
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .selected-product-container {
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+    }
+
+    .customer-information{
+        padding: 0 20px;
+    }
+
+    .customer-information h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .payment-info-title{
+        font-size: 18px;
+    }
+
+    .customer-information-container{
+        width: 100vw;
+    }
+    
+    .customer-contact {
+        flex-wrap: wrap;
+    }
+
+    .customer-city {
+        flex-wrap: wrap;
+    }
+
+    .customer-contact{
+        width: 100%;
+    }
+    
+    .customer-contact input{
+        width: 100%;
+    }
+
+    .customer-email {
+        width: 100%;
+    }
+
+    .customer-phone-number {
+        width: 100%;
+    }
+
+    .customer-city .city{
+        width: 100%;
+    }
+
+    .customer-city .district {
+        width: 100%;
+    }
+
+    .customer-city .ward {
+        width: 100%;
+    }
+
+    .customer-city select{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .payment-method-title {
+        font-size: 18px;
+    }
+
+    .payment-method label{
+        font-size: 14px;
+    }
+
+    .selected-product {
+        padding: 20px 20px;
+        margin-top: 36px;
+    }
+
+    .selected-product-title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+
+    .product-in-cart-grid {
+        grid-template-columns: 100%;
+    }
+    
+    .item-info{
+        padding: 10px;
+    }
+
+    .item-info .item-name{
+        font-size: 14px;
+    }
+
+    .item-detail {
+        font-size: 12px;
+    }
+
+    .item-quantity-and-price {
+        font-size: 12px;
+    }
+
+    .total-price {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .item-image {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .payment-container{
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .selected-product-container {
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+    }
+
+    .customer-information{
+        padding: 0 20px;
+    }
+
+    .customer-information h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .payment-info-title{
+        font-size: 18px;
+    }
+
+    .customer-information-container{
+        width: 100vw;
+    }
+    .customer-contact{
+        width: 100%;
+    }
+    
+    .customer-contact input{
+        width: 100%;
+    }
+
+    .customer-email {
+        width: 100%;
+        margin-right: 12px;
+    }
+
+    .customer-phone-number {
+        width: 60%;
+    }
+
+    .customer-city .city{
+        width: 100%;
+    }
+
+    .customer-city .district {
+        width: 100%;
+    }
+
+    .customer-city .ward {
+        width: 100%;
+    }
+
+    .customer-city {
+        display: grid;
+        grid-template-columns: repeat(3,32%);
+        grid-column-gap: 12px;
+    }
+
+    .customer-city select{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .payment-method-title {
+        font-size: 18px;
+    }
+
+    .payment-method label{
+        font-size: 16px;
+    }
+
+    .selected-product {
+        padding: 20px 20px;
+        margin-top: 36px;
+    }
+
+    .selected-product-title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+
+    .product-in-cart-grid {
+        grid-template-columns: 438px;
+    }
+    
+    .item-info{
+        padding: 10px;
+    }
+
+    .item-info .item-name{
+        font-size: 14px;
+    }
+
+    .item-detail {
+        font-size: 12px;
+    }
+
+    .item-quantity-and-price {
+        font-size: 12px;
+    }
+
+    .total-price {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .item-image {
+        width: 30%;
+    }
+}

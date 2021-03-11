@@ -13,6 +13,7 @@ a {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 119px;
+  padding-top: 127px;
 }
 
 .product-image-container {
@@ -62,9 +63,27 @@ a {
 }
 
 .product-quantity .counter {
-  width: 75px;
-  height: 25px;
-  background-color: crimson;
+  display: flex;
+}
+
+.product-quantity .counter input {
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  outline: transparent;
+  border: inset solid #e3e3e3 1px;
+}
+
+.product-quantity .counter button{
+  width: 27px;
+  height: 27px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  border: none;
+  background-color: #e3e3e3;
 }
 
 .description .title {

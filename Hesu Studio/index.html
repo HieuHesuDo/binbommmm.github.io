@@ -17,9 +17,6 @@
             <div class="hamburger"><div></div></div>
             <div class="menu font-2">
               <div>
-                <!-- <div class="menu-thumbnail">
-                <img src="img/menu-thumb.png" alt="menu-thumb" />
-              </div> -->
                 <div class="menu-submenu">
                   <div class="category">
                     <h4 onclick="openSubmenu()" class="dropbtn">CATEGORY</h4>
@@ -67,24 +64,20 @@
           </div>
 
           <div class="navbar-logo">
-            <img src="img/HESUSTUDIO.png" alt="logo" />
+            <a href="index.html"><img src="img/HESUSTUDIO.png" alt="logo" /></a>
           </div>
+
           <div class="search-and-cart-wrap">
             <div class="navbar-search-wrap">
-              <!-- <input type="checkbox" class="toggler"> -->
               <div class="find-icon-wrap">
               <img src="img/find-icon.png" alt="">
             </div>
               <div class="search" id="search">
                 <p class="font-2">TÌM KIẾM</p>
-                <div class="exit-icon-wrap">
-                  <img src="img/exit-icon.png" alt="">
-                </div>
                 <input class="font-2" type="text" placeholder="Tên sản phẩm" autofocus>
               </div>
             </div>
             <div class="navbar-cart-wrap">
-              <input type="checkbox" class="toggler">
               <div class="cart-icon-wrap">
                 <img src="img/bag-icon.png" alt="">
               </div>
@@ -415,38 +408,6 @@
       </footer>
     </div>
     <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".navbar-search-wrap").click(function(){
-          $(".navbar-search-wrap .search").toggle("fast")
-        });
-        $(".navbar-cart-wrap").click(function(){
-          $(".navbar-search-wrap .search").hide("fast")
-        });
-      });
-
-      $(document).ready(function(){
-        $(".navbar-cart-wrap").click(function(){
-          $(".navbar-cart-wrap .cart").toggle("fast")
-        });
-        $(".navbar-search-wrap").click(function(){
-          $(".navbar-cart-wrap .cart").hide("fast")
-        });
-      });
-
-      $(document).ready(function(){
-        $(".menu-wrap .toggler").click(function(){
-          $(".navbar-search-wrap .search").css("display","none")
-          $(".navbar-cart-wrap .cart").css("display","none")
-        })
-      });
-
-      $(document).ready(function(){
-        $(".menu-wrap .toggler").click(function(){
-          $(".menu-wrap .menu").toggle("slow")
-          $(".menu-wrap .menu").css("display","flex")
-        });
-      });
-    </script>
+    
   </body>
 </html>
