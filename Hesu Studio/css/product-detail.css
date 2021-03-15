@@ -21,7 +21,7 @@ a {
   height: 575px;
   background-size: cover;
   background-position: center;
-  background-image:url('/img/Cable-Round-Cardigan.png');
+  background-image:url('../img/Cable-Round-Cardigan.png');
 }
 
 .product-info {
