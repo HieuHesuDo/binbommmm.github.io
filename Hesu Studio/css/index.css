@@ -6,13 +6,16 @@ h4 {
   font-size: 40px;
 }
 
-.hero-crousel {
+.hero-carousel {
   width: 100%;
   height: 47.375rem;
   background-color: #000000;
+  background-image: url(/img/banner.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.hero-crousel img {
+.hero-carousel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -341,12 +344,12 @@ a {
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   h2 {
     text-align: center;
   }
 
-  .hero-crousel {
+  .hero-carousel {
     width: 100%;
     height: 248px;
   }
@@ -435,7 +438,7 @@ a {
 
   .collection-1-thumbnail {
     width: 100%;
-    height: 427px;
+    height: 100%;
     position: relative;
   }
 
@@ -472,7 +475,7 @@ a {
 
   .collection-2-thumbnail {
     width: 100%;
-    height: 427px;
+    height: 100%;
     position: relative;
   }
 
@@ -509,7 +512,188 @@ a {
 
   .collection-3-thumbnail {
     width: 100%;
-    height: 427px;
+    height: 100%;
+    position: relative;
+  }
+
+  .collection-1-thumbnail img {
+    width: 100%;
+  }
+
+  .article-button-right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+
+  .hero-carousel {
+    width: 100%;
+    height: 248px;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+  }
+
+  .category-box .text {
+    display: block;
+    font-size: 16px !important;
+  }
+
+  .category-box img {
+    opacity: 31%;
+  }
+
+  .new-arrivals-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2,48%);
+    justify-content: space-between;
+  }
+
+  .new-arrivals {
+    width: 100%;
+  }
+
+  .new-arrivals-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .new-arrivals-info {
+    height: 60px;
+    padding: 10px 0;
+  }
+  
+  .new-arrivals-info .new-arrivals-title{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .new-arrivals-info .new-arrivals-price{
+    font-size: 12px;
+  }
+
+  .background-box1-container {
+    display: none;
+  }
+  .background-box2-container {
+    display: none;
+  }
+  .background-box3-container {
+    display: none;
+  }
+
+  .collection-1 {
+    width: 100%;
+    height: min-content;
+    margin-bottom: 60px;
+  }
+
+  .collection-1-title {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+  }
+
+  .collection-1-title h3 {
+    font-size: 35px;
+  }
+
+  .collection-1-info {
+    display: none;
+  }
+
+  .collection-1-thumbnail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .collection-1-thumbnail img {
+    width: 100%;
+  }
+
+  .article-button-right {
+    display: none;
+  }
+
+  .collection-2 {
+    width: 100%;
+    height: min-content;
+    margin-bottom: 60px;
+  }
+
+  .collection-2-title {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .collection-2-title h3 {
+    font-size: 30px;
+  }
+
+  .collection-2-info {
+    display: none;
+  }
+
+  .collection-2-thumbnail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .collection-2-thumbnail img {
+    width: 100%;
+  }
+
+  .article-button-right {
+    display: none;
+  }
+
+  .collection-3 {
+    width: 100%;
+    height: min-content;
+  }
+
+  .collection-3-title {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+  }
+
+  .collection-3-title h3 {
+    font-size: 30px;
+  }
+
+  .collection-3-info {
+    display: none;
+  }
+
+  .collection-3-thumbnail {
+    width: 100%;
+    height: 100%;
     position: relative;
   }
 
@@ -534,7 +718,7 @@ a {
     padding: 22px;
   }
 
-  .hero-crousel {
+  .hero-carousel {
     width: 100%;
     height: 248px;
   }
@@ -612,7 +796,7 @@ a {
     position: absolute;
     top: 50%;
     left: 55%;
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   .collection-1-thumbnail {
@@ -706,3 +890,4 @@ a {
     display: none;
   }
 }
+
