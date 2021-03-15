@@ -7,11 +7,7 @@
 .main-banner .main-banner-img{
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  background-image: url(".//img/top-thumb.png");
-=======
-  background-image: url('/img/top-thumb.png');
->>>>>>> 16c5f16c5e06b14aac0812c8ee5bedaf91fd36c0
+  background-image: url('img/top-thumb.png');
   background-size: cover;
   background-position: center;
   display: flex;
