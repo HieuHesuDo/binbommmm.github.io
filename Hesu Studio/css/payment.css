@@ -76,7 +76,7 @@ select {
     height: 59px;
     width: 206px;
     padding: 0 14px;
-    background: url("/img/down-icon.png") no-repeat right;
+    background: url("../img/down-icon.png") no-repeat right;
     -webkit-appearance: none;
     background-color: #fff;
     overflow: hidden;
@@ -246,7 +246,7 @@ select {
  .delete-item {
      width: 17px;
      height: 20px;
-     background-image: url("/img/delete-icon.png");
+     background-image: url("../img/delete-icon.png");
      position: absolute;
      bottom: 5px;
      right: 20px;
