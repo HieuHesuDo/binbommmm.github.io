@@ -6,19 +6,115 @@ h4 {
   font-size: 40px;
 }
 
-.hero-carousel {
+.slider {
   width: 100%;
-  height: 47.375rem;
-  background-color: #000000;
-  background-image: url("../img/banner.png");
-  background-position: center;
-  background-size: cover;
+  background-color: #fff;
+  overflow: hidden;  
+  padding-top: 60px;
+}  
+
+.slider img {
+  width: 100%;
 }
 
-.hero-carousel img {
-  width: 100%;
+.sliders{
+  width: 500%;
   height: 100%;
+  display: flex;
+}
+
+.sliders input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
   object-fit: cover;
+}
+
+/* css for manual slide navigatio */
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  bottom: 200px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #fff;
+  padding: 5px;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #808080;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/* css for automativ navigation */
+.navigation-auto{
+  position: absolute;
+  width: 100%;
+  bottom: 200px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div{
+  border: 2px solid #fff;
+  padding: 5px;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #fff;
 }
 
 .category-container {
@@ -28,7 +124,7 @@ h4 {
 .category-grid {
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: 272px 272px 272px 272px;
+  grid-template-columns: repeat(4,272px);
 }
 
 .category-box img {
@@ -66,11 +162,12 @@ h4 {
 }
 
 .new-arrivals-container {
-  display: flex;
+  display: grid;
   width: 100%;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(4,272px);
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .new-arrivals {
@@ -81,7 +178,6 @@ h4 {
 .new-arrivals-img {
   width: 100%;
   height: 381px;
-  overflow: hidden;
 }
 
 .new-arrivals-img img {
@@ -193,6 +289,7 @@ a {
   left: 559px;
   top: 437.57px;
   text-align: right;
+  cursor: pointer;
 }
 
 .article-button-left {
@@ -205,6 +302,7 @@ a {
   position: absolute;
   right: 563px;
   top: 503px;
+  cursor: pointer;
 }
 
 .collection-2 {
@@ -224,6 +322,7 @@ a {
   overflow: hidden;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .collection-2-thumbnail img {
@@ -236,6 +335,7 @@ a {
   text-align: right;
   top: 13.688rem;
   right: 30.938rem;
+  cursor: pointer;
 }
 
 .collection-2-info {
@@ -283,6 +383,7 @@ a {
   position: absolute;
   transition: 200ms;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .collection-3-thumbnail img {
@@ -294,6 +395,7 @@ a {
   position: absolute;
   top: 9.5rem;
   left: 30.813rem;
+  cursor: pointer;
 }
 
 .collection-3-info {
@@ -329,29 +431,26 @@ a {
   margin-left: 0.973rem;
 }
 
-.collection-1-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  top: 0;
-  background-color: gray;
-  opacity: 60%;
-  transition: 200ms;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
 @media only screen and (max-width: 600px) {
   h2 {
     text-align: center;
   }
 
-  .hero-carousel {
+  .slider {
     width: 100%;
-    height: 248px;
+    height: 200px;
+    padding-top: 40px;
+  }
+
+  .sliders {
+    height: 100%;
+  }
+
+  .navigation-manual{
+    display: none;
+  }
+  .navigation-auto{
+    display: none;
   }
 
   .category-grid {
@@ -530,9 +629,10 @@ a {
     text-align: center;
   }
 
-  .hero-carousel {
+  .slider {
     width: 100%;
-    height: 248px;
+    height: 200px;  
+    padding-top: 40px;
   }
 
   .category-grid {
@@ -718,9 +818,9 @@ a {
     padding: 22px;
   }
 
-  .hero-carousel {
+  .slider {
     width: 100%;
-    height: 248px;
+    height: 300px;
   }
 
   .category-grid {
@@ -890,4 +990,6 @@ a {
     display: none;
   }
 }
+
+
 

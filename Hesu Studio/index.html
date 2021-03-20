@@ -70,19 +70,199 @@
           <div class="search-and-cart-wrap">
             <div class="navbar-search-wrap">
               <div class="find-icon-wrap">
-              <img src="img/find-icon.png" alt="">
-            </div>
-              <div class="search" id="search">
+                <img src="img/find-icon.png" onclick="togglediv('searchTable')" alt="" />
+              </div>
+              <div class="search TableBody" id="searchTable">
                 <p class="font-2">TÌM KIẾM</p>
-                <input class="font-2" type="text" placeholder="Tên sản phẩm" autofocus>
+                <input
+                  class="font-2"
+                  type="text"
+                  placeholder="Tên sản phẩm"
+                  autofocus
+                />
+                <div class="item-in-search-wrap">
+                  <div class="item-in-search-wrap-grid">
+                    <div class="search-item">
+                      <div
+                        class="search-item-img"
+                        style="
+                          background-image: url('../img/Mercy Cara Knit.png');
+                        "
+                      ></div>
+                      <div class="search-item-info font-2">
+                        <div class="search-item-info-name">Mercy Cara Knit</div>
+                        <br />
+                        <div class="search-item-info-price">
+                          420.000<span>đ</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="search-item">
+                      <div
+                        class="search-item-img"
+                        style="
+                          background-image: url('../img/Zipup\ Kara\ Tee.png');
+                        "
+                      ></div>
+                      <div class="search-item-info font-2">
+                        <div class="search-item-info-name">Zipup Cara Tee</div>
+                        <br />
+                        <div class="search-item-info-price">
+                          320.000<span>đ</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="search-item">
+                      <div
+                        class="search-item-img"
+                        style="
+                          background-image: url('../img/Cable-Round-Cardigan.png');
+                        "
+                      ></div>
+                      <div class="search-item-info font-2">
+                        <div class="search-item-info-name">
+                          Cable Round Cardigan
+                        </div>
+                        <br />
+                        <div class="search-item-info-price">
+                          420.000<span>đ</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="search-item">
+                      <div
+                        class="search-item-img"
+                        style="
+                          background-image: url('../img/Traveler\ Balmacan\ Court.png');
+                        "
+                      ></div>
+                      <div class="search-item-info font-2">
+                        <div class="search-item-info-name">Traveler Court</div>
+                        <br />
+                        <div class="search-item-info-price">
+                          1.220.000<span>đ</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="search-item">
+                      <div
+                        class="search-item-img"
+                        style="
+                          background-image: url('../img/Slimfit\ Down\ Padding.png');
+                        "
+                      ></div>
+                      <div class="search-item-info font-2">
+                        <div class="search-item-info-name">
+                          Slimfit Down Padding
+                        </div>
+                        <br />
+                        <div class="search-item-info-price">
+                          520.000<span>đ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="navbar-cart-wrap">
               <div class="cart-icon-wrap">
-                <img src="img/bag-icon.png" alt="">
+                <img src="img/bag-icon.png" onclick="togglediv('cartTable')" alt="" />
               </div>
-              <div class="cart">
+              <div class="cart TableBody" id="cartTable">
                 <p class="font-2">GIỎ HÀNG</p>
+                <div class="item-in-cart-wrap">
+                  <div class="item-in-cart-wrap-grid">
+                    <div class="item">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url('../img/Mercy Cara Knit.png');
+                        "
+                      ></div>
+                      <div class="item-info font-2">
+                        <div class="item-name">Mercy Cara Knit</div>
+                        <div class="item-detail">Màu be / Size L</div>
+                        <div class="item-quantity-and-price">
+                          <div class="item-quantity">Số lượng: 1</div>
+                          <div class="item-price">420.000<span>đ</span></div>
+                        </div>
+
+                        <div class="delete-item"></div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url('../img/Slimfit\ Down\ Padding.png');
+                        "
+                      ></div>
+                      <div class="item-info font-2">
+                        <div class="item-name">Slimfit Down Padding</div>
+                        <div class="item-detail">Màu be / Size L</div>
+                        <div class="item-quantity-and-price">
+                          <div class="item-quantity">Số lượng: 1</div>
+                          <div class="item-price">420.000<span>đ</span></div>
+                        </div>
+
+                        <div class="delete-item"></div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url('../img/Cable-Round-Cardigan.png');
+                        "
+                      ></div>
+                      <div class="item-info font-2">
+                        <div class="item-name">Cable Round Cardigan</div>
+                        <div class="item-detail">Màu be / Size L</div>
+                        <div class="item-quantity-and-price">
+                          <div class="item-quantity">Số lượng: 1</div>
+                          <div class="item-price">420.000<span>đ</span></div>
+                        </div>
+
+                        <div class="delete-item"></div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url('../img/Zipup\ Kara\ Tee.png');
+                        "
+                      ></div>
+                      <div class="item-info font-2">
+                        <div class="item-name">Zipup Cara Tee</div>
+                        <div class="item-detail">Màu be / Size L</div>
+                        <div class="item-quantity-and-price">
+                          <div class="item-quantity">Số lượng: 1</div>
+                          <div class="item-price">420.000<span>đ</span></div>
+                        </div>
+
+                        <div class="delete-item"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="total-price font-2">
+                  <p>Tổng tiền:</p>
+                  <p>1.500.000<span>đ</span></p>
+                </div>
+
+                <div class="pay-button-wrap">
+                  <a href="payment.html"><button>Thanh toán</button></a>
+                </div>
               </div>
             </div>
           </div>
@@ -90,7 +270,8 @@
       </header>
 
       <main>
-        <div class="hero-carousel">
+        <div class="slider">
+          <a href="./product-list.html"><img src="./R.M-BANNER.gif" alt=""></a>
         </div>
 
         <div class="main-article">
@@ -102,7 +283,7 @@
           </h2>
           <div class="category-container">
             <div class="category-grid">
-              <a href="product-list.html"
+              <a href="./product-list.html"
                 ><div class="category-box">
                   <img src="img/top thumbnail.png" alt="top-thumnail" />
                   <div class="category-box-1-overlay"></div>
@@ -110,7 +291,7 @@
                 </div></a
               >
 
-              <a href=""
+              <a href="./product-list.html"
                 ><div class="category-box">
                   <img src="img/bottom thumbnail.png" alt="bottpm-thumnail" />
                   <div class="category-box-2-overlay"></div>
@@ -118,7 +299,7 @@
                 </div></a
               >
 
-              <a href=""
+              <a href="./product-list.html"
                 ><div class="category-box">
                   <img src="img/shoes thumbnail.png" alt="shoes-thumnail" />
                   <div class="category-box-3-overlay"></div>
@@ -126,7 +307,7 @@
                 </div></a
               >
 
-              <a href=""
+              <a href="./product-list.html"
                 ><div class="category-box">
                   <img
                     src="img/accesories thumbnail.png"
@@ -148,11 +329,11 @@
             <a href="product-detail.html"
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Cable-Round-Cardigan.png" alt="" />
+                  <img src="../img/bio corduroy shirt.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">Cable Round Cardigan</div>
-                  <div class="new-arrivals-price">420.000<span>đ</span></div>
+                  <div class="new-arrivals-title">Bio Corduroy Shirt</div>
+                  <div class="new-arrivals-price">220.000<span>đ</span></div>
                 </div>
               </div></a
             >
@@ -160,7 +341,7 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/House Knit Zipup.png" alt="" />
+                  <img src="../img/House Knit Zipup.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
                   <div class="new-arrivals-title">House Knit Zipup</div>
@@ -172,7 +353,7 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Mercy Cara Knit.png" alt="" />
+                  <img src="../img/Mercy Cara Knit.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
                   <div class="new-arrivals-title">Mercy Cara Knit</div>
@@ -184,7 +365,7 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Slimfit Down Padding.png" alt="" />
+                  <img src="../img/Slimfit Down Padding.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
                   <div class="new-arrivals-title">Slimfit Down Padding</div>
@@ -196,10 +377,10 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Traveler Balmacan Court.png" alt="" />
+                  <img src="../img/Traveler Balmacan Court.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
-                  <div class="new-arrivals-title">Traveler Balmacan Court</div>
+                  <div class="new-arrivals-title">Traveler Court</div>
                   <div class="new-arrivals-price">420.000<span>đ</span></div>
                 </div>
               </div></a
@@ -208,7 +389,7 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/wave cotton trouser.png" alt="" />
+                  <img src="../img/wave cotton trouser.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
                   <div class="new-arrivals-title">Wave Cotton Trouser</div>
@@ -220,7 +401,7 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Zipup Kara Tee.png" alt="" />
+                  <img src="../img/Zipup Kara Tee.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
                   <div class="new-arrivals-title">Zipup Kara Tee</div>
@@ -232,7 +413,7 @@
             <a href=""
               ><div class="new-arrivals">
                 <div class="new-arrivals-img">
-                  <img src="img/Cable-Round-Cardigan.png" alt="" />
+                  <img src="../img/Cable-Round-Cardigan.png" alt="" />
                 </div>
                 <div class="new-arrivals-info font-2">
                   <div class="new-arrivals-title">Cable Round Cardigan</div>
@@ -253,7 +434,7 @@
               <a href="collection.html"
                 ><div class="collection-1-thumbnail">
                   <img
-                    src="img/DROP_2_750X1125_03.jpg"
+                    src="../img/DROP_2_750X1125_03.jpg"
                     alt="collection-1-thumbnail"
                   />
                   <div class="collection-1-overlay"></div></div
@@ -288,18 +469,19 @@
                 <div class="collection-2-background-box1"></div>
                 <div class="collection-2-background-box2"></div>
               </div>
-              <div class="collection-2-thumbnail">
+              <a href="./collection.html"><div class="collection-2-thumbnail">
                 <img
-                  src="img/collection-thumb-2.png"
+                  src="../img/collection-thumb-2.png"
                   alt="collection-2-thumbnail"
                 />
-              </div>
+              </div></a>
+              <a href="./collection.html">
               <div class="collection-2-title">
                 <h3>
                   <span class="font-1">AUTUMN-WINTER</span> <br />
                   <span class="font-2">2020 COLLECTION</span>
                 </h3>
-              </div>
+              </div></a>
               <div class="collection-2-info">
                 <p class="font-2">
                   Lấy cảm hứng từ hơi thở thời trang hiện đại của những chàng
@@ -307,13 +489,13 @@
                   COLLECTION
                 </p>
               </div>
-
+              <a href="./collection.html">
               <div class="article-button-left">
                 <p class="font-2" style="font-size: 18px; font-weight: bold">
                   XEM TIẾP
                 </p>
                 <div class="backgroud-line"></div>
-              </div>
+              </div></a>
             </div>
 
             <div class="collection-3">
@@ -321,92 +503,110 @@
                 <div class="collection-3-background-box1"></div>
                 <div class="collection-3-background-box2"></div>
               </div>
+              <a href="./collection.html">
               <div class="collection-3-thumbnail">
                 <img
-                  src="img/collection-thumb-3.png"
+                  src="../img/collection-thumb-3.png"
                   alt="collection-3-thumbnail"
                 />
-              </div>
+              </div></a>
+              <a href="./collection.html">
               <div class="collection-3-title">
                 <h3>
                   <span class="font-1">SEVENTH</span> <br />
                   <span class="font-2">COLLECTION</span>
                 </h3>
-              </div>
+              </div></a>
               <div class="collection-3-info">
                 <p class="font-2">
                   Lấy cảm hứng từ cuộc hành trình của chính chúng ta trên con
                   đường từ hiện tại đến vĩnh cửu, Bộ sưu tập thứ bảy đánh dấu...
                 </p>
               </div>
-
+              <a href="./collection.html">
               <div class="article-button-right">
                 <div class="backgroud-line"></div>
                 <p class="font-2" style="font-size: 18px; font-weight: bold">
                   XEM TIẾP
                 </p>
-              </div>
+              </div></a>
             </div>
           </div>
         </div>
       </main>
 
       <footer>
-        <div class="footer-shop-info">
-          <div class="footer-logo">
-            <img src="img/HESUSTUDIO.png" alt="logo" />
+        <div class="footer-wrap">
+          <div class="footer-shop-info">
+            <div class="footer-logo">
+              <img src="img/HESUSTUDIO.png" alt="logo" />
+            </div>
+            <div class="footer-address">
+              <img src="img/location-logo.png" alt="location-logo" />
+              <p class="font-2">
+                <strong>Địa chỉ:</strong> 177 Phố Huế - Hoàn Kiếm - Hà Nội
+              </p>
+            </div>
+            <div class="footer-hotline">
+              <img src="img/phone-logo.png" alt="phone-logo" />
+              <p class="font-2">
+                <strong>Hotline:</strong> 19008320 (9h - 17h)
+              </p>
+            </div>
           </div>
-          <div class="footer-address">
-            <img src="img/location-logo.png" alt="location-logo" />
-            <p class="font-2">
-              <strong>Địa chỉ:</strong> 177 Phố Huế - Hoàn Kiếm - Hà Nội
-            </p>
+
+          <hr />
+
+          <div class="footer-shop-customer_support; font-2">
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul style="margin-top: 12px">
+              <li style="margin-bottom: 8px">Chính sách đổi trả</li>
+              <li>Hướng dẫn chọn size</li>
+            </ul>
           </div>
-          <div class="footer-hotline">
-            <img src="img/phone-logo.png" alt="phone-logo" />
-            <p class="font-2"><strong>Hotline:</strong> 19008320 (9h - 17h)</p>
+
+          <hr />
+
+          <div class="footer-shop-info_detail; font-2">
+            <h3>GIỚI THIỆU</h3>
+            <ul style="margin-top: 12px">
+              <li style="margin-bottom: 8px">Giới thiệu về Hesu Studio</li>
+              <li style="margin-bottom: 8px">Chính sách thanh toán</li>
+              <li style="margin-bottom: 8px">Chính sách vận chuyển</li>
+              <li>Chính sách bảo mật</li>
+            </ul>
           </div>
-        </div>
 
-        <hr />
+          <hr />
 
-        <div class="footer-shop-customer_support; font-2">
-          <h3>HỖ TRỢ KHÁCH HÀNG</h3>
-          <ul style="margin-top: 12px">
-            <li style="margin-bottom: 8px">Chính sách đổi trả</li>
-            <li>Hướng dẫn chọn size</li>
-          </ul>
-        </div>
-
-        <hr />
-
-        <div class="footer-shop-info_detail; font-2">
-          <h3>GIỚI THIỆU</h3>
-          <ul style="margin-top: 12px">
-            <li style="margin-bottom: 8px">Giới thiệu về Hesu Studio</li>
-            <li style="margin-bottom: 8px">Chính sách thanh toán</li>
-            <li style="margin-bottom: 8px">Chính sách vận chuyển</li>
-            <li>Chính sách bảo mật</li>
-          </ul>
-        </div>
-
-        <hr />
-
-        <div class="footer-shop-social; font-2">
-          <h3 style="margin-bottom: 12px">FOLLOW US</h3>
-          <div class="social-link">
-            <a href="#"
-              ><img src="img/facebook-logo.png" alt="facebook-link"
-            /></a>
-            <a href="#"><img src="img/insta-logo.png" alt="insta-link" /></a>
-            <a href="#"
-              ><img src="img/youtube-logo.png" alt="youtube-link"
-            /></a>
+          <div class="footer-shop-social; font-2">
+            <h3 style="margin-bottom: 12px">FOLLOW US</h3>
+            <div class="social-link">
+              <a href="#"
+                ><img src="img/facebook-logo.png" alt="facebook-link"
+              /></a>
+              <a href="#"><img src="img/insta-logo.png" alt="insta-link" /></a>
+              <a href="#"
+                ><img src="img/youtube-logo.png" alt="youtube-link"
+              /></a>
+            </div>
           </div>
         </div>
       </footer>
     </div>
     <script src="js/main.js"></script>
-    
+    <script type="text/javascript">
+      // var counter = 1;
+      // setInterval(function(){
+      //   document.getElementById('radio' + counter).checked = true;
+      //   counter ++;
+      //   if(counter > 4){
+      //     counter = 1
+      //   }
+      // }, 5000);
+
+
+      
+    </script>
   </body>
 </html>

@@ -1,213 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hesu Studio</title>
-    <link rel="stylesheet" href="main/main.css" />
-    <link rel="stylesheet" href="css/product-detail.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="navbar">
-          <div class="menu-wrap">
-            <input type="checkbox" class="toggler" />
-            <div class="hamburger"><div></div></div>
-            <div class="menu font-2">
-              <div>
-                <!-- <div class="menu-thumbnail">
-                <img src="img/menu-thumb.png" alt="menu-thumb" />
-              </div> -->
-                <div class="menu-submenu">
-                  <div class="category">
-                    <h4 onclick="openSubmenu()" class="dropbtn">CATEGORY</h4>
-                    <div id="submenu" class="category-submenu">
-                      <div class="top-container">
-                        <ul>
-                          <a href=""><li>ÁO THUN</li></a>
-                          <a href=""><li>ÁO SƠMI</li></a>
-                          <a href=""><li>ÁO LEN</li></a>
-                          <a href=""><li>ÁO KHOÁC</li></a>
-                        </ul>
-                      </div>
-                      <div class="bottom-container">
-                        <ul>
-                          <a href=""><li>QUẦN VẢI</li></a>
-                          <a href=""><li>QUẦN JEAN</li></a>
-                          <a href=""><li>QUẦN SHORT</li></a>
-                        </ul>
-                      </div>
-                      <div class="accessories-container">
-                        <ul>
-                          <a href=""><li>GIÀY</li></a>
-                          <a href=""><li>PHỤ KIỆN</li></a>
-                        </ul>
-                      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesu Studio</title>
+  <link rel="stylesheet" href="main/main.css" />
+  <link rel="stylesheet" href="css/product-detail.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="navbar">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu font-2">
+            <div>
+              <div class="menu-submenu">
+                <div class="category">
+                  <h4 onclick="openSubmenu()" class="dropbtn">CATEGORY</h4>
+                  <div id="submenu" class="category-submenu">
+                    <div class="top-container">
+                      <ul>
+                        <a href=""><li>ÁO THUN</li></a>
+                        <a href=""><li>ÁO SƠMI</li></a>
+                        <a href=""><li>ÁO LEN</li></a>
+                        <a href=""><li>ÁO KHOÁC</li></a>
+                      </ul>
+                    </div>
+                    <div class="bottom-container">
+                      <ul>
+                        <a href=""><li>QUẦN VẢI</li></a>
+                        <a href=""><li>QUẦN JEAN</li></a>
+                        <a href=""><li>QUẦN SHORT</li></a>
+                      </ul>
+                    </div>
+                    <div class="accessories-container">
+                      <ul>
+                        <a href=""><li>GIÀY</li></a>
+                        <a href=""><li>PHỤ KIỆN</li></a>
+                      </ul>
                     </div>
                   </div>
-                  <div class="new-arivals"></div>
-                  <h4>NEW ARRIVALS</h4>
-                  <div class="best-sellers">
-                    <h4>BEST SELLERS</h4>
-                  </div>
-                  <div class="collection">
-                    <h4>COLLECTION</h4>
-                  </div>
-                  <div class="blog">
-                    <h4>BLOG</h4>
-                  </div>
-                  <div class="about-us">
-                    <h4>ABOUT US</h4>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-logo">
-            <a href="index.html"><img src="img/HESUSTUDIO.png" alt="logo" /></a>
-          </div>
-          <div class="search-and-cart-wrap">
-            <div class="navbar-search-wrap">
-              <!-- <input type="checkbox" class="toggler"> -->
-              <div class="find-icon-wrap">
-              <img src="img/find-icon.png" alt="">
-            </div>
-              <div class="search" id="search">
-                <p class="font-2">TÌM KIẾM</p>
-                <div class="exit-icon-wrap">
-                  <img src="img/exit-icon.png" alt="">
+                <div class="new-arivals"></div>
+                <h4>NEW ARRIVALS</h4>
+                <div class="best-sellers">
+                  <h4>BEST SELLERS</h4>
                 </div>
-                <input class="font-2" type="text" placeholder="Tên sản phẩm" autofocus>
-              </div>
-            </div>
-            <div class="navbar-cart-wrap">
-              <input type="checkbox" class="toggler">
-              <div class="cart-icon-wrap">
-                <img src="img/bag-icon.png" alt="">
-              </div>
-              <div class="cart">
-                <p class="font-2">GIỎ HÀNG</p>
+                <div class="collection">
+                  <h4>COLLECTION</h4>
+                </div>
+                <div class="blog">
+                  <h4>BLOG</h4>
+                </div>
+                <div class="about-us">
+                  <h4>ABOUT US</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
 
-      <main>
-        <div class="main-article">
-          <div class="product-detail">
-            <div class="product-image-container">
-              <div class="product-image-carousel"></div>
+        <div class="navbar-logo">
+          <a href="index.html"><img src="img/HESUSTUDIO.png" alt="logo" /></a>
+        </div>
+
+        <div class="search-and-cart-wrap">
+          <div class="navbar-search-wrap">
+            <div class="find-icon-wrap">
+              <img src="img/find-icon.png" onclick="togglediv('searchTable')" alt="" />
             </div>
-            <div class="product-info">
-                <div class="product-name">
-                    <div class="name font-2">Lorem ipsum dolor sit amet</div>
-                    <div class="price">
-                        <p class="font-2">420.000<span class="font-2">đ</span></p>
+            <div class="search TableBody" id="searchTable">
+              <p class="font-2">TÌM KIẾM</p>
+              <input
+                class="font-2"
+                type="text"
+                placeholder="Tên sản phẩm"
+                autofocus
+              />
+              <div class="item-in-search-wrap">
+                <div class="item-in-search-wrap-grid">
+                  <div class="search-item">
+                    <div
+                      class="search-item-img"
+                      style="
+                        background-image: url('../img/Mercy Cara Knit.png');
+                      "
+                    ></div>
+                    <div class="search-item-info font-2">
+                      <div class="search-item-info-name">Mercy Cara Knit</div>
+                      <br />
+                      <div class="search-item-info-price">
+                        420.000<span>đ</span>
+                      </div>
                     </div>
-                    
-                    
-                </div>
+                  </div>
 
-                <div class="product-size font-2">
-                  <p>Chọn size</p>
+                  <div class="search-item">
+                    <div
+                      class="search-item-img"
+                      style="
+                        background-image: url('../img/Zipup\ Kara\ Tee.png');
+                      "
+                    ></div>
+                    <div class="search-item-info font-2">
+                      <div class="search-item-info-name">Zipup Cara Tee</div>
+                      <br />
+                      <div class="search-item-info-price">
+                        320.000<span>đ</span>
+                      </div>
+                    </div>
+                  </div>
 
-                  <div class="size-button">
-                  <button>S</button>
-                  <button>M</button>
-                  <button>L</button>
-                  <button>XL</button>
-                </div>
-                </div>
+                  <div class="search-item">
+                    <div
+                      class="search-item-img"
+                      style="
+                        background-image: url('../img/Cable-Round-Cardigan.png');
+                      "
+                    ></div>
+                    <div class="search-item-info font-2">
+                      <div class="search-item-info-name">
+                        Cable Round Cardigan
+                      </div>
+                      <br />
+                      <div class="search-item-info-price">
+                        420.000<span>đ</span>
+                      </div>
+                    </div>
+                  </div>
 
-                <div class="product-quantity font-2">
-                  <p>Số lượng</p>
-                  <div class="counter">
-                    <button onclick="dec('amount')">-</button>
-                    <input name="amount" type="text" readonly value="1">
-                    <button onclick="inc('amount')">+</button>  
+                  <div class="search-item">
+                    <div
+                      class="search-item-img"
+                      style="
+                        background-image: url('../img/Traveler\ Balmacan\ Court.png');
+                      "
+                    ></div>
+                    <div class="search-item-info font-2">
+                      <div class="search-item-info-name">Traveler Court</div>
+                      <br />
+                      <div class="search-item-info-price">
+                        1.220.000<span>đ</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="search-item">
+                    <div
+                      class="search-item-img"
+                      style="
+                        background-image: url('../img/Slimfit\ Down\ Padding.png');
+                      "
+                    ></div>
+                    <div class="search-item-info font-2">
+                      <div class="search-item-info-name">
+                        Slimfit Down Padding
+                      </div>
+                      <br />
+                      <div class="search-item-info-price">
+                        520.000<span>đ</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-            
+              </div>
+            </div>
+          </div>
+          <div class="navbar-cart-wrap">
+            <div class="cart-icon-wrap">
+              <img src="img/bag-icon.png" onclick="togglediv('cartTable')" alt="" />
+            </div>
+            <div class="cart TableBody" id="cartTable">
+              <p class="font-2">GIỎ HÀNG</p>
+              <div class="item-in-cart-wrap">
+                <div class="item-in-cart-wrap-grid">
+                  <div class="item">
+                    <div
+                      class="item-image"
+                      style="
+                        background-image: url('../img/Mercy Cara Knit.png');
+                      "
+                    ></div>
+                    <div class="item-info font-2">
+                      <div class="item-name">Mercy Cara Knit</div>
+                      <div class="item-detail">Màu be / Size L</div>
+                      <div class="item-quantity-and-price">
+                        <div class="item-quantity">Số lượng: 1</div>
+                        <div class="item-price">420.000<span>đ</span></div>
+                      </div>
+
+                      <div class="delete-item"></div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div
+                      class="item-image"
+                      style="
+                        background-image: url('../img/Slimfit\ Down\ Padding.png');
+                      "
+                    ></div>
+                    <div class="item-info font-2">
+                      <div class="item-name">Slimfit Down Padding</div>
+                      <div class="item-detail">Màu be / Size L</div>
+                      <div class="item-quantity-and-price">
+                        <div class="item-quantity">Số lượng: 1</div>
+                        <div class="item-price">420.000<span>đ</span></div>
+                      </div>
+
+                      <div class="delete-item"></div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div
+                      class="item-image"
+                      style="
+                        background-image: url('../img/Cable-Round-Cardigan.png');
+                      "
+                    ></div>
+                    <div class="item-info font-2">
+                      <div class="item-name">Cable Round Cardigan</div>
+                      <div class="item-detail">Màu be / Size L</div>
+                      <div class="item-quantity-and-price">
+                        <div class="item-quantity">Số lượng: 1</div>
+                        <div class="item-price">420.000<span>đ</span></div>
+                      </div>
+
+                      <div class="delete-item"></div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div
+                      class="item-image"
+                      style="
+                        background-image: url('../img/Zipup\ Kara\ Tee.png');
+                      "
+                    ></div>
+                    <div class="item-info font-2">
+                      <div class="item-name">Zipup Cara Tee</div>
+                      <div class="item-detail">Màu be / Size L</div>
+                      <div class="item-quantity-and-price">
+                        <div class="item-quantity">Số lượng: 1</div>
+                        <div class="item-price">420.000<span>đ</span></div>
+                      </div>
+
+                      <div class="delete-item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="total-price font-2">
+                <p>Tổng tiền:</p>
+                <p>1.500.000<span>đ</span></p>
+              </div>
+
+              <div class="pay-button-wrap">
+                <a href="payment.html"><button>Thanh toán</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-article">
+        <div class="product-detail">
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../img/cardigan-1.png">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../img/cardigan-2.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../img/cardigan-3.jpg">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center; margin-top: 10px">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          
+          <div class="product-info">
+            <div class="product-name">
+              <div class="name font-2">Cable Round Cardigan</div>
+              <div class="price">
+                <p class="font-2">420.000<span class="font-2">đ</span></p>
+              </div>
+
+
+            </div>
+
+            <div class="product-size font-2">
+              <p>Chọn size</p>
+
+              <div class="size-button">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+              </div>
+            </div>
+
+            <div class="product-quantity font-2">
+              <p>Số lượng</p>
+              <div class="counter">
+                <button onclick="dec('amount')">-</button>
+                <input name="amount" type="text" readonly value="1">
+                <button onclick="inc('amount')">+</button>
+              </div>
+            </div>
+
 
             <div class="add-to-cart-button font-2">
-                <a href="#"><button class="font-2">THÊM VÀO GIỎ HÀNG</button></a>
+              <a href="#"><button class="font-2">THÊM VÀO GIỎ HÀNG</button></a>
             </div>
 
             <hr>
 
             <div class="description font-2">
-                        <p class="title">Mô tả</p>
-                        <p>Chất liệu: 80% wool, 20% spandex. <br/>
-                            Đặc tính: Độ co giãn ổn, giữ màu tốt. <br/>
-                            Hướng dẫn sử dụng: <br/>
-                            - Giặt nhẹ ở nhiệt độ thường trong túi giặt.<br/>
-                            - Giặt mặt trái với đồ có màu tương tự.<br/>
-                            - Không sử dụng chất tẩy.<br/>
-                            - Không sử dụng máy sấy.<br/>
-                            </p>
-                    </div>
+              <p class="title">Mô tả</p>
+              <p>Chất liệu: 80% wool, 20% spandex. <br />
+                Đặc tính: Độ co giãn ổn, giữ màu tốt. <br />
+                Hướng dẫn sử dụng: <br />
+                - Giặt nhẹ ở nhiệt độ thường trong túi giặt.<br />
+                - Giặt mặt trái với đồ có màu tương tự.<br />
+                - Không sử dụng chất tẩy.<br />
+                - Không sử dụng máy sấy.<br />
+              </p>
+            </div>
           </div>
         </div>
-        
+
         <hr>
 
         <div class="product-list">
-            <div class="product-suggest-title">
+          <div class="product-suggest-title">
             <p class="font-2" style="font-size: 25px;">You may also like</p>
-        </div>
-            <div class="product-container">
-              <a href=""><div class="product-card">
-                <div class="suggest-product-thumbnail" style="background-image:url('../img/Cable-Round-Cardigan.png');"></div>
-                <div class="suggest-product-info font-2">
-                    <div class="suggest-product-name">
-                      Cable Round Cardigan
-                    </div>
-                    <div class="suggest-product-price">
-                      420.000<span>đ</span>
-                    </div>
+          </div>
+          <div class="product-container">
+            <a href="#">
+              <div class="product-card">
+                <div class="suggest-product-thumbnail" style="background-image:url('../img/Traveler Balmacan Court.png');">
                 </div>
-            </div></a>
-              <a href=""><div class="product-card">
-                <div class="suggest-product-thumbnail" style="background-image:url('../img/Cable-Round-Cardigan.png');"></div>
                 <div class="suggest-product-info font-2">
-                    <div class="suggest-product-name">
-                      Cable Round Cardigan
-                    </div>
-                    <div class="suggest-product-price">
-                      420.000<span>đ</span>
-                    </div>
+                  <div class="suggest-product-name">
+                    Traveler Balmacan Court
+                  </div>
+                  <div class="suggest-product-price">
+                    1.120.000<span>đ</span>
+                  </div>
                 </div>
-            </div></a>
-              <a href=""><div class="product-card">
-                <div class="suggest-product-thumbnail" style="background-image:url('../img/Cable-Round-Cardigan.png');"></div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product-card">
+                <div class="suggest-product-thumbnail" style="background-image:url('../img/Wave Cotton Trouser.png');">
+                </div>
                 <div class="suggest-product-info font-2">
-                    <div class="suggest-product-name">
-                      Cable Round Cardigan
-                    </div>
-                    <div class="suggest-product-price">
-                      420.000<span>đ</span>
-                    </div>
+                  <div class="suggest-product-name">
+                    Wave Cotton Trouser
+                  </div>
+                  <div class="suggest-product-price">
+                    450.000<span>đ</span>
+                  </div>
                 </div>
-            </div></a>
-              <a href=""><div class="product-card">
-                <div class="suggest-product-thumbnail" style="background-image:url('../img/Cable-Round-Cardigan.png');"></div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product-card">
+                <div class="suggest-product-thumbnail" style="background-image:url('../img/Zipup Kara Tee.png');">
+                </div>
                 <div class="suggest-product-info font-2">
-                    <div class="suggest-product-name">
-                      Cable Round Cardigan
-                    </div>
-                    <div class="suggest-product-price">
-                      420.000<span>đ</span>
-                    </div>
+                  <div class="suggest-product-name">
+                    Zipup Kara Tee
+                  </div>
+                  <div class="suggest-product-price">
+                    320.000<span>đ</span>
+                  </div>
                 </div>
-            </div></a>
-        </div>
-      </main>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product-card">
+                <div class="suggest-product-thumbnail" style="background-image:url('../img/Slimfit Down Padding.png');">
+                </div>
+                <div class="suggest-product-info font-2">
+                  <div class="suggest-product-name">
+                    Slimfit Down Padding
+                  </div>
+                  <div class="suggest-product-price">
+                    420.000<span>đ</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+    </main>
 
-      <footer>
+    <footer>
+      <div class="footer-wrap">
         <div class="footer-shop-info">
           <div class="footer-logo">
             <img src="img/HESUSTUDIO.png" alt="logo" />
@@ -220,13 +437,11 @@
           </div>
           <div class="footer-hotline">
             <img src="img/phone-logo.png" alt="phone-logo" />
-            <p class="font-2">
-              <strong>Hotline:</strong> 19008320 (9h - 17h)
-            </p>
+            <p class="font-2"><strong>Hotline:</strong> 19008320 (9h - 17h)</p>
           </div>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="footer-shop-customer_support; font-2">
           <h3>HỖ TRỢ KHÁCH HÀNG</h3>
@@ -236,7 +451,7 @@
           </ul>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="footer-shop-info_detail; font-2">
           <h3>GIỚI THIỆU</h3>
@@ -248,45 +463,72 @@
           </ul>
         </div>
 
-        <hr>
+        <hr />
 
-        
         <div class="footer-shop-social; font-2">
           <h3 style="margin-bottom: 12px">FOLLOW US</h3>
           <div class="social-link">
-            <a href="#"
-              ><img src="img/facebook-logo.png" alt="facebook-link"
-            /></a>
+            <a href="#"><img src="img/facebook-logo.png" alt="facebook-link" /></a>
             <a href="#"><img src="img/insta-logo.png" alt="insta-link" /></a>
-            <a href="#"
-              ><img src="img/youtube-logo.png" alt="youtube-link"
-            /></a>
+            <a href="#"><img src="img/youtube-logo.png" alt="youtube-link" /></a>
           </div>
         </div>
+      </div>
     </footer>
-    </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-  $(".product-size button").click(function(){
-    $(this).css("background-color", "gray")
-    $(this).css("color", "#fff")
-  });
-});
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".product-size button").click(function () {
+        $(this).css("background-color", "gray")
+        $(this).css("color", "#fff")
+      });
+    });
 
-function inc(element) {
-  let el = document.querySelector(`[name="${element}"]`);
-  el.value = parseInt(el.value) + 1;
+    function inc(element) {
+      let el = document.querySelector(`[name="${element}"]`);
+      el.value = parseInt(el.value) + 1;
+    }
+
+    function dec(element) {
+      let el = document.querySelector(`[name="${element}"]`);
+      if (parseInt(el.value) > 0) {
+        el.value = parseInt(el.value) - 1;
+      }
+    }
+
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function dec(element) {
-  let el = document.querySelector(`[name="${element}"]`);
-	if (parseInt(el.value) > 0) {
-	  el.value = parseInt(el.value) - 1;
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
-    </script>
+  </script>
 
-<script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

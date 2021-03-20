@@ -143,10 +143,19 @@ select {
     cursor: pointer;
 }
 
+.back-to-homepage {
+    margin-top: 30px;
+}
+
+.back-to-homepage a{
+    font-size: 20px;
+    text-decoration: none;
+    color: limegreen;
+}
 
  .selected-product {
      padding-left: 61px;
-     padding-right: 85px;
+     padding-right: 61px;
      width: 100%;
  }
 
@@ -159,12 +168,25 @@ select {
 
  .product-in-cart {
     width: 100%;
-    height: auto;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
  }
+
+ .product-in-cart::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 10px;
+  }
+  
+  .product-in-cart::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 10px;
+  }
 
  .product-in-cart-grid {
      display: grid;
-     grid-template-columns: 438px;
+     grid-template-columns: 420px;
      grid-row-gap: 20px;
  }
 
@@ -177,14 +199,13 @@ select {
  .item-image {
      width: 118px;
      height: 150px;
-     background-image: url("/img/Cable\ Round\ Cardigan.png");
      background-position: center;
      background-size: cover;
  }
 
  .item-info {
      width: calc(438px - 118px);
-     height: 100%;
+     height: 100%;  
      padding: 0 47px 0 27px;
      position: relative;
  }

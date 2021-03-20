@@ -21,6 +21,23 @@
   margin-top: 72px;
 }
 
+.product-filter {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.product-filter select{
+  width: 125px;
+  height: 30px;
+  margin-bottom: 24px ;
+  border: none;
+  border-bottom: solid #000 1px;
+  outline-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
 .product-container{
   display: flex;
   flex-wrap: wrap;
