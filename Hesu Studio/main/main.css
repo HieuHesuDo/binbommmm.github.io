@@ -472,10 +472,6 @@ footer {
     justify-content: space-between
   }
   
-  .footer-logo {
-    margin-bottom: 1.75rem;
-  }
-  
   .footer-address {
     display: flex;
     margin-bottom: 0.75rem;
