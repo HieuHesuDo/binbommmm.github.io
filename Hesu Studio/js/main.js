@@ -126,23 +126,7 @@ window.onclick = function (event) {
   }
 };
 
-// $(document).ready(function () {
-//   $(".navbar-search-wrap").click(function () {
-//     $(".navbar-search-wrap .search").toggle("fast");
-//   });
-//   $(".navbar-cart-wrap").click(function () {
-//     $(".navbar-search-wrap .search").hide("fast");
-//   });
-// });
 
-// $(document).ready(function () {
-//   $(".navbar-cart-wrap").click(function () {
-//     $(".navbar-cart-wrap .cart").toggle("fast");
-//   });
-//   $(".navbar-search-wrap").click(function () {
-//     $(".navbar-cart-wrap .cart").hide("fast");
-//   });
-// });
 
 
 // Đây là code mở menu
@@ -164,49 +148,36 @@ $(".menu-wrap .toggler").on("click", function () {
 });
 
 
-// $(".navbar-cart-wrap img").on("click", function () {
-//   if (!$(this).data("clicked")) {
-//     //do your stuff here if the button is not clicked
-//     $(".navbar-search-wrap .search").css("display","none");
-//     $(".navbar-cart-wrap .cart").show("fast");
-//     $("body").css("overflow", "hidden");
-//     $(this).data("clicked", true);
-//   } else {
-//     //do your stuff here if the button is clicked
-//     $(".navbar-cart-wrap .cart").hide("fast");
-//     $("body").css("overflow", "scroll");
-//     $(this).data("clicked", false);
-//   }
-// });
-
-// $(".navbar-search-wrap img").on("click", function () {
-//   if (!$(this).data("clicked")) {
-//     //do your stuff here if the button is not clicked
-//     $(".navbar-cart-wrap .cart").css("display","none");
-//     $(".navbar-search-wrap .search").show("fast");
-//     $("body").css("overflow", "hidden");
-//     $(this).data("clicked", true);
-//   } else {
-//     //do your stuff here if the button is clicked
-//     $(".navbar-search-wrap .search").hide("fast");
-//     $("body").css("overflow", "scroll");
-//     $(this).data("clicked", false);
-//   }
-// });
-
-
-
-// Đây là code mở find và cart
-function togglediv(id) {
-  document.querySelectorAll(".TableBody").forEach(function(div) {
-    if (div.id == id) {
-      // Toggle specified DIV
-      div.style.display = div.style.display == "none" ? "block" : "none";
-    } else {
-      // Hide other DIVs
-      div.style.display = "none";
-    }
+// Đây là code mở search
+$(document).ready(function () {
+  $(".navbar-search-wrap img").click(function(){
+    $(".navbar-search-wrap .search").show("fast");
+    $("body").css("overflow", "hidden")
+    $(".overlay-body").css("display","block")
   });
-}
+});
 
+// Đây là code đóng search
+$(".exit-search").on("click", function(){
+  $(".navbar-search-wrap .search").hide("fast");
+    $(this).data("clicked", true);
+    $("body").css("overflow", "scroll");
+    $(".overlay-body").css("display","none")
+})
 
+// Đây là code mở cart
+$(document).ready(function () {
+  $(".navbar-cart-wrap img").click(function(){
+    $(".navbar-cart-wrap .cart").show("fast");
+    $("body").css("overflow", "hidden")
+    $(".overlay-body").css("display","block")
+  });
+});
+
+// Đây là đóng mở cart
+$(".exit-cart").on("click", function(){
+    $(".navbar-cart-wrap .cart").hide("fast");
+    $(this).data("clicked", true);
+    $("body").css("overflow", "scroll");
+    $(".overlay-body").css("display","none")
+})

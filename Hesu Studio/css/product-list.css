@@ -54,6 +54,39 @@
   height: 381px;
   background-size: cover;
   background-position: center;
+  position: relative;
+  cursor: default;
+}
+
+.product-thumbnail button{
+  position: absolute;
+  top:35%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: #fff solid 2px;
+  transition: 200ms;
+  display: none;
+  cursor: pointer;
+}
+
+.product-thumbnail button i{
+  font-size: 30px;
+  color: #fff;
+}
+
+.product-thumbnail:hover {
+  opacity: 51%;
+  transition: 200ms;
+  animation: ease-in-out;
+}
+
+.product-thumbnail:hover button{
+  display: block;
+  transition: 500ms;
+  animation: ease-in-out;
 }
 
 .product-thumnail img {

@@ -6,6 +6,7 @@
     <title>Hesu Studio</title>
     <link rel="stylesheet" href="main/main.css" />
     <link rel="stylesheet" href="css/product-list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -70,10 +71,13 @@
           <div class="search-and-cart-wrap">
             <div class="navbar-search-wrap">
               <div class="find-icon-wrap">
-                <img src="img/find-icon.png" onclick="togglediv('searchTable')" alt="" />
+                <img src="img/find-icon.png" alt="" />
               </div>
-              <div class="search TableBody" id="searchTable">
-                <p class="font-2">TÌM KIẾM</p>
+              <div class="search">
+                <div class="title-and-exit-wrap">
+                  <p class="font-2 exit">TÌM KIẾM</p>
+                  <div class="exit-search" style="cursor: pointer;"><img src="./img/exit-icon.png" alt=""></div>
+                </div>
                 <input
                   class="font-2"
                   type="text"
@@ -166,15 +170,20 @@
                       </div>
                     </div>
                   </div>
+                  <br>
+                  <a href="product-list.html" class="font-2" style="text-align: center;"><p>Xem thêm 50 sản phẩm</p></a>
                 </div>
               </div>
             </div>
             <div class="navbar-cart-wrap">
               <div class="cart-icon-wrap">
-                <img src="img/bag-icon.png" onclick="togglediv('cartTable')" alt="" />
+                <img src="img/bag-icon.png" alt="" />
               </div>
               <div class="cart TableBody" id="cartTable">
+                <div class="title-and-exit-wrap">
                 <p class="font-2">GIỎ HÀNG</p>
+                <div class="exit-cart" style="cursor: pointer;"><img src="./img/exit-icon.png" alt=""></div>
+              </div>
                 <div class="item-in-cart-wrap">
                   <div class="item-in-cart-wrap-grid">
                     <div class="item">
@@ -294,7 +303,8 @@
                     style="
                       background-image: url('./img/Cable-Round-Cardigan.png');
                     "
-                  ></div>
+                  >
+                  <button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Cable Round Cardigan</div>
                     <div class="product-price">420.000<span>đ</span></div>
@@ -308,7 +318,7 @@
                   <div
                     class="product-thumbnail"
                     style="background-image: url('./img/House Knit Zipup.png')"
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">House Knit Zipup</div>
                     <div class="product-price">520.000<span>đ</span></div>
@@ -320,7 +330,7 @@
                   <div
                     class="product-thumbnail"
                     style="background-image: url('./img/Mercy Cara Knit.png')"
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Mercy Cara Knit</div>
                     <div class="product-price">210.000<span>đ</span></div>
@@ -334,7 +344,7 @@
                     style="
                       background-image: url('./img/Slimfit Down Padding.png');
                     "
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Slimfit Down Padding</div>
                     <div class="product-price">320.000<span>đ</span></div>
@@ -348,7 +358,7 @@
                     style="
                       background-image: url('./img/Traveler Balmacan Court.png');
                     "
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Traveler Balmacan Court</div>
                     <div class="product-price">1.120.000<span>đ</span></div>
@@ -362,7 +372,7 @@
                     style="
                       background-image: url('./img/Daily tee.png');
                     "
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Daily Tee</div>
                     <div class="product-price">230.000<span>đ</span></div>
@@ -374,7 +384,7 @@
                   <div
                     class="product-thumbnail"
                     style="background-image: url('./img/Zipup Kara Tee.png')"
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Zipup Kara Tee</div>
                     <div class="product-price">350.000<span>đ</span></div>
@@ -389,7 +399,7 @@
                     style="
                       background-image: url('./img/bio corduroy shirt.png');
                     "
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Bio Corduroy Shirt</div>
                     <div class="product-price">320.000<span>đ</span></div>
@@ -404,7 +414,7 @@
                     style="
                       background-image: url('./img/mohair cardigan.png');
                     "
-                  ></div>
+                  ><button><i class="fas fa-eye"></i></button></div>
                   <div class="suggest-product-info">
                     <div class="product-name">Mohair Cardigan</div>
                     <div class="product-price">420.000<span>đ</span></div>
