@@ -152,6 +152,7 @@ $(".menu-wrap .toggler").on("click", function () {
 $(document).ready(function () {
   $(".navbar-search-wrap img").click(function(){
     $(".navbar-search-wrap .search").show("fast");
+    $(".navbar-cart-wrap .cart").hide("fast");
     $("body").css("overflow", "hidden")
     $(".overlay-body").css("display","block")
   });
@@ -169,12 +170,13 @@ $(".exit-search").on("click", function(){
 $(document).ready(function () {
   $(".navbar-cart-wrap img").click(function(){
     $(".navbar-cart-wrap .cart").show("fast");
+    $(".navbar-search-wrap .search").hide("fast");
     $("body").css("overflow", "hidden")
     $(".overlay-body").css("display","block")
   });
 });
 
-// Đây là đóng mở cart
+// Đây là code đóng cart
 $(".exit-cart").on("click", function(){
     $(".navbar-cart-wrap .cart").hide("fast");
     $(this).data("clicked", true);
