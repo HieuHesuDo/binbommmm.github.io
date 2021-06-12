@@ -716,8 +716,8 @@ footer {
     }
 
     .menu-submenu h4{
-      font-size: 20px;
-    line-height: 40px;
+      font-size: 30px;
+      line-height: 51px;
     }
 
     .find-icon-wrap img {
@@ -779,6 +779,10 @@ footer {
   @media only screen and (min-width: 768px) and (max-width: 1024px){
     .main-article {
       width: 100%;
+    }
+
+    .menu-submenu {
+      width: 75%;
     }
 
     footer {
